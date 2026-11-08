@@ -1,0 +1,31 @@
+{
+  "project": "ptit-docker-check-1794068122913",
+  "executedAt": "2026-11-07T16:15:22.914Z",
+  "checks": {
+    "healthSwaggerAndMongo": "PASS",
+    "generateTrustSealVerifyReceiveDownload": "PASS",
+    "tampering401Replay409ChangedControl400": "PASS",
+    "nonRootAndProductionOnlyImage": "PASS",
+    "keysPeersGridFsAndReplayPersistAfterRestart": "PASS"
+  },
+  "runtime": {
+    "node": "v22.23.4",
+    "platform": "linux",
+    "architecture": "arm64",
+    "typescript": false,
+    "playwright": false,
+    "envFile": false,
+    "testFiles": false,
+    "reportScripts": false
+  },
+  "storage": {
+    "enabled": true,
+    "database": "ptit_docker_check",
+    "unitId": "don-vi-b",
+    "peers": 1,
+    "receipts": 2,
+    "version": "8.0.34"
+  },
+  "sha256": "349134e8d7c4ce934cb7e385c5e753af81713fde2b6035d41b33c18246f6f9cc",
+  "passed": true
+}

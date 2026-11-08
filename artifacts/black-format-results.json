@@ -1,0 +1,31 @@
+{
+  "sourceSha256": "8e5f55aafad0c79592f0cb7ee64b3a651eda72de9c6ecb8fc2ada1a2408a30c1",
+  "outputPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAI-TAP-LON-Thong-nhat-Times-New-Roman-Mau-den.docx",
+  "outputSha256": "abc91c6e821bb51c076addbc3ab49e2f62b3baf83c8498ca0477402ff2eadfa4",
+  "outputBytes": 1742615,
+  "textUnchanged": true,
+  "allImageBytesUnchanged": true,
+  "imageCount": 11,
+  "textFont": "Times New Roman",
+  "textColor": "#000000",
+  "themeFontNormalized": true,
+  "allStyleTextColorsBlack": true,
+  "codeTextSizePt": 12,
+  "normalTextSizePt": 12,
+  "chapterTitleSizePt": 14,
+  "changes": {
+    "fontPropertiesNormalized": 2344,
+    "colorPropertiesNormalized": 2344,
+    "codeRunsSetTo12Pt": 91
+  },
+  "backupFileId": "1KsDskTls3fxPpMmAepZevQUXXmulDNG7",
+  "remoteVerified": true,
+  "verifiedAt": "2026-11-02T15:39:06.856167+00:00",
+  "remoteModifiedTime": "2026-11-02T15:38:27.401Z",
+  "readbackColorCounts": {
+    "000000": 2344
+  },
+  "readbackFontCounts": {
+    "Times New Roman": 2344
+  }
+}

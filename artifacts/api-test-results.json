@@ -1,0 +1,527 @@
+{
+  "executedAt": "2026-11-08T02:19:01.518Z",
+  "transport": "HTTP thực tế với NestJS và MongoDB riêng cho kiểm thử",
+  "apiEndpointsExercised": 12,
+  "requests": 72,
+  "statusMismatches": 0,
+  "endpoints": [
+    "GET /api/health",
+    "GET /api/keys/status",
+    "GET /api/keys/public",
+    "POST /api/keys/generate",
+    "POST /api/keys/import",
+    "POST /api/peers",
+    "POST /api/envelopes/seal",
+    "POST /api/envelopes/verify",
+    "POST /api/envelopes/open",
+    "POST /api/envelopes/receive",
+    "GET /api/documents/{id}",
+    "GET /api/storage/status"
+  ],
+  "traces": [
+    {
+      "unit": "don-vi-a",
+      "method": "GET",
+      "endpoint": "/api/health",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "GET",
+      "endpoint": "/api/health",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "GET",
+      "endpoint": "/",
+      "expected": 302,
+      "actual": 302
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "GET",
+      "endpoint": "/docs",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "GET",
+      "endpoint": "/docs/swagger-ui-init.js",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "GET",
+      "endpoint": "/docs-json",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "GET",
+      "endpoint": "/api/keys/status",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "GET",
+      "endpoint": "/api/keys/status",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "GET",
+      "endpoint": "/api/keys/public",
+      "expected": 404,
+      "actual": 404
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/keys/generate",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/keys/generate",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/keys/generate",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/keys/generate",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/keys/generate",
+      "expected": 201,
+      "actual": 201
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "GET",
+      "endpoint": "/api/keys/status",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/keys/import",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/keys/import",
+      "expected": 201,
+      "actual": 201
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "GET",
+      "endpoint": "/api/keys/public",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "GET",
+      "endpoint": "/api/keys/public",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/keys/generate",
+      "expected": 409,
+      "actual": 409
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/keys/import",
+      "expected": 409,
+      "actual": 409
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/peers",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/peers",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/peers",
+      "expected": 201,
+      "actual": 201
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/peers",
+      "expected": 201,
+      "actual": 201
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/peers",
+      "expected": 201,
+      "actual": 201
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/peers",
+      "expected": 409,
+      "actual": 409
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/envelopes/seal",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/envelopes/seal",
+      "expected": 404,
+      "actual": 404
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/envelopes/seal",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/envelopes/seal",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/envelopes/seal",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/verify",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/verify",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/verify",
+      "expected": 401,
+      "actual": 401
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/open",
+      "expected": 401,
+      "actual": 401
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/open",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/open",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/open",
+      "expected": 409,
+      "actual": 409
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 409,
+      "actual": 409
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/verify",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/envelopes/seal",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "GET",
+      "endpoint": "/api/documents/{id}",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "GET",
+      "endpoint": "/api/documents/{id}",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "GET",
+      "endpoint": "/api/documents/{id}",
+      "expected": 404,
+      "actual": 404
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "GET",
+      "endpoint": "/api/documents/{id}",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "GET",
+      "endpoint": "/api/documents/{id}",
+      "expected": 404,
+      "actual": 404
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 503,
+      "actual": 503
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "GET",
+      "endpoint": "/api/storage/status",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "GET",
+      "endpoint": "/api/storage/status",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/envelopes/seal",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "GET",
+      "endpoint": "/api/documents/{id}",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/envelopes/seal",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "GET",
+      "endpoint": "/api/documents/{id}",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "POST",
+      "endpoint": "/api/envelopes/seal",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "POST",
+      "endpoint": "/api/envelopes/receive",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-b",
+      "method": "GET",
+      "endpoint": "/api/documents/{id}",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "GET",
+      "endpoint": "/api/health",
+      "expected": 403,
+      "actual": 403
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "GET",
+      "endpoint": "/api/health",
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "unit": "don-vi-a",
+      "method": "GET",
+      "endpoint": "/docs-json",
+      "expected": 200,
+      "actual": 200
+    }
+  ]
+}

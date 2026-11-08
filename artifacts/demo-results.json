@@ -1,0 +1,67 @@
+{
+  "executedAt": "2026-11-02T14:14:47.085Z",
+  "node": "v22.22.3",
+  "protocol": "chapter-2-header-payload",
+  "transport": "HTTP POST application/json + MongoDB GridFS",
+  "outputDirectory": "/Users/ducytcg123456/Desktop/BTL MMH/artifacts/demo/2026-11-02T14-14-46-801Z",
+  "files": [
+    {
+      "filename": "cong-van.pdf",
+      "originalBytes": 664,
+      "envelopeBytes": 3230,
+      "sha256": "349134e8d7c4ce934cb7e385c5e753af81713fde2b6035d41b33c18246f6f9cc",
+      "identical": true,
+      "sealHttpMs": 10.62929200000002,
+      "receiveHttpMs": 42.128625,
+      "documentId": "6ae89ad602e1c196411435c1"
+    },
+    {
+      "filename": "cong-van.docx",
+      "originalBytes": 9956,
+      "envelopeBytes": 19830,
+      "sha256": "d82b4fa9bcbc45a0e101bb59154e9088b7236ef07bc2d7fdccb7d0453f1e01d5",
+      "identical": true,
+      "sealHttpMs": 4.658457999999996,
+      "receiveHttpMs": 9.18629199999998,
+      "documentId": "6ae89ad702e1c196411435c4"
+    },
+    {
+      "filename": "anh-mau.png",
+      "originalBytes": 69,
+      "envelopeBytes": 2166,
+      "sha256": "b600c19281624f14014ca44bf81870d030a42a9da90831393442f935719ec875",
+      "identical": true,
+      "sealHttpMs": 4.203750000000014,
+      "receiveHttpMs": 6.0119170000000395,
+      "documentId": "6ae89ad702e1c196411435c7"
+    }
+  ],
+  "mongo": {
+    "enabled": true,
+    "database": "ptit_demo_1793628886801",
+    "unitId": "don-vi-b",
+    "peers": 1,
+    "receipts": 3,
+    "version": "8.0.34"
+  },
+  "scenarios": {
+    "happyCase": "PASS",
+    "multipleFormats": "PASS",
+    "tampering": {
+      "status": 401,
+      "result": "PASS"
+    },
+    "spoofing": {
+      "status": 401,
+      "result": "PASS"
+    },
+    "replay": {
+      "status": 409,
+      "result": "PASS"
+    },
+    "rewrittenReplay": {
+      "status": 400,
+      "result": "PASS"
+    }
+  }
+}

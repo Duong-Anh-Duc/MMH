@@ -1,0 +1,10 @@
+# Chỉ gửi mã ứng dụng và cấu hình build vào Docker, loại cả khóa và .env cục bộ.
+*
+!Dockerfile
+!.dockerignore
+!package.json
+!package-lock.json
+!tsconfig.json
+!tsconfig.build.json
+!src/
+!src/**

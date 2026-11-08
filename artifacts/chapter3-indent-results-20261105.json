@@ -1,0 +1,613 @@
+{
+  "sourceSha256": "12565acd2f1052e8a15785935cfa5c72f46c1725eb62628a0ff500cfe720e065",
+  "outputPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAI-TAP-LON-Chuong3-Can-deu-Thut-dau-dong.docx",
+  "outputSha256": "a1808526cb9f8def2c0d95a0bb41e26a8d8bc1cd863ef676b04e69a0053155fc",
+  "outputBytes": 1966761,
+  "paragraphTypes": {
+    "heading": 21,
+    "body": 41,
+    "code": 27,
+    "image": 10,
+    "caption": 10,
+    "digest": 1,
+    "reference": 6
+  },
+  "bodyAlignment": "justified",
+  "firstLineCm": 1.0,
+  "bodyLineSpacing": 1.25,
+  "bodySpaceAfterPt": 6,
+  "bodyLeftRightIndentCm": 0,
+  "codeLeftRightIndentCm": 0.5,
+  "headingsIndentCm": 0,
+  "referencesHangingCm": 0.75,
+  "textUnchanged": true,
+  "tableXmlUnchanged": true,
+  "allImageBytesUnchanged": true,
+  "outsideChapter3Unchanged": true,
+  "remoteVerified": true,
+  "details": [
+    {
+      "elementIndex": 406,
+      "category": "heading",
+      "textPrefix": "CHƯƠNG 3: CÀI ĐẶT THỰC NGHIỆM VÀ KẾT QUẢ"
+    },
+    {
+      "elementIndex": 407,
+      "category": "body",
+      "textPrefix": "Trên cơ sở mô hình mật mã lai ở Chương 1 và đặc tả hệ thống tại Chương 2, chương này "
+    },
+    {
+      "elementIndex": 408,
+      "category": "heading",
+      "textPrefix": "3.1. Môi trường và công nghệ triển khai"
+    },
+    {
+      "elementIndex": 409,
+      "category": "heading",
+      "textPrefix": "3.1.1. Lựa chọn ngôn ngữ lập trình và nền tảng phát triển"
+    },
+    {
+      "elementIndex": 410,
+      "category": "body",
+      "textPrefix": "TypeScript được sử dụng để khai báo rõ kiểu dữ liệu của header, payload và phong bì, "
+    },
+    {
+      "elementIndex": 412,
+      "category": "body",
+      "textPrefix": "Hai tiến trình HTTP chạy trên cùng máy qua loopback để phục vụ học tập. Đây là mô phỏ"
+    },
+    {
+      "elementIndex": 413,
+      "category": "heading",
+      "textPrefix": "3.1.2. Các thư viện mật mã học chuyên dụng"
+    },
+    {
+      "elementIndex": 414,
+      "category": "body",
+      "textPrefix": "Mô-đun node:crypto có sẵn trong Node.js thực hiện phép toán mật mã thông qua OpenSSL "
+    },
+    {
+      "elementIndex": 416,
+      "category": "body",
+      "textPrefix": "Bảng 3.2 đối chiếu các yêu cầu thiết kế với thành phần hiện thực. Mỗi thao tác nhạy c"
+    },
+    {
+      "elementIndex": 418,
+      "category": "heading",
+      "textPrefix": "3.2. Hiện thực hóa các mô-đun chức năng cốt lõi"
+    },
+    {
+      "elementIndex": 419,
+      "category": "body",
+      "textPrefix": "Mã nguồn được chia thành src/crypto, src/keys, src/envelopes và src/storage. CryptoSe"
+    },
+    {
+      "elementIndex": 420,
+      "category": "heading",
+      "textPrefix": "3.2.1. Mô-đun sinh và lưu trữ cặp khóa RSA"
+    },
+    {
+      "elementIndex": 421,
+      "category": "body",
+      "textPrefix": "CryptoService.generateRsaPair() sinh khóa RSA với số mũ công khai 65537. API cho phép"
+    },
+    {
+      "elementIndex": 422,
+      "category": "body",
+      "textPrefix": "KeysService.generate() tạo thư mục nhận diện nguyên tử và không ghi đè cặp khóa hiện "
+    },
+    {
+      "elementIndex": 423,
+      "category": "heading",
+      "textPrefix": "3.2.2. Mô-đun mã hóa AES-256 và bọc khóa phiên RSA-OAEP"
+    },
+    {
+      "elementIndex": 424,
+      "category": "body",
+      "textPrefix": "Tệp gốc được chuyển thành Base64 và đưa vào JSON bản rõ cùng trích yếu, tên tệp, loại"
+    },
+    {
+      "elementIndex": 425,
+      "category": "code",
+      "textPrefix": "const cipher = createCipheriv('aes-256-cbc', key, iv);"
+    },
+    {
+      "elementIndex": 426,
+      "category": "code",
+      "textPrefix": "const ciphertext = Buffer.concat([cipher.update(plaintext), cipher.final()]);"
+    },
+    {
+      "elementIndex": 427,
+      "category": "code",
+      "textPrefix": "const encryptedKey = publicEncrypt({"
+    },
+    {
+      "elementIndex": 428,
+      "category": "code",
+      "textPrefix": "key: recipientPublicKey,"
+    },
+    {
+      "elementIndex": 429,
+      "category": "code",
+      "textPrefix": "padding: constants.RSA_PKCS1_OAEP_PADDING,"
+    },
+    {
+      "elementIndex": 430,
+      "category": "code",
+      "textPrefix": "oaepHash: 'sha256',"
+    },
+    {
+      "elementIndex": 431,
+      "category": "code",
+      "textPrefix": "}, key);"
+    },
+    {
+      "elementIndex": 432,
+      "category": "body",
+      "textPrefix": "RSA chỉ bọc khóa phiên AES thay vì mã hóa trực tiếp tài liệu. SHA-256 được chỉ định r"
+    },
+    {
+      "elementIndex": 433,
+      "category": "heading",
+      "textPrefix": "3.2.3. Mô-đun băm SHA-256 và tạo chữ ký số"
+    },
+    {
+      "elementIndex": 434,
+      "category": "body",
+      "textPrefix": "Theo đúng mục 2.3.3 và bước 5 của mục 2.4.2, chữ ký được tạo trên chuỗi Base64 encryp"
+    },
+    {
+      "elementIndex": 435,
+      "category": "code",
+      "textPrefix": "const signature = sign('sha256', signingBytes(envelope), {"
+    },
+    {
+      "elementIndex": 436,
+      "category": "code",
+      "textPrefix": "key: senderPrivateKey,"
+    },
+    {
+      "elementIndex": 437,
+      "category": "code",
+      "textPrefix": "padding: constants.RSA_PKCS1_PADDING,"
+    },
+    {
+      "elementIndex": 438,
+      "category": "code",
+      "textPrefix": "});"
+    },
+    {
+      "elementIndex": 439,
+      "category": "body",
+      "textPrefix": "Hệ thống giữ mô hình Encrypt-then-Sign: có bản mã trước rồi mới tạo chữ ký. Cần phân "
+    },
+    {
+      "elementIndex": 440,
+      "category": "heading",
+      "textPrefix": "3.2.4. Mô-đun đóng gói và giải nén JSON"
+    },
+    {
+      "elementIndex": 441,
+      "category": "body",
+      "textPrefix": "EnvelopesService.seal() xuất phong bì gồm đúng hai khối header và payload như mục 2.3"
+    },
+    {
+      "elementIndex": 442,
+      "category": "body",
+      "textPrefix": "Bên nhận kiểm tra timestamp theo cửa sổ ±300 giây và receiver_id trước khi truy vấn k"
+    },
+    {
+      "elementIndex": 443,
+      "category": "heading",
+      "textPrefix": "3.2.5. Mô-đun thẩm định chữ ký và khôi phục tệp gốc"
+    },
+    {
+      "elementIndex": 444,
+      "category": "body",
+      "textPrefix": "Luồng open() gồm kiểm tra phong bì và chữ ký; mở khóa bí mật bên nhận; giải header.ke"
+    },
+    {
+      "elementIndex": 445,
+      "category": "body",
+      "textPrefix": "StorageService.accept() ghi byte gốc vào MongoDB GridFS và tạo bản ghi receipts gồm r"
+    },
+    {
+      "elementIndex": 446,
+      "category": "body",
+      "textPrefix": "Ghi tệp GridFS và ghi receipts là hai thao tác, chưa phải một giao dịch bao trùm cả h"
+    },
+    {
+      "elementIndex": 448,
+      "category": "body",
+      "textPrefix": "Tài liệu được phục hồi ở dạng rõ trong kho nhận, vì vậy MongoDB thuộc môi trường nội "
+    },
+    {
+      "elementIndex": 449,
+      "category": "heading",
+      "textPrefix": "3.3. Giao diện và kết quả thực thi chương trình"
+    },
+    {
+      "elementIndex": 451,
+      "category": "heading",
+      "textPrefix": "3.3.1. Giao diện thao tác của bên gửi"
+    },
+    {
+      "elementIndex": 452,
+      "category": "body",
+      "textPrefix": "Giao diện thao tác sử dụng Swagger UI do NestJS sinh tự động, gồm biểu mẫu chọn tệp, "
+    },
+    {
+      "elementIndex": 453,
+      "category": "code",
+      "textPrefix": "UNIT_ID=don-vi-a DATA_DIR=./data/don-vi-a PORT=3000 npm start"
+    },
+    {
+      "elementIndex": 454,
+      "category": "code",
+      "textPrefix": "UNIT_ID=don-vi-b DATA_DIR=./data/don-vi-b PORT=3001 npm start"
+    },
+    {
+      "elementIndex": 455,
+      "category": "body",
+      "textPrefix": "Để B tự động mở gói qua REST, đặt RECEIVE_KEY_PASSPHRASE trong cấu hình cục bộ của ti"
+    },
+    {
+      "elementIndex": 456,
+      "category": "body",
+      "textPrefix": "Tại /docs của mỗi bên, người dùng sinh khóa bằng POST /api/keys/generate, trao đổi kh"
+    },
+    {
+      "elementIndex": 457,
+      "category": "image",
+      "textPrefix": ""
+    },
+    {
+      "elementIndex": 458,
+      "category": "caption",
+      "textPrefix": "Hình 3.1. Gửi tệp PDF và tạo phong bì tại đơn vị A; các trường chứa mật khẩu đã được "
+    },
+    {
+      "elementIndex": 459,
+      "category": "heading",
+      "textPrefix": "3.3.2. Cấu trúc tệp package.json thực tế sau đóng gói"
+    },
+    {
+      "elementIndex": 460,
+      "category": "body",
+      "textPrefix": "Tên package.json trong đề cương được hiểu là tệp gói tin trao đổi, khác với package.j"
+    },
+    {
+      "elementIndex": 461,
+      "category": "code",
+      "textPrefix": "{"
+    },
+    {
+      "elementIndex": 462,
+      "category": "code",
+      "textPrefix": "\"header\": {"
+    },
+    {
+      "elementIndex": 463,
+      "category": "code",
+      "textPrefix": "\"request_id\": \"881c438f-3186-4ac5-abb7-6663c1ef3268\","
+    },
+    {
+      "elementIndex": 464,
+      "category": "code",
+      "textPrefix": "\"sender_id\": \"don-vi-a\","
+    },
+    {
+      "elementIndex": 465,
+      "category": "code",
+      "textPrefix": "\"receiver_id\": \"don-vi-b\","
+    },
+    {
+      "elementIndex": 466,
+      "category": "code",
+      "textPrefix": "\"timestamp\": \"2026-11-02T14:14:46.967Z\","
+    },
+    {
+      "elementIndex": 467,
+      "category": "code",
+      "textPrefix": "\"key\": \"WVAVG7IpWqSZbhYIcOyXgvh4... (rút gọn)\""
+    },
+    {
+      "elementIndex": 468,
+      "category": "code",
+      "textPrefix": "},"
+    },
+    {
+      "elementIndex": 469,
+      "category": "code",
+      "textPrefix": "\"payload\": {"
+    },
+    {
+      "elementIndex": 470,
+      "category": "code",
+      "textPrefix": "\"encrypted_data\": \"lAh2S/BZzkWB1Nf0X74a91DF... (rút gọn)\","
+    },
+    {
+      "elementIndex": 471,
+      "category": "code",
+      "textPrefix": "\"iv\": \"Um00M+HBKEYHiXu5MmwdvQ==\","
+    },
+    {
+      "elementIndex": 472,
+      "category": "code",
+      "textPrefix": "\"signature\": \"kzg5FmLdWTnbKpW0UgmTA/PD... (rút gọn)\""
+    },
+    {
+      "elementIndex": 473,
+      "category": "code",
+      "textPrefix": "}"
+    },
+    {
+      "elementIndex": 474,
+      "category": "code",
+      "textPrefix": "}"
+    },
+    {
+      "elementIndex": 475,
+      "category": "body",
+      "textPrefix": "Gói đầy đủ và tệp được phục hồi nằm tại artifacts/demo/2026-11-02T14-14-46-801Z. JSON"
+    },
+    {
+      "elementIndex": 476,
+      "category": "heading",
+      "textPrefix": "3.3.3. Giao diện thao tác của bên nhận"
+    },
+    {
+      "elementIndex": 477,
+      "category": "body",
+      "textPrefix": "Tại B, giao diện POST /api/envelopes/open cho phép chọn tệp phong bì, nhập mật khẩu c"
+    },
+    {
+      "elementIndex": 478,
+      "category": "image",
+      "textPrefix": ""
+    },
+    {
+      "elementIndex": 479,
+      "category": "caption",
+      "textPrefix": "Hình 3.2. Đơn vị B mở phong bì và tải tài liệu gốc qua Swagger UI."
+    },
+    {
+      "elementIndex": 480,
+      "category": "image",
+      "textPrefix": ""
+    },
+    {
+      "elementIndex": 481,
+      "category": "caption",
+      "textPrefix": "Hình 3.3. Tiếp nhận phong bì JSON qua REST API và trả biên nhận lưu trữ."
+    },
+    {
+      "elementIndex": 482,
+      "category": "body",
+      "textPrefix": "Trong lượt demo dùng làm dữ liệu báo cáo, MongoDB 8.0.34 tại cơ sở dữ liệu ptit_demo_"
+    },
+    {
+      "elementIndex": 483,
+      "category": "image",
+      "textPrefix": ""
+    },
+    {
+      "elementIndex": 484,
+      "category": "caption",
+      "textPrefix": "Hình 3.4. Trạng thái và số bản ghi MongoDB của một phiên trình diễn giao diện."
+    },
+    {
+      "elementIndex": 485,
+      "category": "body",
+      "textPrefix": "Ảnh giao diện được chụp trong một phiên riêng dùng cơ sở dữ liệu tạm riêng, vì vậy tê"
+    },
+    {
+      "elementIndex": 486,
+      "category": "heading",
+      "textPrefix": "3.4. Kịch bản kiểm thử và đánh giá an toàn"
+    },
+    {
+      "elementIndex": 487,
+      "category": "body",
+      "textPrefix": "Các kịch bản gồm kiểm thử mật mã ở lớp service và kiểm thử tích hợp HTTP/MongoDB. Khi"
+    },
+    {
+      "elementIndex": 488,
+      "category": "body",
+      "textPrefix": "Bộ kiểm thử được chạy bằng npm test tại 2026-11-02T14:13:02.559Z. Kết quả: 42/42 ca đ"
+    },
+    {
+      "elementIndex": 489,
+      "category": "image",
+      "textPrefix": ""
+    },
+    {
+      "elementIndex": 490,
+      "category": "caption",
+      "textPrefix": "Hình 3.5. Trích nguyên văn nhật ký npm test: 42 ca đạt, không có ca thất bại."
+    },
+    {
+      "elementIndex": 491,
+      "category": "heading",
+      "textPrefix": "3.4.1. Kịch bản 1: Luồng truyền nhận chuẩn"
+    },
+    {
+      "elementIndex": 492,
+      "category": "body",
+      "textPrefix": "Đơn vị A mã hóa và ký công văn PDF bằng khóa của mình và khóa công khai của B. B kiểm"
+    },
+    {
+      "elementIndex": 493,
+      "category": "digest",
+      "textPrefix": "SHA-256 của PDF khôi phục: 349134e8d7c4ce934cb7e385c5e753af81713fde2b6035d41b33c18246"
+    },
+    {
+      "elementIndex": 494,
+      "category": "body",
+      "textPrefix": "Trong ảnh Hình 3.3, API receive trả HTTP 200 kèm document_id, sha256 và download_url."
+    },
+    {
+      "elementIndex": 495,
+      "category": "heading",
+      "textPrefix": "3.4.2. Kịch bản 2: Chống can thiệp dữ liệu"
+    },
+    {
+      "elementIndex": 496,
+      "category": "body",
+      "textPrefix": "Kịch bản demo đảo một bit trong ciphertext rồi giữ nguyên chữ ký. Bên nhận trả HTTP 4"
+    },
+    {
+      "elementIndex": 497,
+      "category": "image",
+      "textPrefix": ""
+    },
+    {
+      "elementIndex": 498,
+      "category": "caption",
+      "textPrefix": "Hình 3.6. Đảo một bit bản mã, giữ nguyên chữ ký: API từ chối với HTTP 401."
+    },
+    {
+      "elementIndex": 499,
+      "category": "heading",
+      "textPrefix": "3.4.3. Kịch bản 3: Chống mạo danh bên gửi"
+    },
+    {
+      "elementIndex": 500,
+      "category": "body",
+      "textPrefix": "Kẻ giả mạo dùng cặp RSA khác ký lại phong bì nhưng vẫn khai báo người gửi là A. B kiể"
+    },
+    {
+      "elementIndex": 501,
+      "category": "image",
+      "textPrefix": ""
+    },
+    {
+      "elementIndex": 502,
+      "category": "caption",
+      "textPrefix": "Hình 3.7. Ký bằng khóa giả nhưng khai báo đơn vị A: API từ chối với HTTP 401."
+    },
+    {
+      "elementIndex": 503,
+      "category": "heading",
+      "textPrefix": "3.4.4. Kịch bản 4: Nhiều định dạng và các trường hợp biên"
+    },
+    {
+      "elementIndex": 504,
+      "category": "body",
+      "textPrefix": "Kiểm thử HTTP bổ sung tên tệp tiếng Việt có dấu để kiểm tra cả nội dung lẫn tên tệp k"
+    },
+    {
+      "elementIndex": 506,
+      "category": "body",
+      "textPrefix": "PDF và DOCX được tạo riêng cho thử nghiệm; PNG là ảnh 1×1 pixel có cấu trúc và checks"
+    },
+    {
+      "elementIndex": 507,
+      "category": "body",
+      "textPrefix": "Bộ test bổ sung tệp rỗng, kích thước 1/15/16/17 byte và 64 KiB, JSON/Base64 lỗi, trườ"
+    },
+    {
+      "elementIndex": 508,
+      "category": "image",
+      "textPrefix": ""
+    },
+    {
+      "elementIndex": 509,
+      "category": "caption",
+      "textPrefix": "Hình 3.8. Gửi lại phong bì đã tiếp nhận: API từ chối với HTTP 409."
+    },
+    {
+      "elementIndex": 510,
+      "category": "image",
+      "textPrefix": ""
+    },
+    {
+      "elementIndex": 511,
+      "category": "caption",
+      "textPrefix": "Hình 3.9. Đổi UUID và timestamp của phong bì cũ: control không khớp, HTTP 400."
+    },
+    {
+      "elementIndex": 512,
+      "category": "heading",
+      "textPrefix": "3.4.5. Đo thời gian thực thi và độ tăng dung lượng"
+    },
+    {
+      "elementIndex": 513,
+      "category": "body",
+      "textPrefix": "Phép đo được chạy tại 2026-11-02T14:14:50.069Z, với một lượt khởi động làm nóng và 5 "
+    },
+    {
+      "elementIndex": 515,
+      "category": "body",
+      "textPrefix": "Với tệp 10 MiB (10.485.760 byte, lớn hơn 10 MB thập phân), tổng thời gian trung bình "
+    },
+    {
+      "elementIndex": 516,
+      "category": "image",
+      "textPrefix": ""
+    },
+    {
+      "elementIndex": 517,
+      "category": "caption",
+      "textPrefix": "Hình 3.10. Thời gian trung bình đóng gói và mở/lưu MongoDB theo kích thước tệp."
+    },
+    {
+      "elementIndex": 518,
+      "category": "body",
+      "textPrefix": "Benchmark dùng JSON gọn, trong khi API HTTP xuất JSON thụt lề để dễ đọc, vì vậy kích "
+    },
+    {
+      "elementIndex": 519,
+      "category": "body",
+      "textPrefix": "Với n byte đầu vào, một lớp Base64 tạo 4 × ceil(n/3) ký tự. Luồng mục 2.4.2 Base64 tệ"
+    },
+    {
+      "elementIndex": 520,
+      "category": "body",
+      "textPrefix": "Kết quả cho thấy bản thực nghiệm đáp ứng việc giữ bí mật nội dung, phát hiện can thiệ"
+    },
+    {
+      "elementIndex": 521,
+      "category": "body",
+      "textPrefix": "Các ca đã thực hiện phát hiện cả thay đổi bản mã, giả mạo chữ ký và tái sử dụng bản m"
+    },
+    {
+      "elementIndex": 522,
+      "category": "heading",
+      "textPrefix": "Tài liệu tham khảo của Chương 3"
+    },
+    {
+      "elementIndex": 523,
+      "category": "reference",
+      "textPrefix": "[1] Node.js v22, Crypto API. https://nodejs.org/docs/latest-v22.x/api/crypto.html"
+    },
+    {
+      "elementIndex": 524,
+      "category": "reference",
+      "textPrefix": "[2] NestJS, OpenAPI (Swagger). https://docs.nestjs.com/openapi/introduction"
+    },
+    {
+      "elementIndex": 525,
+      "category": "reference",
+      "textPrefix": "[3] NestJS, File upload. https://docs.nestjs.com/techniques/file-upload"
+    },
+    {
+      "elementIndex": 526,
+      "category": "reference",
+      "textPrefix": "[4] NIST SP 800-38A, mục 6.2 và Phụ lục C. https://nvlpubs.nist.gov/nistpubs/Legacy/S"
+    },
+    {
+      "elementIndex": 527,
+      "category": "reference",
+      "textPrefix": "[5] IETF RFC 8017, PKCS #1 v2.2, mục 7.1 và 8.2. https://www.rfc-editor.org/rfc/rfc80"
+    },
+    {
+      "elementIndex": 528,
+      "category": "reference",
+      "textPrefix": "[6] MongoDB, Node.js Driver: GridFS và Indexes. https://www.mongodb.com/docs/drivers/"
+    }
+  ],
+  "verifiedAt": "2026-11-05T04:25:46.092254+00:00",
+  "remoteModifiedTime": "2026-11-05T04:25:31.290Z",
+  "backupFileId": "1rrDjMWd2Z4hprzOf-f6OYwMqQOZv_nUU"
+}

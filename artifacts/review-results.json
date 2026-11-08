@@ -1,0 +1,209 @@
+{
+  "reviewScope": "Verified complete Word file downloaded from supplied Google Drive link, local Chapter 3, source code and recorded test results",
+  "googleDocs": {
+    "url": "https://docs.google.com/document/d/1hlUT3wDVveSOjz4xkSf1L_4oOk41RG9C/edit",
+    "readStatus": "SUCCESS",
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "name": "BÀI TẬP LỚN.docx",
+    "modifiedTime": "2026-11-02T14:36:08.569Z",
+    "sourceBytes": 440172,
+    "sha256": "6e5ba9538f3aa89607e4ab0fbe79aeb1b0009a5f5ffc37d14451a5f319059489",
+    "identicalToPriorLocalSource": true,
+    "remoteModified": false,
+    "chapter3BodyPresent": false
+  },
+  "sourceWordSha256": "6e5ba9538f3aa89607e4ab0fbe79aeb1b0009a5f5ffc37d14451a5f319059489",
+  "reviewedCopy": "docs/Ban-de-nghi-sua-tu-Word-Chuong-1-2-3.docx",
+  "changes": [
+    {
+      "section": "Mở đầu: thống nhất CBC",
+      "before": "Làm chủ nền tảng lý thuyết: Nghiên cứu sâu về các thuật toán mã hóa dữ liệu đối xứng xác thực (AES-256-GCM), mã hóa bất đối xứng bọc khóa (RSA-OAEP) và các chuẩn ký số quốc tế (RSASSA-PKCS1-v1_5 kết hợp SHA-256). ",
+      "after": "Làm chủ nền tảng lý thuyết: Nghiên cứu sâu về các thuật toán mã hóa dữ liệu đối xứng theo chế độ CBC (AES-256-CBC), mã hóa bất đối xứng bọc khóa (RSA-OAEP) và các chuẩn ký số quốc tế (RSASSA-PKCS1-v1_5 kết hợp SHA-256). "
+    },
+    {
+      "section": "Mở đầu: thống nhất CBC",
+      "before": "Các thuật toán mật mã học hiện đại: Thuật toán mã hóa đối xứng khối có xác thực dữ liệu đính kèm AES-256-GCM; Thuật toán mã hóa bất đối xứng và bọc khóa RSA-OAEP (SHA-256); Thuật toán ký số RSASSA-PKCS1-v1_5 kết hợp hàm băm SHA-256.",
+      "after": "Các thuật toán mật mã học hiện đại: Thuật toán mã hóa đối xứng khối theo chế độ CBC AES-256-CBC; Thuật toán mã hóa bất đối xứng và bọc khóa RSA-OAEP (SHA-256); Thuật toán ký số RSASSA-PKCS1-v1_5 kết hợp hàm băm SHA-256."
+    },
+    {
+      "section": "Mở đầu: thống nhất CBC",
+      "before": "Nghiên cứu các tiêu chuẩn mật mã học quốc tế: NIST SP 800-38D (chuẩn AES-GCM), RFC 8017 (chuẩn mật mã khóa công khai PKCS #1 v2.2), RFC 5280 (chuẩn chứng thư số X.509). ",
+      "after": "Nghiên cứu các tiêu chuẩn mật mã học quốc tế: NIST SP 800-38A (chuẩn AES-CBC), RFC 8017 (chuẩn mật mã khóa công khai PKCS #1 v2.2), RFC 5280 (chuẩn chứng thư số X.509). "
+    },
+    {
+      "section": "Mở đầu: thống nhất CBC",
+      "before": "Chương 1: Tổng quan về cơ sở lý thuyết mật mã học ứng dụng Trình bày cơ sở toán học và nguyên lý hoạt động của các thuật toán mật mã cốt lõi được sử dụng trong đề tài, bao gồm: mã hóa đối xứng AES-256-GCM, mã hóa bất đối xứng RSA-OAEP, hàm băm SHA-256, chữ ký số RSASSA-PKCS1-v1_5 và nguyên lý mô hình phong bì số kết hợp.",
+      "after": "Chương 1: Tổng quan về cơ sở lý thuyết mật mã học ứng dụng Trình bày cơ sở toán học và nguyên lý hoạt động của các thuật toán mật mã cốt lõi được sử dụng trong đề tài, bao gồm: mã hóa đối xứng AES-256-CBC, mã hóa bất đối xứng RSA-OAEP, hàm băm SHA-256, chữ ký số RSASSA-PKCS1-v1_5 và nguyên lý mô hình phong bì số kết hợp."
+    },
+    {
+      "section": "Mở đầu: công nghệ Chương 3",
+      "before": "Chương 3: Cài đặt và hiện thực hóa hệ thống Mô tả chi tiết cấu trúc thư mục dự án, giải pháp kết nối cơ sở dữ liệu MongoDB, thiết kế kho chứng thư số , triển khai các module nghiệp vụ mật mã trên ngôn ngữ Go và xây dựng hệ thống RESTful API tiếp nhận văn bản.",
+      "after": "Chương 3: Cài đặt thực nghiệm và kết quả. Trình bày cấu trúc dự án, kết nối MongoDB, danh mục khóa công khai, các mô-đun mật mã bằng Node.js/TypeScript/NestJS, REST API truyền nhận và kết quả kiểm thử, đo hiệu năng."
+    },
+    {
+      "section": "Mở đầu: bố cục Chương 4",
+      "before": "Chương 4: Thử nghiệm và đánh giá kết quả Trình bày các kịch bản thử nghiệm thực tế với công cụ Test Client; đánh giá hiệu năng xử lý mã hóa/giải mã; phân tích kết quả thử nghiệm trong các tình huống can thiệp giả mạo dữ liệu và đưa ra nhận xét, đánh giá tổng thể về mức độ đáp ứng mục tiêu đề tài.",
+      "after": "Chương 4: Đánh giá và hướng phát triển. Tổng hợp mức độ đáp ứng mục tiêu, ưu điểm và hạn chế của hệ thống; đề xuất tích hợp PKI, thiết bị ký chuyên dụng và mở rộng mô hình liên thông."
+    },
+    {
+      "section": "1.1.1: giới hạn chống chối bỏ",
+      "before": "Tính chống chối bỏ (Non-repudiation): Đảm bảo bên gửi không thể phủ nhận việc mình đã gửi thông điệp và bên nhận không thể phủ nhận việc đã nhận gói tin. Chữ ký số dựa trên hạ tầng khóa công khai là phương thức hiện thực hóa mục tiêu này.",
+      "after": "Tính chống chối bỏ (Non-repudiation): Chữ ký của người gửi hỗ trợ tạo bằng chứng về nguồn gốc và nội dung đã ký, với điều kiện khóa và danh tính được quản lý tin cậy. Chữ ký của người gửi không tự chứng minh người nhận đã tiếp nhận tài liệu; yêu cầu này cần biên nhận có chữ ký riêng của bên nhận."
+    },
+    {
+      "section": "1.2.3: diễn giải CBC",
+      "before": "Nhờ đó, dù hai khối dữ liệu bản rõ có nội dung hoàn toàn giống nhau, bản mã tương ứng sinh ra vẫn hoàn toàn khác biệt.",
+      "after": "Cơ chế móc xích khiến bản mã của một khối phụ thuộc vào bản rõ và khối bản mã trước đó; với khối đầu tiên, sự phụ thuộc này đến từ IV. Không suy ra khẳng định tuyệt đối rằng mọi khối bản rõ giống nhau luôn cho bản mã khác nhau."
+    },
+    {
+      "section": "1.2.3: IV của CBC",
+      "before": "Vai trò của Vector khởi tạo (IV - Initialization Vector):IV có độ dài 16 byte (128 bit), đóng vai trò là khối giả lập C0 cho khối đầu tiên. IV không cần giữ bí mật nhưng bắt buộc phải là một giá trị giả ngẫu nhiên hoặc duy nhất (Nonce) cho mỗi lần mã hóa. IV ngăn chặn hoàn toàn việc kẻ tấn công nhận diện các thông điệp có phần mở đầu giống nhau.",
+      "after": "Vai trò của Vector khởi tạo (IV - Initialization Vector): IV của AES-CBC dài 16 byte, đóng vai trò C₀ cho khối đầu tiên. IV không cần bí mật nhưng phải khó dự đoán trước cho mỗi lần mã hóa và cần được bảo vệ toàn vẹn. Trong bản cài đặt, IV được sinh bằng randomBytes(16), có bản sao trong control của dữ liệu mã hóa và được đối chiếu sau giải mã. Chỉ bảo đảm tính duy nhất của một IV có thể dự đoán được là chưa đủ cho CBC."
+    },
+    {
+      "section": "1.3.2: công thức nghịch đảo RSA",
+      "before": "d * e -1 (mod ϕ(n)).",
+      "after": "d ≡ e⁻¹ (mod φ(n)), tương đương e·d ≡ 1 (mod φ(n))."
+    },
+    {
+      "section": "1.4.2: phạm vi kết luận về chữ ký",
+      "before": "Chữ ký số có giá trị pháp lý tương đương con dấu và chữ ký của người đại diện cơ quan:",
+      "after": "Chữ ký số trong bản thực nghiệm được sử dụng để kiểm tra tính toàn vẹn và quyền kiểm soát khóa ký của bên gửi. Quy trình tạo và kiểm tra chữ ký dùng chuẩn RSASSA-PKCS1-v1_5 với SHA-256 như sau:"
+    },
+    {
+      "section": "1.4.3: phạm vi Encrypt-then-Sign",
+      "before": "Lợi ích an toàn: Loại trừ rủi ro tấn công chuyển tiếp lén lút (Surreptitious Forwarding), đồng thời cho phép các trạm trung gian kiểm tra tính toàn vẹn và tính xác thực của gói tin mà không cần phải giải mã dữ liệu nghiệp vụ nhạy cảm bên trong.",
+      "after": "Lợi ích: Cho phép kiểm tra chữ ký của bản mã trước khi giải mã. Hạn chế chuyển tiếp lén lút còn đòi hỏi ràng buộc người gửi, người nhận và thông tin điều khiển với dữ liệu được bảo vệ; không tự suy ra chỉ từ thứ tự mã hóa rồi ký. Trong bản cài đặt, bước đối chiếu control sau giải mã thực hiện ràng buộc này."
+    },
+    {
+      "section": "Định dạng khối mã",
+      "before": "{",
+      "after": "{"
+    },
+    {
+      "section": "Định dạng khối mã",
+      "before": "2.3.2. Đặc tả chi tiết khối thông tin điều khiển mở (Header)",
+      "after": "2.3.2. Đặc tả chi tiết khối thông tin điều khiển mở (Header)"
+    },
+    {
+      "section": "2.4.3: ràng buộc control",
+      "before": "Bước 6: Giải mã `encrypted_data` bằng khóa AES-256 và `iv` thu được dữ liệu Plaintext JSON.",
+      "after": "Bước 6: Giải mã encrypted_data bằng khóa AES-256 và iv để lấy Plaintext JSON. Kiểm tra protocol và đối chiếu control, là bản sao header/IV trong dữ liệu mã hóa; mọi khác biệt phải bị từ chối trước khi lưu hoặc ghi nhận UUID."
+    },
+    {
+      "section": "2.4.3: lưu và kiểm tra tài liệu",
+      "before": "Bước 7: Giải mã chuỗi Base64 tệp đính kèm khôi phục file gốc và lưu trữ kết quả vào MongoDB.",
+      "after": "Bước 7: Giải Base64 tệp đính kèm, đối chiếu kích thước và SHA-256, lưu tệp vào MongoDB GridFS và ghi biên nhận có request_id duy nhất. Chỉ chấp nhận nội dung sau khi mọi kiểm tra thành công."
+    },
+    {
+      "section": "2.4.4: MongoDB chống phát lại",
+      "before": "Lớp 2 - Danh mục chỉ mục duy nhất (Nonce Cache / UUID Index): Bên nhận duy trì một bộ nhớ đệm (Redis/In-Memory Cache) lưu trữ danh sách `request_id` (UUIDv4) của các gói tin đã xử lý trong khoảng thời gian Delta T. Nếu một request có `request_id` đã tồn tại trong cache, hệ thống sẽ xác định là tấn công phát lại và từ chối xử lý.",
+      "after": "Lớp 2 - Chỉ mục UUID duy nhất: Bản thực nghiệm dùng MongoDB receipts với unique index trên ownerId/request_id. Gói có request_id đã được chấp nhận tại đơn vị nhận sẽ bị từ chối. Lịch sử tồn tại sau khởi động lại; timestamp vẫn được kiểm tra theo cửa sổ ±5 phút. Control được đối chiếu sau giải mã để chặn sửa UUID hoặc timestamp của bản mã đã ký."
+    },
+    {
+      "section": "2.1.3: chỉ tiêu hiệu năng",
+      "before": "Thời gian đóng gói mã hóa và thẩm định giải mã tệp tin dung lượng 10MB không quá 1.5 giây trên cấu hình máy chủ tiêu chuẩn.",
+      "after": "Mục tiêu: tổng thời gian đóng gói mã hóa và thẩm định, giải mã tệp 10 MB không quá 1,5 giây. Kết quả được đánh giá trên cấu hình thực nghiệm tại mục 3.4.5, ghi rõ có tính hoặc không tính chi phí truyền mạng."
+    },
+    {
+      "section": "Mở đầu: mức độ khẳng định",
+      "before": "Giải pháp kết hợp giữa Mã hóa dữ liệu theo mô hình hệ mật lai (Hybrid Cryptosystem) và Ký số điện tử (Digital Signature) là hướng tiếp cận tối ưu: vừa giải quyết triệt để bài toán hiệu năng xử lý với các gói tin có dung lượng lớn (nhờ mã hóa đối xứng), vừa đảm bảo an toàn tuyệt đối trong việc bọc khóa phiên, phân phối khóa và xác thực danh tính đơn vị gửi (nhờ mã hóa bất đối xứng và chữ ký số).",
+      "after": "Giải pháp kết hợp giữa Mã hóa dữ liệu theo mô hình hệ mật lai (Hybrid Cryptosystem) và Ký số điện tử (Digital Signature) là hướng tiếp cận tối ưu: vừa giải quyết triệt để bài toán hiệu năng xử lý với các gói tin có dung lượng lớn (nhờ mã hóa đối xứng), vừa hỗ trợ bảo vệ dữ liệu khi triển khai và quản lý khóa đúng cách trong việc bọc khóa phiên, phân phối khóa và xác thực danh tính đơn vị gửi (nhờ mã hóa bất đối xứng và chữ ký số)."
+    },
+    {
+      "section": "2.4.2: chuẩn bị khóa và control",
+      "before": "Bước 3: Khởi tạo sinh ngẫu nhiên an toàn (Crypto Random) 32 byte khóa AES-256 và 16 byte IV.",
+      "after": "Bước 3: Sinh ngẫu nhiên 32 byte khóa AES-256 và 16 byte IV. Bọc khóa phiên bằng RSA-OAEP/SHA-256 với khóa công khai bên nhận, tạo header và bổ sung bản sao header/IV vào control của Plaintext JSON."
+    },
+    {
+      "section": "2.4.2: thứ tự đóng gói",
+      "before": "Bước 6: Mã hóa khóa AES-256 bằng Public Key của Bên nhận qua chuẩn RSA-OAEP thu được khóa phiên mã hóa `key` (Base64).",
+      "after": "Bước 6: Hoàn thiện dữ liệu phong bì với header.key đã được chuẩn bị ở bước 3 và payload chứa encrypted_data, iv, signature; kiểm tra đúng cấu trúc trước khi phát hành."
+    },
+    {
+      "section": "Mở đầu: phạm vi kỹ thuật",
+      "before": "Về kỹ thuật: Xây dựng giải pháp phần mềm hoàn chỉnh bằng ngôn ngữ Go; quản trị dữ liệu trên MongoDB; quản lý chứng thư số thông qua kho lưu trữ khóa công khai nội bộ của hệ thống (không bao gồm việc xây dựng hạ tầng cấp phát chứng thư số thương mại CA công cộng). ",
+      "after": "Về kỹ thuật: Xây dựng giải pháp phần mềm hoàn chỉnh bằng TypeScript trên nền Node.js/NestJS; quản trị dữ liệu trên MongoDB; quản lý chứng thư số thông qua kho lưu trữ khóa công khai nội bộ của hệ thống (không bao gồm việc xây dựng hạ tầng cấp phát chứng thư số thương mại CA công cộng). "
+    },
+    {
+      "section": "Mở đầu: phạm vi TLS/HTTPS",
+      "before": "Mặc dù các giao thức bảo mật tầng truyền tải phổ biến hiện nay (như TLS/HTTPS) đã cung cấp khả năng bảo vệ đường truyền, nhưng đây chỉ là cơ chế bảo mật từng chặng (Hop-by-Hop). Dữ liệu hoàn toàn có thể bị lộ lọt hoặc can thiệp khi đi qua các trạm trung gian, máy chủ ủy quyền (Proxy), cổng định tuyến nội bộ hoặc khi lưu tạm tại các hệ thống trung chuyển. Do đó, việc thiết lập một cơ chế an toàn ở tầng ứng dụng (Application-level Security) theo nguyên lý đầu cuối tới đầu cuối (End-to-End Security) trực tiếp giữa các đơn vị gửi và nhận là điều kiện tiên quyết.",
+      "after": "TLS/HTTPS bảo vệ kênh truyền giữa hai điểm kết thúc phiên TLS. Nếu TLS được kết thúc tại proxy hoặc gateway thì thành phần đó có thể xử lý bản rõ; nếu chỉ chuyển tiếp đường hầm TLS thì không mặc nhiên đọc được nội dung. Phong bì bảo mật tầng ứng dụng bổ sung khả năng bảo vệ tài liệu khi qua hệ thống trung chuyển hoặc lưu tạm, với khóa bí mật chỉ được giữ tại đơn vị nhận."
+    },
+    {
+      "section": "Mở đầu: mục tiêu hiện thực hóa",
+      "before": "Hiện thực hóa và triển khai ứng dụng: Lập trình hoàn chỉnh hệ thống bằng ngôn ngữ hiệu năng cao Go (Golang), xây dựng RESTful API tiếp nhận gói tin bảo mật, tích hợp cơ sở dữ liệu MongoDB phục vụ quản lý danh mục đơn vị, kho chứng thư số và lưu trữ an toàn các bản tin đã thẩm tra, giải mã. ",
+      "after": "Hiện thực hóa và triển khai ứng dụng: Lập trình hoàn chỉnh hệ thống bằng TypeScript trên nền Node.js/NestJS, xây dựng RESTful API tiếp nhận gói tin bảo mật, tích hợp cơ sở dữ liệu MongoDB phục vụ quản lý danh mục đơn vị, kho chứng thư số và lưu trữ an toàn các bản tin đã thẩm tra, giải mã. "
+    },
+    {
+      "section": "Mở đầu: phương pháp thực nghiệm",
+      "before": "Cài đặt mã nguồn thực tế trên môi trường Golang, kết nối cơ sở dữ liệu MongoDB.",
+      "after": "Cài đặt mã nguồn thực tế trên môi trường Node.js với TypeScript/NestJS, kết nối cơ sở dữ liệu MongoDB."
+    },
+    {
+      "section": "1.6.2: kiểu dữ liệu JSON và vai trò Base64",
+      "before": "Gói tin truyền dẫn giữa các đơn vị được chuẩn hóa dưới định dạng JSON (JavaScript Object Notation). Chuẩn JSON thuần túy chỉ hỗ trợ kiểu dữ liệu chuỗi ký tự UTF-8/ASCII và không hỗ trợ trực tiếp dữ liệu nhị phân thô. Việc chuyển đổi tệp PDF sang chuỗi Base64 cho phép đóng gói toàn bộ tệp đính kèm vào trong một trường thuộc tính của payload JSON, bảo đảm tính toàn vẹn và thuận tiện khi truyền tải qua các giao thức web API (REST/HTTP POST).",
+      "after": "Gói tin giữa các đơn vị sử dụng JSON. JSON hỗ trợ object, array, string, number, boolean và null, nhưng không có kiểu byte nhị phân thô. Base64 cho phép biểu diễn byte của tệp PDF bằng chuỗi để nhúng vào JSON bản rõ trước khi mã hóa. Bản mã cũng được chuyển thành Base64 để đặt trong trường encrypted_data của phong bì gửi qua REST API. Base64 chỉ là biểu diễn dữ liệu, không cung cấp tính bí mật."
+    },
+    {
+      "section": "1.6.3: chi phí Base64 chính xác",
+      "before": "Chi phí dung lượng: Do 3 byte nhị phân (24 bit) được chuyển thành 4 byte ASCII (32 bit), dung lượng tệp tin sau khi mã hóa Base64 sẽ tăng thêm đúng:",
+      "after": "Chi phí dung lượng: Với n byte, Base64 có độ dài 4 × ceil(n/3) ký tự. Tỷ lệ tăng tiệm cận 33,3% khi n lớn; tệp nhỏ còn chịu ảnh hưởng của ký tự đệm. Đây là chi phí của một lần Base64, không phải toàn bộ phong bì hai lớp của hệ thống."
+    },
+    {
+      "section": "1.6.3: ý nghĩa công thức tỷ lệ",
+      "before": "Độ tăng dung lượng = ((4 - 3) / 3) * 100% = 33.33%",
+      "after": "Với một nhóm đủ 3 byte: ((4 − 3) / 3) × 100% ≈ 33,33%."
+    },
+    {
+      "section": "1.6.3: liên kết chi phí với luồng thực nghiệm",
+      "before": "Mức chi phí overhead 33.3% này hoàn toàn chấp nhận được so với độ an toàn và sự tiện lợi vượt trội mà mô hình gói tin JSON mang lại.",
+      "after": "Luồng trong mục 2.4 sử dụng hai lớp Base64: một lớp cho tệp trong JSON bản rõ và một lớp cho bản mã. Vì vậy tổng kích thước tiệm cận 16/9 lần tệp gốc, tức tăng khoảng 77,8%, cộng metadata, khóa bọc, chữ ký và padding; số liệu thực nghiệm được trình bày tại mục 3.4.5."
+    },
+    {
+      "section": "2.1.2: phạm vi xử lý tệp của bản cài đặt",
+      "before": "Mã hóa dữ liệu lai (Hybrid Encryption): Tự động sinh khóa ngẫu nhiên AES-256 cho từng phiên làm việc, hỗ trợ mã hóa luồng dữ liệu lớn và mã hóa bọc khóa phiên bằng thuật toán RSA-OAEP.",
+      "after": "Mã hóa dữ liệu lai (Hybrid Encryption): Sinh khóa AES-256 mới cho mỗi gói, mã hóa tệp và nội dung công văn, bọc khóa phiên bằng RSA-OAEP/SHA-256. Bản thực nghiệm xử lý trong RAM với giới hạn tệp 10 MiB; xử lý luồng tệp lớn hơn là hướng mở rộng."
+    }
+  ],
+  "codeFixes": [
+    "Vietnamese multipart filename encoding",
+    "missing JSON body validation",
+    "GridFS deletion after ambiguous receipt commit"
+  ],
+  "reportFixes": [
+    "Chart generated from benchmark.json on each report export",
+    "Added storage failure/reconciliation limitations",
+    "Corrected reference notes for RSA inverse and CBC IV"
+  ],
+  "findings": [
+    {
+      "location": "Mở đầu",
+      "issue": "Go/Golang appears in objectives, technical scope, experimental method and chapter overview; implementation uses NestJS/TypeScript"
+    },
+    {
+      "location": "Mở đầu vs 1.2.3, 1.5.1, 2.4.2",
+      "issue": "AES-GCM / NIST 800-38D conflicts with AES-CBC / NIST 800-38A used in design and code"
+    },
+    {
+      "location": "1.3.2",
+      "issue": "RSA inverse expression incorrectly written as d times e^-1"
+    },
+    {
+      "location": "1.2.3",
+      "issue": "CBC IV requires unpredictability, not uniqueness alone"
+    },
+    {
+      "location": "1.6.2–1.6.3",
+      "issue": "JSON supports more types than strings; 33.3 percent is one Base64 layer, not total envelope cost"
+    },
+    {
+      "location": "2.4.2–2.4.4",
+      "issue": "Document needs encrypted control binding and persistent MongoDB UUID index to match implemented behavior"
+    },
+    {
+      "location": "Chapter 3",
+      "issue": "Only listed in table of contents; body absent in shared source"
+    }
+  ]
+}

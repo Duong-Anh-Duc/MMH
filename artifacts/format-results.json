@@ -1,0 +1,33 @@
+{
+  "sourcePath": "/tmp/ptit-format-current.docx",
+  "sourceSha256": "8f635692bbdf4aeb215c9745b570d0f97fc24ebdfa70cad80338f05af8f0ab63",
+  "outputPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAI-TAP-LON-Cap-nhat-Chuong3-Dong-bo-dinh-dang.docx",
+  "outputSha256": "8e5f55aafad0c79592f0cb7ee64b3a651eda72de9c6ecb8fc2ada1a2408a30c1",
+  "outputBytes": 1740296,
+  "earlierBodyElementsPreserved": 405,
+  "allTextUnchanged": true,
+  "allImageBytesUnchanged": true,
+  "images": 11,
+  "chapter3Format": {
+    "bodyFont": "Times New Roman",
+    "bodySizePt": 12,
+    "lineSpacing": 1.25,
+    "chapterTitleSizePt": 14,
+    "headingsSizePt": 12,
+    "alignment": "left",
+    "pageSize": "Letter",
+    "marginsCm": 2.54,
+    "codeFont": "Roboto Mono",
+    "codeSizePt": 9
+  },
+  "fontCharacterCounts": {
+    "('Times New Roman', 14.0)": 40,
+    "('Times New Roman', 12.0)": 18947,
+    "('Roboto Mono', 9.0)": 912
+  },
+  "backupFileId": "1wPJtL8-6lQCkQhA5To7IDemLO2hhFLZE",
+  "remoteVerified": true,
+  "verifiedAt": "2026-11-02T15:23:43.065081+00:00",
+  "remoteModifiedTime": "2026-11-02T15:23:25.675Z",
+  "documentUrl": "https://docs.google.com/document/d/1hlUT3wDVveSOjz4xkSf1L_4oOk41RG9C/edit"
+}

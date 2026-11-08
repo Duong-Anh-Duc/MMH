@@ -1,0 +1,62 @@
+name: ptit-secure-envelope
+
+x-unit: &unit
+  image: ptit-secure-envelope:local
+  build:
+    context: .
+    dockerfile: Dockerfile
+  init: true
+  restart: unless-stopped
+  depends_on:
+    mongodb:
+      condition: service_healthy
+  environment: &unit-environment
+    NODE_ENV: production
+    HOST: 0.0.0.0
+    PORT: '3000'
+    DATA_DIR: /app/data
+    MONGODB_URI: mongodb://mongodb:27017
+    MONGODB_DATABASE: ${DOCKER_MONGODB_DATABASE:-ptit_envelope_docker}
+    MAX_FILE_SIZE_MB: '10'
+    TIMESTAMP_WINDOW_SECONDS: '300'
+
+services:
+  mongodb:
+    image: mongo:8.0
+    restart: unless-stopped
+    ports:
+      - '127.0.0.1:${MONGO_PORT:-27018}:27017'
+    volumes:
+      - mongodb-data:/data/db
+    healthcheck:
+      test: ['CMD', 'mongosh', '--quiet', '--eval', 'db.adminCommand({ ping: 1 }).ok']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  unit-a:
+    <<: *unit
+    environment:
+      <<: *unit-environment
+      UNIT_ID: don-vi-a
+      RECEIVE_KEY_PASSPHRASE: ${UNIT_A_RECEIVE_KEY_PASSPHRASE:-}
+    ports:
+      - '127.0.0.1:${UNIT_A_PORT:-3000}:3000'
+    volumes:
+      - unit-a-data:/app/data
+
+  unit-b:
+    <<: *unit
+    environment:
+      <<: *unit-environment
+      UNIT_ID: don-vi-b
+      RECEIVE_KEY_PASSPHRASE: ${UNIT_B_RECEIVE_KEY_PASSPHRASE:-}
+    ports:
+      - '127.0.0.1:${UNIT_B_PORT:-3001}:3000'
+    volumes:
+      - unit-b-data:/app/data
+
+volumes:
+  mongodb-data:
+  unit-a-data:
+  unit-b-data:

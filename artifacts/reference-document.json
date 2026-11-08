@@ -1,0 +1,29 @@
+{
+  "source": "/Users/ducytcg123456/Downloads/BÀI TẬP LỚN.docx",
+  "sha256": "6e5ba9538f3aa89607e4ab0fbe79aeb1b0009a5f5ffc37d14451a5f319059489",
+  "chapter3": "docs/Chuong-3-Cai-dat-thuc-nghiem.docx",
+  "merged": "docs/Bai-tap-lon-Ghep-Chuong-1-2-3.docx",
+  "originalModified": false,
+  "basis": {
+    "algorithm": "AES-256-CBC",
+    "envelopeHeader": [
+      "request_id",
+      "sender_id",
+      "receiver_id",
+      "timestamp",
+      "key"
+    ],
+    "envelopePayload": [
+      "encrypted_data",
+      "iv",
+      "signature"
+    ],
+    "database": "MongoDB GridFS",
+    "application": "NestJS + TypeScript"
+  },
+  "knownDraftInconsistencies": [
+    "GCM/Go in the introduction vs CBC in detailed Chapters 1-2",
+    "Manually entered table-of-contents page numbers",
+    "Control binding added inside encrypted plaintext for metadata/replay protection"
+  ]
+}

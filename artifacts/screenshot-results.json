@@ -1,0 +1,60 @@
+{
+  "mongoDbName": "ptit_screenshots_1793631549346",
+  "results": [
+    {
+      "filename": "rest-api.png",
+      "status": 200,
+      "response": {
+        "request_id": "2d47f5ef-daa0-49d2-93da-12d244831b08",
+        "sender_id": "don-vi-a",
+        "receiver_id": "don-vi-b",
+        "filename": "cong-van.pdf",
+        "sha256": "349134e8d7c4ce934cb7e385c5e753af81713fde2b6035d41b33c18246f6f9cc",
+        "document_id": "6ae8a5401fc2b2181078af7c",
+        "download_url": "/api/documents/6ae8a5401fc2b2181078af7c",
+        "status": "accepted"
+      },
+      "executedAt": "2026-11-02T14:59:13.023Z"
+    },
+    {
+      "filename": "test-tampering.png",
+      "status": 401,
+      "response": {
+        "message": "Chữ ký không hợp lệ. Gói tin có thể đã bị can thiệp.",
+        "error": "Unauthorized",
+        "statusCode": 401
+      },
+      "executedAt": "2026-11-02T14:59:13.745Z"
+    },
+    {
+      "filename": "test-spoofing.png",
+      "status": 401,
+      "response": {
+        "message": "Chữ ký không hợp lệ. Gói tin có thể đã bị can thiệp.",
+        "error": "Unauthorized",
+        "statusCode": 401
+      },
+      "executedAt": "2026-11-02T14:59:14.416Z"
+    },
+    {
+      "filename": "test-replay.png",
+      "status": 409,
+      "response": {
+        "message": "Gói tin đã được tiếp nhận trước đó (MongoDB request_id).",
+        "error": "Conflict",
+        "statusCode": 409
+      },
+      "executedAt": "2026-11-02T14:59:15.134Z"
+    },
+    {
+      "filename": "test-changed-control.png",
+      "status": 400,
+      "response": {
+        "message": "Header hoặc IV khác bản sao được bảo vệ trong tài liệu.",
+        "error": "Bad Request",
+        "statusCode": 400
+      },
+      "executedAt": "2026-11-02T14:59:15.860Z"
+    }
+  ]
+}

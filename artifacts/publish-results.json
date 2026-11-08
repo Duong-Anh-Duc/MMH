@@ -1,0 +1,31 @@
+{
+  "targetFileId": "1hlUT3wDVveSOjz4xkSf1L_4oOk41RG9C",
+  "sourceSha256": "6e5ba9538f3aa89607e4ab0fbe79aeb1b0009a5f5ffc37d14451a5f319059489",
+  "outputPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAI-TAP-LON-Cap-nhat-Chuong3-Anh-test.docx",
+  "outputSha256": "8f635692bbdf4aeb215c9745b570d0f97fc24ebdfa70cad80338f05af8f0ab63",
+  "outputBytes": 1739049,
+  "originalParagraphsPreserved": 398,
+  "originalTablesPreserved": 6,
+  "chapter3Images": 10,
+  "totalImages": 11,
+  "captions": [
+    "Hình 3.1. Gửi tệp PDF và tạo phong bì tại đơn vị A; các trường chứa mật khẩu đã được che.",
+    "Hình 3.2. Đơn vị B mở phong bì và tải tài liệu gốc qua Swagger UI.",
+    "Hình 3.3. Tiếp nhận phong bì JSON qua REST API và trả biên nhận lưu trữ.",
+    "Hình 3.4. Trạng thái và số bản ghi MongoDB của một phiên trình diễn giao diện.",
+    "Hình 3.5. Trích nguyên văn nhật ký npm test: 42 ca đạt, không có ca thất bại.",
+    "Hình 3.6. Đảo một bit bản mã, giữ nguyên chữ ký: API từ chối với HTTP 401.",
+    "Hình 3.7. Ký bằng khóa giả nhưng khai báo đơn vị A: API từ chối với HTTP 401.",
+    "Hình 3.8. Gửi lại phong bì đã tiếp nhận: API từ chối với HTTP 409.",
+    "Hình 3.9. Đổi UUID và timestamp của phong bì cũ: control không khớp, HTTP 400.",
+    "Hình 3.10. Thời gian trung bình đóng gói và mở/lưu MongoDB theo kích thước tệp."
+  ],
+  "backupFileId": "1l0c-0JmMjVWES7IW1dKe4K7iLRhj0fKY",
+  "remoteModified": true,
+  "readbackVerified": true,
+  "readbackSha256": "8f635692bbdf4aeb215c9745b570d0f97fc24ebdfa70cad80338f05af8f0ab63",
+  "readbackBytes": 1739049,
+  "verifiedAt": "2026-11-02T15:04:45.400410+00:00",
+  "remoteModifiedTime": "2026-11-02T15:04:24.136Z",
+  "documentUrl": "https://docs.google.com/document/d/1hlUT3wDVveSOjz4xkSf1L_4oOk41RG9C/edit"
+}

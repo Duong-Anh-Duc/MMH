@@ -1,0 +1,134 @@
+{
+  "sourceSha256": "c0359f997cfc3c9b40a0c0cefbc3946cda24ff611951f989f761e4ca3bf866a2",
+  "outputPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAI-TAP-LON-Bang-co-khung-vien-20261105.docx",
+  "outputSha256": "12565acd2f1052e8a15785935cfa5c72f46c1725eb62628a0ff500cfe720e065",
+  "outputBytes": 1966348,
+  "changedTables": [
+    {
+      "tableIndex": 6,
+      "header": "Thành phần",
+      "rows": 9,
+      "gridColumns": 2,
+      "columnWidthsTwips": [
+        2995,
+        6365
+      ],
+      "ratios": [
+        32,
+        68
+      ]
+    },
+    {
+      "tableIndex": 7,
+      "header": "Nhiệm vụ",
+      "rows": 5,
+      "gridColumns": 2,
+      "columnWidthsTwips": [
+        3370,
+        5990
+      ],
+      "ratios": [
+        36,
+        64
+      ]
+    },
+    {
+      "tableIndex": 8,
+      "header": "Yêu cầu Chương 2",
+      "rows": 7,
+      "gridColumns": 3,
+      "columnWidthsTwips": [
+        2621,
+        3370,
+        3369
+      ],
+      "ratios": [
+        28,
+        36,
+        36
+      ]
+    },
+    {
+      "tableIndex": 9,
+      "header": "Dữ liệu",
+      "rows": 5,
+      "gridColumns": 3,
+      "columnWidthsTwips": [
+        2059,
+        3182,
+        4119
+      ],
+      "ratios": [
+        22,
+        34,
+        44
+      ]
+    },
+    {
+      "tableIndex": 10,
+      "header": "Phương thức / endpoint",
+      "rows": 9,
+      "gridColumns": 2,
+      "columnWidthsTwips": [
+        4212,
+        5148
+      ],
+      "ratios": [
+        45,
+        55
+      ]
+    },
+    {
+      "tableIndex": 11,
+      "header": "Kịch bản bổ sung",
+      "rows": 11,
+      "gridColumns": 4,
+      "columnWidthsTwips": [
+        3182,
+        1310,
+        1685,
+        3183
+      ],
+      "ratios": [
+        34,
+        14,
+        18,
+        34
+      ]
+    },
+    {
+      "tableIndex": 12,
+      "header": "Tệp gốc",
+      "rows": 6,
+      "gridColumns": 5,
+      "columnWidthsTwips": [
+        1310,
+        2527,
+        2153,
+        1685,
+        1685
+      ],
+      "ratios": [
+        14,
+        27,
+        23,
+        18,
+        18
+      ]
+    }
+  ],
+  "textUnchanged": true,
+  "allImageBytesUnchanged": true,
+  "mergesUnchanged": true,
+  "otherDocumentPartsUnchanged": true,
+  "chapter4Preserved": true,
+  "borderColor": "#000000",
+  "outerBorderPt": 0.75,
+  "innerBorderPt": 0.5,
+  "textFont": "Times New Roman",
+  "textSizePt": 12,
+  "backupFileId": "1qtWdOOEJEwHhqrR5mFxR-Sw1ZvByEVkt",
+  "remoteVerified": true,
+  "verifiedAt": "2026-11-05T04:19:15.854837+00:00",
+  "remoteModifiedTime": "2026-11-05T04:19:02.098Z"
+}

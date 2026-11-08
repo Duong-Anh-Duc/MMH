@@ -1,0 +1,400 @@
+TAP version 13
+# Subtest: API: health A/B và chuyển hướng trang gốc
+ok 1 - API: health A/B và chuyển hướng trang gốc
+  ---
+  duration_ms: 107.316
+  type: 'test'
+  ...
+# Subtest: API: Swagger UI, tài nguyên JavaScript và OpenAPI được cung cấp
+ok 2 - API: Swagger UI, tài nguyên JavaScript và OpenAPI được cung cấp
+  ---
+  duration_ms: 4.384
+  type: 'test'
+  ...
+# Subtest: API: trạng thái khóa mới và tải public key khi chưa khởi tạo
+ok 3 - API: trạng thái khóa mới và tải public key khi chưa khởi tạo
+  ---
+  duration_ms: 3.795458
+  type: 'test'
+  ...
+# Subtest: API: generate từ chối đầu vào sai với HTTP 400
+ok 4 - API: generate từ chối đầu vào sai với HTTP 400
+  ---
+  duration_ms: 9.09425
+  type: 'test'
+  ...
+# Subtest: API: generate tạo khóa A và không tiết lộ khóa bí mật
+ok 5 - API: generate tạo khóa A và không tiết lộ khóa bí mật
+  ---
+  duration_ms: 25.117792
+  type: 'test'
+  ...
+# Subtest: API: import khóa B xử lý sai mật khẩu rồi nhập đúng khóa PEM
+ok 6 - API: import khóa B xử lý sai mật khẩu rồi nhập đúng khóa PEM
+  ---
+  duration_ms: 4.12575
+  type: 'test'
+  ...
+# Subtest: API: tải public key và chặn ghi đè khóa đã sinh/nhập
+ok 7 - API: tải public key và chặn ghi đè khóa đã sinh/nhập
+  ---
+  duration_ms: 7.308833
+  type: 'test'
+  ...
+# Subtest: API: peers từ chối sai vân tay và mã đơn vị của chính mình
+ok 8 - API: peers từ chối sai vân tay và mã đơn vị của chính mình
+  ---
+  duration_ms: 1.819583
+  type: 'test'
+  ...
+# Subtest: API: peers ghim khóa hai chiều và chặn thay khóa đối tác
+ok 9 - API: peers ghim khóa hai chiều và chặn thay khóa đối tác
+  ---
+  duration_ms: 12.261209
+  type: 'test'
+  ...
+# Subtest: API: seal từ chối thiếu tệp, đối tác chưa ghim, sai mật khẩu và trích yếu dài
+ok 10 - API: seal từ chối thiếu tệp, đối tác chưa ghim, sai mật khẩu và trích yếu dài
+  ---
+  duration_ms: 11.313833
+  type: 'test'
+  ...
+# Subtest: API: seal trả phong bì JSON đúng cấu trúc Chương 2
+ok 11 - API: seal trả phong bì JSON đúng cấu trúc Chương 2
+  ---
+  duration_ms: 21.086292
+  type: 'test'
+  ...
+# Subtest: API: verify xác nhận chữ ký và không tiêu thụ UUID
+ok 12 - API: verify xác nhận chữ ký và không tiêu thụ UUID
+  ---
+  duration_ms: 8.516958
+  type: 'test'
+  ...
+# Subtest: API: bản mã bị sửa nhận 401 ở verify và open
+ok 13 - API: bản mã bị sửa nhận 401 ở verify và open
+  ---
+  duration_ms: 4.860333
+  type: 'test'
+  ...
+# Subtest: API: open sai mật khẩu rồi nhận thành công tệp có tên tiếng Việt
+ok 14 - API: open sai mật khẩu rồi nhận thành công tệp có tên tiếng Việt
+  ---
+  duration_ms: 32.510583
+  type: 'test'
+  ...
+# Subtest: API: chống phát lại giữa open và receive, verify vẫn không tiêu thụ UUID
+ok 15 - API: chống phát lại giữa open và receive, verify vẫn không tiêu thụ UUID
+  ---
+  duration_ms: 11.892625
+  type: 'test'
+  ...
+# Subtest: API: receive nhận JSON mới và trả biên nhận hợp lệ
+ok 16 - API: receive nhận JSON mới và trả biên nhận hợp lệ
+  ---
+  duration_ms: 11.23125
+  type: 'test'
+  ...
+# Subtest: API: tải GridFS đúng byte và chặn ID sai hoặc tài liệu ngoài đơn vị
+ok 17 - API: tải GridFS đúng byte và chặn ID sai hoặc tài liệu ngoài đơn vị
+  ---
+  duration_ms: 12.490375
+  type: 'test'
+  ...
+# Subtest: API: receive xử lý body lỗi và thiếu cấu hình mật khẩu
+ok 18 - API: receive xử lý body lỗi và thiếu cấu hình mật khẩu
+  ---
+  duration_ms: 2.752375
+  type: 'test'
+  ...
+# Subtest: API: receive từ chối UUID, thời gian và Base64 sai
+ok 19 - API: receive từ chối UUID, thời gian và Base64 sai
+  ---
+  duration_ms: 2.193291
+  type: 'test'
+  ...
+# Subtest: API: storage/status tách số bản ghi của A và B
+ok 20 - API: storage/status tách số bản ghi của A và B
+  ---
+  duration_ms: 5.636542
+  type: 'test'
+  ...
+# Subtest: API: truyền nhận PDF, DOCX và PNG đúng từng byte
+ok 21 - API: truyền nhận PDF, DOCX và PNG đúng từng byte
+  ---
+  duration_ms: 28.167791
+  type: 'test'
+  ...
+# Subtest: API: middleware chặn origin khác và cho phép origin cùng máy chủ
+ok 22 - API: middleware chặn origin khác và cho phép origin cùng máy chủ
+  ---
+  duration_ms: 0.82975
+  type: 'test'
+  ...
+# Subtest: API: mọi endpoint OpenAPI đều được kiểm thử với luồng thành công
+ok 23 - API: mọi endpoint OpenAPI đều được kiểm thử với luồng thành công
+  ---
+  duration_ms: 0.523583
+  type: 'test'
+  ...
+# Subtest: Health và Swagger được cung cấp cho đơn vị hiện tại
+ok 24 - Health và Swagger được cung cấp cho đơn vị hiện tại
+  ---
+  duration_ms: 42.685375
+  type: 'test'
+  ...
+# Subtest: DTO từ chối mật khẩu ngắn, RSA yếu và trường dư
+ok 25 - DTO từ chối mật khẩu ngắn, RSA yếu và trường dư
+  ---
+  duration_ms: 14.607291
+  type: 'test'
+  ...
+# Subtest: API sinh khóa chỉ trả khóa công khai; không cho phép ghi đè
+ok 26 - API sinh khóa chỉ trả khóa công khai; không cho phép ghi đè
+  ---
+  duration_ms: 18.388292
+  type: 'test'
+  ...
+# Subtest: Upload thiếu tệp hoặc sai trường bị từ chối
+ok 27 - Upload thiếu tệp hoặc sai trường bị từ chối
+  ---
+  duration_ms: 5.207834
+  type: 'test'
+  ...
+# Subtest: Yêu cầu trình duyệt từ origin khác bị chặn
+ok 28 - Yêu cầu trình duyệt từ origin khác bị chặn
+  ---
+  duration_ms: 0.497416
+  type: 'test'
+  ...
+# Subtest: Hai máy chủ HTTP độc lập trao đổi và khôi phục đúng tệp nhị phân
+ok 29 - Hai máy chủ HTTP độc lập trao đổi và khôi phục đúng tệp nhị phân
+  ---
+  duration_ms: 71.018709
+  type: 'test'
+  ...
+# Subtest: Luồng chuẩn khôi phục đúng từng byte và SHA-256
+ok 30 - Luồng chuẩn khôi phục đúng từng byte và SHA-256
+  ---
+  duration_ms: 32.567625
+  type: 'test'
+  ...
+# Subtest: Phong bì có đúng 5 trường header và 3 trường payload theo Chương 2
+ok 31 - Phong bì có đúng 5 trường header và 3 trường payload theo Chương 2
+  ---
+  duration_ms: 1.588334
+  type: 'test'
+  ...
+# Subtest: Chữ ký là RSASSA-PKCS1-v1_5/SHA-256 trên chuỗi Base64 encrypted_data
+ok 32 - Chữ ký là RSASSA-PKCS1-v1_5/SHA-256 trên chuỗi Base64 encrypted_data
+  ---
+  duration_ms: 2.247583
+  type: 'test'
+  ...
+# Subtest: Cùng đầu vào vẫn có khóa phiên, IV, UUID và bản mã mới
+ok 33 - Cùng đầu vào vẫn có khóa phiên, IV, UUID và bản mã mới
+  ---
+  duration_ms: 3.281791
+  type: 'test'
+  ...
+# Subtest: Sửa payload.encrypted_data: từ chối trước bước mở khóa bí mật
+ok 34 - Sửa payload.encrypted_data: từ chối trước bước mở khóa bí mật
+  ---
+  duration_ms: 2.246792
+  type: 'test'
+  ...
+# Subtest: Sửa payload.signature: từ chối trước bước mở khóa bí mật
+ok 35 - Sửa payload.signature: từ chối trước bước mở khóa bí mật
+  ---
+  duration_ms: 2.038542
+  type: 'test'
+  ...
+# Subtest: Sửa request_id: không được chấp nhận nội dung hoặc ghi biên nhận
+ok 36 - Sửa request_id: không được chấp nhận nội dung hoặc ghi biên nhận
+  ---
+  duration_ms: 3.270042
+  type: 'test'
+  ...
+# Subtest: Sửa timestamp: không được chấp nhận nội dung hoặc ghi biên nhận
+ok 37 - Sửa timestamp: không được chấp nhận nội dung hoặc ghi biên nhận
+  ---
+  duration_ms: 5.786875
+  type: 'test'
+  ...
+# Subtest: Sửa key: không được chấp nhận nội dung hoặc ghi biên nhận
+ok 38 - Sửa key: không được chấp nhận nội dung hoặc ghi biên nhận
+  ---
+  duration_ms: 3.37075
+  type: 'test'
+  ...
+# Subtest: Sửa receiver_id: không được chấp nhận nội dung hoặc ghi biên nhận
+ok 39 - Sửa receiver_id: không được chấp nhận nội dung hoặc ghi biên nhận
+  ---
+  duration_ms: 1.492958
+  type: 'test'
+  ...
+# Subtest: Sửa iv: không được chấp nhận nội dung hoặc ghi biên nhận
+ok 40 - Sửa iv: không được chấp nhận nội dung hoặc ghi biên nhận
+  ---
+  duration_ms: 2.725041
+  type: 'test'
+  ...
+# Subtest: Không thể thay sender_id bằng bí danh cùng khóa để giả mạo đơn vị
+ok 41 - Không thể thay sender_id bằng bí danh cùng khóa để giả mạo đơn vị
+  ---
+  duration_ms: 8.930625
+  type: 'test'
+  ...
+# Subtest: Không thể sửa UUID và timestamp để phát lại bản mã cũ
+ok 42 - Không thể sửa UUID và timestamp để phát lại bản mã cũ
+  ---
+  duration_ms: 4.579084
+  type: 'test'
+  ...
+# Subtest: Giả mạo chữ ký bằng khóa kẻ tấn công bị từ chối
+ok 43 - Giả mạo chữ ký bằng khóa kẻ tấn công bị từ chối
+  ---
+  duration_ms: 65.297959
+  type: 'test'
+  ...
+# Subtest: Người gửi chưa ghim khóa bị từ chối
+ok 44 - Người gửi chưa ghim khóa bị từ chối
+  ---
+  duration_ms: 1.641209
+  type: 'test'
+  ...
+# Subtest: Sai mật khẩu không tiêu thụ request_id
+ok 45 - Sai mật khẩu không tiêu thụ request_id
+  ---
+  duration_ms: 3.4425
+  type: 'test'
+  ...
+# Subtest: Khởi tạo lại service vẫn từ chối gói đã nhận
+ok 46 - Khởi tạo lại service vẫn từ chối gói đã nhận
+  ---
+  duration_ms: 3.807083
+  type: 'test'
+  ...
+# Subtest: Hai lần nhận đồng thời chỉ có một lần thành công
+ok 47 - Hai lần nhận đồng thời chỉ có một lần thành công
+  ---
+  duration_ms: 3.487834
+  type: 'test'
+  ...
+# Subtest: verify không tiêu thụ UUID và chưa xác nhận bản sao control
+ok 48 - verify không tiêu thụ UUID và chưa xác nhận bản sao control
+  ---
+  duration_ms: 4.026209
+  type: 'test'
+  ...
+# Subtest: Thứ tự trường JSON và khoảng trắng không ảnh hưởng kết quả
+ok 49 - Thứ tự trường JSON và khoảng trắng không ảnh hưởng kết quả
+  ---
+  duration_ms: 2.879625
+  type: 'test'
+  ...
+# Subtest: Timestamp lệch -301 giây ngoài cửa sổ ±300 giây bị từ chối
+ok 50 - Timestamp lệch -301 giây ngoài cửa sổ ±300 giây bị từ chối
+  ---
+  duration_ms: 1.818917
+  type: 'test'
+  ...
+# Subtest: Timestamp lệch 301 giây ngoài cửa sổ ±300 giây bị từ chối
+ok 51 - Timestamp lệch 301 giây ngoài cửa sổ ±300 giây bị từ chối
+  ---
+  duration_ms: 1.694916
+  type: 'test'
+  ...
+# Subtest: Tệp rỗng và kích thước quanh khối AES đều khôi phục đúng
+ok 52 - Tệp rỗng và kích thước quanh khối AES đều khôi phục đúng
+  ---
+  duration_ms: 17.638792
+  type: 'test'
+  ...
+# Subtest: JSON, Base64 sai, trường dư và schema cũ bị từ chối
+ok 53 - JSON, Base64 sai, trường dư và schema cũ bị từ chối
+  ---
+  duration_ms: 3.128208
+  type: 'test'
+  ...
+# Subtest: Tên có đường dẫn và tệp vượt giới hạn bị từ chối
+ok 54 - Tên có đường dẫn và tệp vượt giới hạn bị từ chối
+  ---
+  duration_ms: 0.091416
+  type: 'test'
+  ...
+# Subtest: Khóa bí mật mã hóa, quyền POSIX 0600 và không được ghi đè
+ok 55 - Khóa bí mật mã hóa, quyền POSIX 0600 và không được ghi đè
+  ---
+  duration_ms: 0.527708
+  type: 'test'
+  ...
+# Subtest: Không tin khóa sai vân tay hoặc thay khóa đã ghim
+ok 56 - Không tin khóa sai vân tay hoặc thay khóa đã ghim
+  ---
+  duration_ms: 37.362417
+  type: 'test'
+  ...
+# Subtest: Tên tệp không lộ trên gói tin; IV và RSA có đúng kích thước
+ok 57 - Tên tệp không lộ trên gói tin; IV và RSA có đúng kích thước
+  ---
+  duration_ms: 2.404666
+  type: 'test'
+  ...
+# Subtest: Nhập PKCS\#1 rồi lưu thành PKCS\#8 mã hóa mà không đổi cặp khóa
+ok 58 - Nhập PKCS\#1 rồi lưu thành PKCS\#8 mã hóa mà không đổi cặp khóa
+  ---
+  duration_ms: 3.073709
+  type: 'test'
+  ...
+# Subtest: Khóa đối tác được truy xuất từ MongoDB và không bị thay khóa đã ghim
+ok 59 - Khóa đối tác được truy xuất từ MongoDB và không bị thay khóa đã ghim
+  ---
+  duration_ms: 132.27075
+  type: 'test'
+  ...
+# Subtest: POST JSON theo Chương 2 nhận công văn, lưu GridFS và tải đúng byte
+ok 60 - POST JSON theo Chương 2 nhận công văn, lưu GridFS và tải đúng byte
+  ---
+  duration_ms: 75.244291
+  type: 'test'
+  ...
+# Subtest: Chỉ mục MongoDB nhận đồng thời một UUID đúng một lần và không để dư file GridFS
+ok 61 - Chỉ mục MongoDB nhận đồng thời một UUID đúng một lần và không để dư file GridFS
+  ---
+  duration_ms: 20.538167
+  type: 'test'
+  ...
+# Subtest: Kết nối MongoDB mới vẫn tải lại tài liệu và nhận diện request_id đã xử lý
+ok 62 - Kết nối MongoDB mới vẫn tải lại tài liệu và nhận diện request_id đã xử lý
+  ---
+  duration_ms: 6.023125
+  type: 'test'
+  ...
+# Subtest: Tệp trên 24 KiB đi qua endpoint JSON và được lưu đầy đủ
+ok 63 - Tệp trên 24 KiB đi qua endpoint JSON và được lưu đầy đủ
+  ---
+  duration_ms: 14.509417
+  type: 'test'
+  ...
+# Subtest: REST receive thiếu body phải trả 400, không phát sinh lỗi nội bộ 500
+ok 64 - REST receive thiếu body phải trả 400, không phát sinh lỗi nội bộ 500
+  ---
+  duration_ms: 3.840458
+  type: 'test'
+  ...
+# Subtest: Không xóa tệp đã nhận nếu phản hồi ghi MongoDB bị mất sau khi commit
+ok 65 - Không xóa tệp đã nhận nếu phản hồi ghi MongoDB bị mất sau khi commit
+  ---
+  duration_ms: 11.641792
+  type: 'test'
+  ...
+1..65
+# tests 65
+# suites 0
+# pass 65
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 743.168083
