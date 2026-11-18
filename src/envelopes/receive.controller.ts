@@ -4,7 +4,7 @@ import type { Response } from 'express';
 import { StorageService } from '../storage/storage.service';
 import { EnvelopesService } from './envelopes.service';
 
-@ApiTags('3. REST API và MongoDB (Chương 2)')
+@ApiTags('3. REST API và MongoDB')
 @Controller('api')
 export class ReceiveController {
   // Nhận lõi mật mã và kho MongoDB; không nhận khóa bí mật hoặc mật khẩu của B từ phía A.
@@ -17,7 +17,7 @@ export class ReceiveController {
   @Post('envelopes/receive')
   @HttpCode(200)
   @ApiConsumes('application/json')
-  @ApiOperation({ summary: 'Nhận JSON theo Chương 2, giải mã và lưu tài liệu vào MongoDB' })
+  @ApiOperation({ summary: 'Nhận phong bì JSON, giải mã và lưu tài liệu vào MongoDB' })
   @ApiBody({
     schema: {
       type: 'object',

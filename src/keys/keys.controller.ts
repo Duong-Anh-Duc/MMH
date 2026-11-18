@@ -26,7 +26,16 @@ export class KeysController {
 
   // Nạp cặp khóa PEM đã tồn tại thay vì sinh mới, đúng yêu cầu xuất/nhập khóa tại mục 2.1.2.
   @Post('keys/import')
-  @ApiOperation({ summary: 'Nhập khóa PEM PKCS#1/PKCS#8 và lưu PKCS#8 mã hóa tại đơn vị' })
+  @ApiOperation({
+    summary: 'Nhập lại khóa bí mật RSA của đơn vị từ bản sao lưu',
+    description: [
+      'Dùng khi khôi phục cặp khóa đã có hoặc chuyển khóa sang máy khác. Chỉ nhập khi đơn vị chưa có cặp khóa.',
+      'privateKeyPem: dán toàn bộ khóa bí mật PEM của chính đơn vị, gồm dòng BEGIN/END (PKCS#1 hoặc PKCS#8).',
+      'passphrase: mật khẩu dài 12–128 ký tự. Với PEM đã mã hóa, cần đúng mật khẩu hiện có; cùng mật khẩu này được dùng bảo vệ lại khóa khi lưu.',
+      'Hệ thống suy ra public key tương ứng, lưu private key dưới dạng PKCS#8 mã hóa và trả public key cùng fingerprint. Nếu đã có khóa, API từ chối ghi đè với HTTP 409.',
+      'Để lấy public key của đơn vị, dùng GET /api/keys/public. Để ghim public key của đối tác, dùng POST /api/peers.',
+    ].join('\n\n'),
+  })
   importIdentity(@Body() body: ImportKeysDto) {
     return this.keys.importIdentity(body.privateKeyPem, body.passphrase);
   }

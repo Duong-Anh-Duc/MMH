@@ -35,12 +35,17 @@ export class TrustPeerDto {
 
 // Chỉ nhập khóa bí mật của chính đơn vị trên máy cục bộ; service chuẩn hóa và mã hóa trước khi lưu.
 export class ImportKeysDto {
-  @ApiProperty({ description: 'Khóa bí mật PEM PKCS#1 hoặc PKCS#8 của đơn vị hiện tại.' })
+  @ApiProperty({
+    description:
+      'Toàn bộ khóa bí mật PEM của chính đơn vị từ bản sao lưu, gồm dòng BEGIN/END; hỗ trợ PKCS#1 hoặc PKCS#8.',
+  })
   @IsString()
   @Length(100, 16384)
   privateKeyPem!: string;
 
-  @ApiProperty({ description: 'Mật khẩu mở khóa và bảo vệ lại tệp PKCS#8, tối thiểu 12 ký tự.' })
+  @ApiProperty({
+    description: 'Mật khẩu mở khóa PEM đã mã hóa và bảo vệ khóa khi lưu lại (12–128 ký tự).',
+  })
   @IsString()
   @Length(12, 128)
   passphrase!: string;

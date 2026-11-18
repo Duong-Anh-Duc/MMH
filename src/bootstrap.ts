@@ -41,13 +41,6 @@ export async function createApp(settings: Settings, logging = true) {
   );
   const config = new DocumentBuilder()
     .setTitle(`Phong bì số · ${settings.unitId}`)
-    .setDescription(
-      'Thực nghiệm Chương 3: AES-256-CBC + RSA-OAEP/SHA-256 + RSASSA-PKCS1-v1_5. ' +
-        'Schema Chương 2: header {request_id, sender_id, receiver_id, timestamp, key}, payload {encrypted_data, iv, signature}. ' +
-        '1. Sinh khóa mỗi đơn vị. 2. Trao đổi và ghim khóa công khai. ' +
-        '3. Bên gửi dùng seal. 4. Bên nhận dùng verify/open. ' +
-        'Khóa bí mật ở lại máy đơn vị. Chỉ dùng dữ liệu thử nghiệm trên localhost.',
-    )
     .setVersion('1.0')
     .build();
   // Sinh OpenAPI từ controller/DTO để có giao diện Try it out, chọn tệp và tải kết quả tại /docs.
