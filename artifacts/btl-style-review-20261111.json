@@ -1,0 +1,914 @@
+{
+  "sourcePath": "/tmp/btl-style-review-drive-source-20261111.docx",
+  "outputPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAO-CAO-BTL.docx",
+  "sourceSha256": "ef8f3fb68bdd15cf1e215ed835a036e394819aa395663d076aa8fbbebd84e3be",
+  "outputSha256": "f11aa1d9e345f262a2c48d086bc7b7c4d3014386a129f79c4efcbfc27de8f13b",
+  "reviewFile": "/Users/ducytcg123456/Downloads/AI quá cha ơi.docx",
+  "reviewItems": [
+    "Khoảng cách tiêu đề và thân bài",
+    "Thứ bậc cỡ chữ 16/14/13",
+    "Bỏ bullet/đánh số trong đoạn giải thích; quy trình dùng Bước",
+    "Bỏ đậm/ngiêng trong thân bài",
+    "Lược chú giải song ngữ trùng nghĩa",
+    "Tên 19 bảng đặt dưới bảng",
+    "Kết luận được viết đầy đủ hơn từ nội dung có sẵn"
+  ],
+  "templatePageFormat": {
+    "paper": "A4",
+    "leftCm": 2.5,
+    "rightCm": 1.8,
+    "topBottomCm": 2,
+    "font": "Times New Roman",
+    "bodyPt": 13,
+    "bodyLineSpacing": 1.15,
+    "firstLineCm": 0.8
+  },
+  "headingSizesPt": {
+    "chapter": 16,
+    "section": 14,
+    "subsection": 13
+  },
+  "tableCaptionsMovedBelow": [
+    "Bảng 1.1. Các nhóm tấn công và biện pháp bảo vệ đường truyền",
+    "Bảng 1.2. So sánh mật mã đối xứng và mật mã bất đối xứng",
+    "Bảng 1.3. Vai trò của các khóa trong mô hình phong bì số",
+    "Bảng 2.1. Yêu cầu phi chức năng của hệ thống",
+    "Bảng 2.2. Đặc tả các trường trong phần header",
+    "Bảng 2.3. Đặc tả các trường trong phần payload",
+    "Bảng 3.1. Cấu hình môi trường thực nghiệm",
+    "Bảng 3.2. Thư viện và các hàm mật mã được sử dụng",
+    "Bảng 3.3. Đối chiếu yêu cầu thiết kế với thành phần hiện thực",
+    "Bảng 3.4. Cấu trúc lưu trữ khóa và tài liệu",
+    "Bảng 3.5. Các API phục vụ truyền nhận phong bì số",
+    "Bảng 3.6. Các kịch bản kiểm thử bổ sung và kết quả mong đợi",
+    "Bảng 3.7. Thời gian xử lý và độ tăng dung lượng của phong bì",
+    "Bảng 4.1. Đối chiếu các mục tiêu an toàn với kết quả thực nghiệm",
+    "Bảng 4.2. Đối chiếu các yêu cầu phi chức năng",
+    "Bảng 4.3. Dung lượng phong bì và phần cố định mỗi gói",
+    "Bảng 4.4. Hiện trạng quản lý khóa so với các mối đe dọa theo bài giảng",
+    "Bảng 4.5. Đối chiếu xác thực hai chiều X.509 với phong bì hiện tại",
+    "Bảng 4.6. Tổng hợp hạn chế và hướng giải quyết"
+  ],
+  "equationCountPreserved": 31,
+  "imageCountPreserved": 11,
+  "changes": [
+    {
+      "kind": "terminology",
+      "sourceParagraph": 20,
+      "before": "Trong bối cảnh đẩy mạnh chuyển đổi số quốc gia và tích hợp liên thông các hệ thống thông tin, nhu cầu trao đổi các gói tin dữ liệu nghiệp vụ số giữa các cơ quan, tổ chức, doanh nghiệp ngày càng tăng nhanh. Các gói tin này thường chứa đựng những thông tin nhạy cảm, số liệu tài chính hoặc dữ liệu hành chính có độ mật cao. Khi được truyền đưa qua môi trường mạng mở (Internet), các gói tin phải đối mặt với nhiều nguy cơ an ninh nghiêm trọng như: bị nghe lén (Eavesdropping), bị chỉnh sửa dữ liệu trái phép (Tampering), bị giả mạo nguồn gốc đơn vị phát (Spoofing) hoặc bị tấn công phát lại (Replay Attack).",
+      "after": "Trong bối cảnh đẩy mạnh chuyển đổi số quốc gia và tích hợp liên thông các hệ thống thông tin, nhu cầu trao đổi các gói tin dữ liệu nghiệp vụ số giữa các cơ quan, tổ chức, doanh nghiệp ngày càng tăng nhanh. Các gói tin này thường chứa đựng những thông tin nhạy cảm, số liệu tài chính hoặc dữ liệu hành chính có độ mật cao. Khi được truyền đưa qua môi trường mạng mở (Internet), các gói tin phải đối mặt với nhiều nguy cơ an ninh nghiêm trọng như: bị nghe lén, bị chỉnh sửa dữ liệu trái phép, bị giả mạo nguồn gốc đơn vị phát hoặc bị tấn công phát lại."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 21,
+      "before": "Mặc dù các giao thức bảo mật tầng truyền tải phổ biến hiện nay (như TLS/HTTPS) đã cung cấp khả năng bảo vệ đường truyền, nhưng đây chỉ là cơ chế bảo mật từng chặng (Hop-by-Hop). Dữ liệu hoàn toàn có thể bị lộ lọt hoặc can thiệp khi đi qua các trạm trung gian, máy chủ ủy quyền (Proxy), cổng định tuyến nội bộ hoặc khi lưu tạm tại các hệ thống trung chuyển. Do đó, việc thiết lập một cơ chế an toàn ở tầng ứng dụng (Application-level Security) theo nguyên lý đầu cuối tới đầu cuối (End-to-End Security) trực tiếp giữa các đơn vị gửi và nhận là điều kiện tiên quyết.",
+      "after": "Mặc dù các giao thức bảo mật tầng truyền tải phổ biến hiện nay (như TLS/HTTPS) đã cung cấp khả năng bảo vệ đường truyền, nhưng đây chỉ là cơ chế bảo mật từng chặng. Dữ liệu hoàn toàn có thể bị lộ lọt hoặc can thiệp khi đi qua các trạm trung gian, máy chủ ủy quyền, cổng định tuyến nội bộ hoặc khi lưu tạm tại các hệ thống trung chuyển. Do đó, việc thiết lập một cơ chế an toàn ở tầng ứng dụng theo nguyên lý đầu cuối tới đầu cuối trực tiếp giữa các đơn vị gửi và nhận là điều kiện tiên quyết."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 22,
+      "before": "Giải pháp kết hợp giữa Mã hóa dữ liệu theo mô hình hệ mật lai (Hybrid Cryptosystem) và Ký số điện tử (Digital Signature) là hướng tiếp cận tối ưu: vừa giải quyết triệt để bài toán hiệu năng xử lý với các gói tin có dung lượng lớn (nhờ mã hóa đối xứng), vừa đảm bảo an toàn tuyệt đối trong việc bọc khóa phiên, phân phối khóa và xác thực danh tính đơn vị gửi (nhờ mã hóa bất đối xứng và chữ ký số).",
+      "after": "Giải pháp kết hợp giữa Mã hóa dữ liệu theo mô hình hệ mật lai và Ký số điện tử là hướng tiếp cận tối ưu: vừa giải quyết triệt để bài toán hiệu năng xử lý với các gói tin có dung lượng lớn (nhờ mã hóa đối xứng), vừa đảm bảo an toàn tuyệt đối trong việc bọc khóa phiên, phân phối khóa và xác thực danh tính đơn vị gửi (nhờ mã hóa bất đối xứng và chữ ký số)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 25,
+      "before": "Thiết kế kiến trúc hệ thống chuẩn hóa: Xây dựng đặc tả gói tin phong bì bảo mật (JSON Envelope) độc lập nền tảng, thiết kế quy trình truyền nhận khép kín giữa các đơn vị, tích hợp cơ chế phòng chống tấn công phát lại (Anti-Replay Attack). ",
+      "after": "Thiết kế kiến trúc hệ thống chuẩn hóa: Xây dựng đặc tả gói tin phong bì bảo mật độc lập nền tảng, thiết kế quy trình truyền nhận khép kín giữa các đơn vị, tích hợp cơ chế phòng chống tấn công phát lại. "
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 26,
+      "before": "Hiện thực hóa và triển khai ứng dụng: Lập trình hoàn chỉnh hệ thống bằng ngôn ngữ hiệu năng cao Go (Golang), xây dựng RESTful API tiếp nhận gói tin bảo mật, tích hợp cơ sở dữ liệu MongoDB phục vụ quản lý danh mục đơn vị, kho chứng thư số và lưu trữ an toàn các bản tin đã thẩm tra, giải mã. ",
+      "after": "Hiện thực hóa và triển khai ứng dụng: Lập trình hoàn chỉnh hệ thống bằng ngôn ngữ hiệu năng cao Go, xây dựng RESTful API tiếp nhận gói tin bảo mật, tích hợp cơ sở dữ liệu MongoDB phục vụ quản lý danh mục đơn vị, kho chứng thư số và lưu trữ an toàn các bản tin đã thẩm tra, giải mã. "
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 28,
+      "before": "Đối tượng nghiên cứu:",
+      "after": "Đối tượng nghiên cứu: "
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 30,
+      "before": "Cơ chế bảo mật tầng ứng dụng: Cấu trúc phong bì số (Digital Envelope), cơ chế ký trước mã hóa / mã hóa trước ký (Encrypt-then-Sign), và tiêu chuẩn chứng thư số khóa công khai X.509 / PEM.",
+      "after": "Cơ chế bảo mật tầng ứng dụng: Cấu trúc phong bì số, cơ chế ký trước mã hóa / mã hóa trước ký, và tiêu chuẩn chứng thư số khóa công khai X.509 / PEM."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 31,
+      "before": "Các giải pháp kỹ thuật phòng chống tấn công mạng: Ngăn chặn tấn công phát lại bằng dấu thời gian trượt (Sliding Timestamp) và chỉ mục định danh duy nhất (Message Nonce / UUID).",
+      "after": "Các giải pháp kỹ thuật phòng chống tấn công mạng: Ngăn chặn tấn công phát lại bằng dấu thời gian trượt và chỉ mục định danh duy nhất (UUID)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 32,
+      "before": "Phạm vi nghiên cứu:",
+      "after": "Phạm vi nghiên cứu: "
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 37,
+      "before": "Phương pháp nghiên cứu lý thuyết:",
+      "after": "Phương pháp nghiên cứu lý thuyết: "
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 39,
+      "before": "Phân tích các mô hình mối đe dọa (Threat Modeling), đánh giá tính an toàn toán học của các sơ đồ kết hợp mã hóa và chữ ký số.",
+      "after": "Phân tích các mô hình mối đe dọa, đánh giá tính an toàn toán học của các sơ đồ kết hợp mã hóa và chữ ký số."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 40,
+      "before": "Phương pháp phân tích và thiết kế hệ thống:",
+      "after": "Phương pháp phân tích và thiết kế hệ thống: "
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 42,
+      "before": "Thiết kế đặc tả cấu trúc gói tin JSON Envelope, sơ đồ tuần tự (Sequence Diagram) và lưu đồ thuật toán chi tiết các bước mã hóa, ký số, bóc tách phong bì và kiểm tra chữ ký.",
+      "after": "Thiết kế đặc tả cấu trúc gói tin phong bì JSON, sơ đồ tuần tự và lưu đồ thuật toán chi tiết các bước mã hóa, ký số, bóc tách phong bì và kiểm tra chữ ký."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 43,
+      "before": "Phương pháp thực nghiệm và đánh giá:",
+      "after": "Phương pháp thực nghiệm và đánh giá: "
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 45,
+      "before": "Xây dựng công cụ mô phỏng phía máy khách (Test Client) để đóng gói và gửi các bản tin thực tế có dung lượng khác nhau (kể cả tệp đính kèm vài MB).",
+      "after": "Xây dựng công cụ mô phỏng phía máy khách để đóng gói và gửi các bản tin thực tế có dung lượng khác nhau (kể cả tệp đính kèm vài MB)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 49,
+      "before": "Chương 1: Tổng quan về cơ sở lý thuyết mật mã học ứng dụng Trình bày cơ sở toán học và nguyên lý hoạt động của các thuật toán mật mã cốt lõi được sử dụng trong đề tài, bao gồm: mã hóa đối xứng AES-256-GCM, mã hóa bất đối xứng RSA-OAEP, hàm băm SHA-256, chữ ký số RSASSA-PKCS1-v1_5 và nguyên lý mô hình phong bì số kết hợp.",
+      "after": "Chương 1: Tổng quan về cơ sở lý thuyết mật mã học ứng dụng  Trình bày cơ sở toán học và nguyên lý hoạt động của các thuật toán mật mã cốt lõi được sử dụng trong đề tài, bao gồm: mã hóa đối xứng AES-256-GCM, mã hóa bất đối xứng RSA-OAEP, hàm băm SHA-256, chữ ký số RSASSA-PKCS1-v1_5 và nguyên lý mô hình phong bì số kết hợp. "
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 50,
+      "before": "Chương 2: Phân tích và thiết kế hệ thống Phân tích chi tiết yêu cầu bài toán truyền nhận văn bản an toàn giữa hai đơn vị; mô hình kiến trúc hai bên; đặc tả cấu trúc gói tin JSON Envelope; thiết kế các sơ đồ luồng xử lý tại Bên gửi, Bên nhận và cơ chế phòng chống tấn công phát lại.",
+      "after": "Chương 2: Phân tích và thiết kế hệ thống  Phân tích chi tiết yêu cầu bài toán truyền nhận văn bản an toàn giữa hai đơn vị; mô hình kiến trúc hai bên; đặc tả cấu trúc gói tin phong bì JSON; thiết kế các sơ đồ luồng xử lý tại Bên gửi, Bên nhận và cơ chế phòng chống tấn công phát lại. "
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 51,
+      "before": "Chương 3: Cài đặt và hiện thực hóa hệ thống Mô tả chi tiết cấu trúc thư mục dự án, giải pháp kết nối cơ sở dữ liệu MongoDB, thiết kế kho chứng thư số , triển khai các module nghiệp vụ mật mã trên ngôn ngữ Go và xây dựng hệ thống RESTful API tiếp nhận văn bản.",
+      "after": "Chương 3: Cài đặt và hiện thực hóa hệ thống  Mô tả chi tiết cấu trúc thư mục dự án, giải pháp kết nối cơ sở dữ liệu MongoDB, thiết kế kho chứng thư số , triển khai các module nghiệp vụ mật mã trên ngôn ngữ Go và xây dựng hệ thống RESTful API tiếp nhận văn bản. "
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 52,
+      "before": "Chương 4: Thử nghiệm và đánh giá kết quả Trình bày các kịch bản thử nghiệm thực tế với công cụ Test Client; đánh giá hiệu năng xử lý mã hóa/giải mã; phân tích kết quả thử nghiệm trong các tình huống can thiệp giả mạo dữ liệu và đưa ra nhận xét, đánh giá tổng thể về mức độ đáp ứng mục tiêu đề tài.",
+      "after": "Chương 4: Thử nghiệm và đánh giá kết quả  Trình bày các kịch bản thử nghiệm thực tế với công cụ Test Client; đánh giá hiệu năng xử lý mã hóa/giải mã; phân tích kết quả thử nghiệm trong các tình huống can thiệp giả mạo dữ liệu và đưa ra nhận xét, đánh giá tổng thể về mức độ đáp ứng mục tiêu đề tài."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 57,
+      "before": "Hệ thống trao đổi dữ liệu an toàn cần giải quyết trọn vẹn 4 mục tiêu mật mã cơ bản (Security Objectives):",
+      "after": "Hệ thống trao đổi dữ liệu an toàn cần giải quyết trọn vẹn 4 mục tiêu mật mã cơ bản:"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 58,
+      "before": "Tính bí mật (Confidentiality): Đảm bảo dữ liệu chỉ có thể được tiếp cận và đọc hiểu bởi các thực thể được cấp quyền hợp lệ. Ngăn chặn triệt để hành vi trích xuất nội dung trái phép trên đường truyền thông qua kỹ thuật mã hóa dữ liệu.",
+      "after": "Tính bí mật: Đảm bảo dữ liệu chỉ có thể được tiếp cận và đọc hiểu bởi các thực thể được cấp quyền hợp lệ. Ngăn chặn triệt để hành vi trích xuất nội dung trái phép trên đường truyền thông qua kỹ thuật mã hóa dữ liệu."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 59,
+      "before": "Tính toàn vẹn (Integrity): Đảm bảo dữ liệu trong quá trình lưu chuyển không bị thêm, bớt, chỉnh sửa hoặc thay thế trái phép. Tính toàn vẹn được kiểm chứng thông qua các hàm băm mật mã và mã xác thực thông điệp.",
+      "after": "Tính toàn vẹn: Đảm bảo dữ liệu trong quá trình lưu chuyển không bị thêm, bớt, chỉnh sửa hoặc thay thế trái phép. Tính toàn vẹn được kiểm chứng thông qua các hàm băm mật mã và mã xác thực thông điệp."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 60,
+      "before": "Tính xác thực (Authentication): Xác minh danh tính thực tế của nguồn phát thông điệp và tính xác thực của chính gói tin, đảm bảo bên nhận chắc chắn dữ liệu đến từ đúng đơn vị đối tác được ủy quyền.",
+      "after": "Tính xác thực: Xác minh danh tính thực tế của nguồn phát thông điệp và tính xác thực của chính gói tin, đảm bảo bên nhận chắc chắn dữ liệu đến từ đúng đơn vị đối tác được ủy quyền."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 61,
+      "before": "Tính chống chối bỏ (Non-repudiation): Đảm bảo bên gửi không thể phủ nhận việc mình đã gửi thông điệp và bên nhận không thể phủ nhận việc đã nhận gói tin. Chữ ký số dựa trên hạ tầng khóa công khai là phương thức hiện thực hóa mục tiêu này.",
+      "after": "Tính chống chối bỏ: Đảm bảo bên gửi không thể phủ nhận việc mình đã gửi thông điệp và bên nhận không thể phủ nhận việc đã nhận gói tin. Chữ ký số dựa trên hạ tầng khóa công khai là phương thức hiện thực hóa mục tiêu này."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 64,
+      "before": "Tấn công thụ động (Passive Attacks):",
+      "after": "Tấn công thụ động:"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 65,
+      "before": "Nghe lén (Eavesdropping/Sniffing): Kẻ tấn công thu giữ các gói tin đi qua gateway để trích xuất nội dung tài liệu nội bộ, thông tin mật.",
+      "after": "Nghe lén: Kẻ tấn công thu giữ các gói tin đi qua gateway để trích xuất nội dung tài liệu nội bộ, thông tin mật."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 66,
+      "before": "Phân tích lưu lượng (Traffic Analysis): Dù dữ liệu đã mã hóa, kẻ tấn công vẫn có thể đo lường kích thước, tần suất và địa chỉ nguồn/đích nhằm suy đoán các mối quan hệ tác nghiệp nhạy cảm giữa các đơn vị.",
+      "after": "Phân tích lưu lượng: Dù dữ liệu đã mã hóa, kẻ tấn công vẫn có thể đo lường kích thước, tần suất và địa chỉ nguồn/đích nhằm suy đoán các mối quan hệ tác nghiệp nhạy cảm giữa các đơn vị."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 67,
+      "before": "Tấn công chủ động (Active Attacks):",
+      "after": "Tấn công chủ động:"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 68,
+      "before": "Sửa đổi thông điệp (Message Modification): Can thiệp vào luồng bit để thay đổi số liệu, thông tin văn bản trước khi đến đích.",
+      "after": "Sửa đổi thông điệp: Can thiệp vào luồng bit để thay đổi số liệu, thông tin văn bản trước khi đến đích."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 69,
+      "before": "Giả mạo danh tính (Masquerade/Spoofing): Kẻ tấn công phát sinh gói tin với danh nghĩa của một đơn vị uy tín nhằm phát tán dữ liệu sai lệch.",
+      "after": "Giả mạo danh tính: Kẻ tấn công phát sinh gói tin với danh nghĩa của một đơn vị uy tín nhằm phát tán dữ liệu sai lệch."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 70,
+      "before": "Tấn công phát lại (Replay Attacks): Thu thập các gói tin hợp lệ trước đó và gửi lại nhiều lần nhằm trục lợi hoặc làm rối loạn logic xử lý nghiệp vụ.",
+      "after": "Tấn công phát lại: Thu thập các gói tin hợp lệ trước đó và gửi lại nhiều lần nhằm trục lợi hoặc làm rối loạn logic xử lý nghiệp vụ."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 75,
+      "before": "Mật mã học khóa đối xứng (Symmetric-key Cryptography) là hệ mật mã mà trong đó cả bên gửi và bên nhận cùng sử dụng chung một khóa bí mật K cho cả quá trình mã hóa (E) và giải mã (D):",
+      "after": "Mật mã học khóa đối xứng là hệ mật mã mà trong đó cả bên gửi và bên nhận cùng sử dụng chung một khóa bí mật K cho cả quá trình mã hóa (E) và giải mã (D):"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 78,
+      "before": "(Trong đó: P là bản rõ - Plaintext, C là bản mã - Ciphertext, K là khóa bí mật chung).",
+      "after": "(Trong đó: P là bản rõ, C là bản mã, K là khóa bí mật chung)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 79,
+      "before": "Ưu điểm vượt trội của mật mã đối xứng là tốc độ tính toán cực nhanh và tiêu thụ ít tài nguyên xử lý. Tuy nhiên, thách thức lớn nhất là bài toán thỏa thuận và phân phối khóa bí mật (Key Distribution) qua một kênh liên lạc ban đầu chưa an toàn.",
+      "after": "Ưu điểm vượt trội của mật mã đối xứng là tốc độ tính toán cực nhanh và tiêu thụ ít tài nguyên xử lý. Tuy nhiên, thách thức lớn nhất là bài toán thỏa thuận và phân phối khóa bí mật qua một kênh liên lạc ban đầu chưa an toàn."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 81,
+      "before": "Thuật toán Tiêu chuẩn mã hóa nâng cao (Advanced Encryption Standard - AES) được Viện Tiêu chuẩn và Kỹ thuật Quốc gia Hoa Kỳ (NIST) công bố chuẩn hóa (FIPS PUB 197).",
+      "after": "Thuật toán Tiêu chuẩn mã hóa nâng cao (AES) được Viện Tiêu chuẩn và Kỹ thuật Quốc gia Hoa Kỳ (NIST) công bố chuẩn hóa (FIPS PUB 197)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 82,
+      "before": "Cấu trúc: AES là một hệ mã khối (Block Cipher) hoạt động trên các khối dữ liệu cố định có kích thước 128 bit (16 byte), tổ chức dưới dạng ma trận trạng thái 4x4 byte.",
+      "after": "Cấu trúc: AES là một hệ mã khối hoạt động trên các khối dữ liệu cố định có kích thước 128 bit (16 byte), tổ chức dưới dạng ma trận trạng thái 4x4 byte."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 83,
+      "before": "Tham số cấu hình AES-256: Sử dụng độ dài khóa 256 bit (32 byte), thực hiện qua 14 vòng lặp biến đổi (Rounds) lặp lại liên tiếp. Không gian khóa 2256 là bất khả thi để tấn công vét cạn bằng mọi siêu máy tính hiện hành.",
+      "after": "Tham số cấu hình AES-256: Sử dụng độ dài khóa 256 bit (32 byte), thực hiện qua 14 vòng lặp biến đổi lặp lại liên tiếp. Không gian khóa 2256 là bất khả thi để tấn công vét cạn bằng mọi siêu máy tính hiện hành."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 85,
+      "before": "SubBytes: Phép thế phi tuyến độc lập từng byte qua bảng thế S-box nhằm tạo tính hỗn loạn (Confusion).",
+      "after": "SubBytes: Phép thế phi tuyến độc lập từng byte qua bảng thế S-box nhằm tạo tính hỗn loạn."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 86,
+      "before": "ShiftRows: Phép dịch vòng các byte trên từng hàng của ma trận trạng thái nhằm tạo tính khuếch tán (Diffusion).",
+      "after": "ShiftRows: Phép dịch vòng các byte trên từng hàng của ma trận trạng thái nhằm tạo tính khuếch tán."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 88,
+      "before": "AddRoundKey: Phép XOR từng cột của ma trận trạng thái với khóa con của vòng (Round Key) sinh ra từ quy trình mở rộng khóa (Key Expansion).",
+      "after": "AddRoundKey: Phép XOR từng cột của ma trận trạng thái với khóa con của vòng sinh ra từ quy trình mở rộng khóa."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 89,
+      "before": "1.2.3. Chế độ hoạt động CBC (Cipher Block Chaining) và vai trò của Vector khởi tạo (IV)",
+      "after": "1.2.3. Chế độ hoạt động CBC và vai trò của Vector khởi tạo (IV)"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 90,
+      "before": "Do AES chỉ mã hóa từng khối 128 bit độc lập, chế độ hoạt động (Mode of Operation) là cơ chế bắt buộc để xử lý các dữ liệu có độ dài tùy biến:",
+      "after": "Do AES chỉ mã hóa từng khối 128 bit độc lập, chế độ hoạt động là cơ chế bắt buộc để xử lý các dữ liệu có độ dài tùy biến:"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 94,
+      "before": "Vai trò của Vector khởi tạo (IV - Initialization Vector):IV có độ dài 16 byte (128 bit), đóng vai trò là khối giả lập C0 cho khối đầu tiên. IV không cần giữ bí mật nhưng bắt buộc phải là một giá trị giả ngẫu nhiên hoặc duy nhất (Nonce) cho mỗi lần mã hóa. IV ngăn chặn hoàn toàn việc kẻ tấn công nhận diện các thông điệp có phần mở đầu giống nhau.",
+      "after": "Vai trò của Vector khởi tạo (IV): IV có độ dài 16 byte (128 bit), đóng vai trò là khối giả lập C0 cho khối đầu tiên. IV không cần giữ bí mật nhưng bắt buộc phải là một giá trị giả ngẫu nhiên hoặc duy nhất cho mỗi lần mã hóa. IV ngăn chặn hoàn toàn việc kẻ tấn công nhận diện các thông điệp có phần mở đầu giống nhau."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 95,
+      "before": "Cơ chế đệm (Padding): Sử dụng chuẩn PKCS#7 để bổ sung các byte đệm vào khối cuối cùng, đảm bảo toàn bộ luồng dữ liệu luôn là bội số của 16 byte.",
+      "after": "Cơ chế đệm: Sử dụng chuẩn PKCS#7 để bổ sung các byte đệm vào khối cuối cùng, đảm bảo toàn bộ luồng dữ liệu luôn là bội số của 16 byte."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 102,
+      "before": "Mật mã bất đối xứng (Asymmetric Cryptography) phân tách vai trò của khóa thành hai thành phần toán học liên kết chặt chẽ:",
+      "after": "Mật mã bất đối xứng phân tách vai trò của khóa thành hai thành phần toán học liên kết chặt chẽ:"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 103,
+      "before": "Khóa công khai (Public Key): Được công khai để các đơn vị khác dùng để mã hóa thông điệp gửi tới thực thể hoặc để kiểm tra tính hợp lệ của chữ ký số do thực thể đó phát hành.",
+      "after": "Khóa công khai: Được công khai để các đơn vị khác dùng để mã hóa thông điệp gửi tới thực thể hoặc để kiểm tra tính hợp lệ của chữ ký số do thực thể đó phát hành."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 104,
+      "before": "Khóa bí mật (Private Key): Được đơn vị lưu giữ bảo mật tuyệt đối tại máy chủ an toàn hoặc thiết bị phần cứng chuyên dụng (HSM), dùng để giải mã dữ liệu hoặc ký số.",
+      "after": "Khóa bí mật: Được đơn vị lưu giữ bảo mật tuyệt đối tại máy chủ an toàn hoặc thiết bị phần cứng chuyên dụng (HSM), dùng để giải mã dữ liệu hoặc ký số."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 121,
+      "before": "Sử dụng RSA nguyên bản (Textbook RSA) có tính tất định và dễ bị khai thác bởi tấn công bản rõ chọn trước (CPA) hoặc tấn công đồng cấu. Do đó, khi ứng dụng RSA để mã hóa (bọc) khóa phiên AES, chuẩn đệm RSA-OAEP (Optimal Asymmetric Encryption Padding) được áp dụng bắt buộc:",
+      "after": "Sử dụng RSA nguyên bản có tính tất định và dễ bị khai thác bởi tấn công bản rõ chọn trước (CPA) hoặc tấn công đồng cấu. Do đó, khi ứng dụng RSA để mã hóa (bọc) khóa phiên AES, chuẩn đệm RSA-OAEP được áp dụng bắt buộc:"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 122,
+      "before": "Cấu trúc OAEP: Sử dụng mạng Feistel hai vòng kết hợp hàm sinh mặt nạ (MGF1) và hàm băm SHA-256 cùng một chuỗi ngẫu nhiên (seed).",
+      "after": "Cấu trúc OAEP: Sử dụng mạng Feistel hai vòng kết hợp hàm sinh mặt nạ (MGF1) và hàm băm SHA-256 cùng một chuỗi ngẫu nhiên."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 123,
+      "before": "Tính ưu việt: Biến đổi thuật toán thành phi tất định (Probabilistic Encryption) và đảm bảo mức độ an toàn chống tấn công chọn bản mã thích nghi (IND-CCA2).",
+      "after": "Tính ưu việt: Biến đổi thuật toán thành phi tất định và đảm bảo mức độ an toàn chống tấn công chọn bản mã thích nghi (IND-CCA2)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 128,
+      "before": "Hàm băm mật mã biến đổi một thông điệp đầu vào có kích thước tùy ý thành một giá trị băm cố định (Digest). Thuật toán SHA-256 sinh ra giá trị băm cố định 256 bit (32 byte) và đáp ứng 4 tiêu chuẩn:",
+      "after": "Hàm băm mật mã biến đổi một thông điệp đầu vào có kích thước tùy ý thành một giá trị băm cố định. Thuật toán SHA-256 sinh ra giá trị băm cố định 256 bit (32 byte) và đáp ứng 4 tiêu chuẩn:"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 129,
+      "before": "Tính một chiều (Pre-image Resistance): Từ giá trị băm h, không thể tìm ngược lại thông điệp M ban đầu.",
+      "after": "Tính một chiều: Từ giá trị băm h, không thể tìm ngược lại thông điệp M ban đầu."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 130,
+      "before": "Tính kháng tiền ảnh thứ hai (Second Pre-image Resistance): Cho trước M1, không thể tìm được M2 ≠ M1 sao cho H(M1)=H(M2).",
+      "after": "Tính kháng tiền ảnh thứ hai: Cho trước M1, không thể tìm được M2 ≠ M1 sao cho H(M1)=H(M2)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 131,
+      "before": "Tính kháng va chạm (Collision Resistance): Bất khả thi để tìm thấy hai thông điệp bất kỳ có cùng giá trị băm.",
+      "after": "Tính kháng va chạm: Bất khả thi để tìm thấy hai thông điệp bất kỳ có cùng giá trị băm."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 132,
+      "before": "Hiệu ứng tuyết lở (Avalanche Effect): Thay đổi dù chỉ 1 bit ở đầu vào sẽ làm xáo trộn hoàn toàn giá trị băm đầu ra.",
+      "after": "Hiệu ứng tuyết lở: Thay đổi dù chỉ 1 bit ở đầu vào sẽ làm xáo trộn hoàn toàn giá trị băm đầu ra."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 138,
+      "before": "Mã hóa giá trị băm đã đệm bằng Khóa bí mật của bên gửi (Private Key A) để tạo ra Chữ ký số S: ",
+      "after": "Mã hóa giá trị băm đã đệm bằng Khóa bí mật của bên gửi để tạo ra Chữ ký số S: "
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 144,
+      "before": "1.4.3. Mô hình ký sau khi mã hóa (Encrypt-then-Sign) để tối ưu tính an toàn",
+      "after": "1.4.3. Mô hình ký sau khi mã hóa để tối ưu tính an toàn"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 145,
+      "before": "Hệ thống áp dụng mô hình Ký sau khi mã hóa (Encrypt-then-Sign):",
+      "after": "Hệ thống áp dụng mô hình Ký sau khi mã hóa:"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 146,
+      "before": "Bên gửi thực hiện mã hóa tệp dữ liệu trước để sinh ra Ciphertext, sau đó dùng Private Key của mình để ký trực tiếp lên chuỗi Ciphertext đó.",
+      "after": "Bên gửi thực hiện mã hóa tệp dữ liệu trước để sinh ra bản mã, sau đó dùng khóa bí mật của mình để ký trực tiếp lên chuỗi bản mã đó."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 147,
+      "before": "Lợi ích an toàn: Loại trừ rủi ro tấn công chuyển tiếp lén lút (Surreptitious Forwarding), đồng thời cho phép các trạm trung gian kiểm tra tính toàn vẹn và tính xác thực của gói tin mà không cần phải giải mã dữ liệu nghiệp vụ nhạy cảm bên trong.",
+      "after": "Lợi ích an toàn: Loại trừ rủi ro tấn công chuyển tiếp lén lút, đồng thời cho phép các trạm trung gian kiểm tra tính toàn vẹn và tính xác thực của gói tin mà không cần phải giải mã dữ liệu nghiệp vụ nhạy cảm bên trong."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 148,
+      "before": "1.5. Mô hình Mã hóa phong bì số (Digital Envelope / Hybrid Encryption)",
+      "after": "1.5. Mô hình Mã hóa phong bì số"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 150,
+      "before": "Mô hình Phong bì số (Digital Envelope) là sự kết hợp tối ưu giữa mật mã đối xứng, mật mã bất đối xứng và chữ ký điện tử:",
+      "after": "Mô hình Phong bì số là sự kết hợp tối ưu giữa mật mã đối xứng, mật mã bất đối xứng và chữ ký điện tử:"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 157,
+      "before": "Bọc khóa phiên: Bên gửi dùng Public Key của Bên nhận (đảm bảo Tính bí mật - chỉ Bên nhận mới mở được phong bì).",
+      "after": "Bọc khóa phiên: Bên gửi dùng khóa công khai của Bên nhận (đảm bảo Tính bí mật - chỉ Bên nhận mới mở được phong bì)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 158,
+      "before": "Ký số gói tin: Bên gửi dùng Private Key của Bên gửi (đảm bảo Tính xác thực và Chống chối bỏ).",
+      "after": "Ký số gói tin: Bên gửi dùng khóa bí mật của Bên gửi (đảm bảo Tính xác thực và Chống chối bỏ)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 159,
+      "before": "Mở bọc khóa: Bên nhận dùng Private Key của Bên nhận để giải mã lấy lại khóa phiên Ksession.",
+      "after": "Mở bọc khóa: Bên nhận dùng khóa bí mật của Bên nhận để giải mã lấy lại khóa phiên Ksession."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 160,
+      "before": "Kiểm tra chữ ký: Bên nhận dùng Public Key của Bên gửi để xác minh chữ ký số (đảm bảo Tính toàn vẹn).",
+      "after": "Kiểm tra chữ ký: Bên nhận dùng khóa công khai của Bên gửi để xác minh chữ ký số (đảm bảo Tính toàn vẹn)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 164,
+      "before": "Base64 (RFC 4648) là phương thức chuyển đổi dữ liệu nhị phân (Binary) sang tập các ký tự ASCII an toàn:",
+      "after": "Base64 (RFC 4648) là phương thức chuyển đổi dữ liệu nhị phân sang tập các ký tự ASCII an toàn:"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 168,
+      "before": "Gói tin truyền dẫn giữa các đơn vị được chuẩn hóa dưới định dạng JSON (JavaScript Object Notation). Chuẩn JSON thuần túy chỉ hỗ trợ kiểu dữ liệu chuỗi ký tự UTF-8/ASCII và không hỗ trợ trực tiếp dữ liệu nhị phân thô. Việc chuyển đổi tệp PDF sang chuỗi Base64 cho phép đóng gói toàn bộ tệp đính kèm vào trong một trường thuộc tính của payload JSON, bảo đảm tính toàn vẹn và thuận tiện khi truyền tải qua các giao thức web API (REST/HTTP POST).",
+      "after": "Gói tin truyền dẫn giữa các đơn vị được chuẩn hóa dưới định dạng JSON. Chuẩn JSON thuần túy chỉ hỗ trợ kiểu dữ liệu chuỗi ký tự UTF-8/ASCII và không hỗ trợ trực tiếp dữ liệu nhị phân thô. Việc chuyển đổi tệp PDF sang chuỗi Base64 cho phép đóng gói toàn bộ tệp đính kèm vào trong một trường thuộc tính của payload JSON, bảo đảm tính toàn vẹn và thuận tiện khi truyền tải qua các giao thức web API (REST/HTTP POST)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 169,
+      "before": "1.6.3. Đánh giá ưu điểm và chi phí dung lượng (~33.3% overhead) của Base64",
+      "after": "1.6.3. Đánh giá ưu điểm và chi phí dung lượng (tăng khoảng 33,3%) của Base64"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 173,
+      "before": "Mức chi phí overhead 33.3% này hoàn toàn chấp nhận được so với độ an toàn và sự tiện lợi vượt trội mà mô hình gói tin JSON mang lại.",
+      "after": "Mức chi phí 33.3% này hoàn toàn chấp nhận được so với độ an toàn và sự tiện lợi vượt trội mà mô hình gói tin JSON mang lại."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 177,
+      "before": "Trong mô hình trao đổi văn bản và hồ sơ nghiệp vụ giữa các cơ quan, đơn vị liên thông, luồng dữ liệu đòi hỏi mức độ bảo mật tối cao. Kịch bản nghiệp vụ cơ bản diễn ra giữa hai thực thể: Đơn vị gửi (Sender Unit) và Đơn vị nhận (Receiver Unit) thông qua hạ tầng mạng mở.",
+      "after": "Trong mô hình trao đổi văn bản và hồ sơ nghiệp vụ giữa các cơ quan, đơn vị liên thông, luồng dữ liệu đòi hỏi mức độ bảo mật tối cao. Kịch bản nghiệp vụ cơ bản diễn ra giữa hai thực thể: Đơn vị gửi và Đơn vị nhận thông qua hạ tầng mạng mở."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 179,
+      "before": "Bước 2 (Xử lý an toàn phía Gửi): Hệ thống phía gửi tự động chuyển đổi tệp đính kèm sang chuỗi Base64, sinh khóa phiên AES-256 để mã hóa dữ liệu (Payload), bọc khóa phiên bằng khóa công khai của Đơn vị nhận và tạo chữ ký số RSASSA-PKCS1-v1_5 đính kèm.",
+      "after": "Bước 2 (Xử lý an toàn phía Gửi): Hệ thống phía gửi tự động chuyển đổi tệp đính kèm sang chuỗi Base64, sinh khóa phiên AES-256 để mã hóa dữ liệu, bọc khóa phiên bằng khóa công khai của Đơn vị nhận và tạo chữ ký số RSASSA-PKCS1-v1_5 đính kèm."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 185,
+      "before": "Mã hóa dữ liệu lai (Hybrid Encryption): Tự động sinh khóa ngẫu nhiên AES-256 cho từng phiên làm việc, hỗ trợ mã hóa luồng dữ liệu lớn và mã hóa bọc khóa phiên bằng thuật toán RSA-OAEP.",
+      "after": "Mã hóa dữ liệu lai: Tự động sinh khóa ngẫu nhiên AES-256 cho từng phiên làm việc, hỗ trợ mã hóa luồng dữ liệu lớn và mã hóa bọc khóa phiên bằng thuật toán RSA-OAEP."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 193,
+      "before": "Trách nhiệm phía Bên gửi: Chịu trách nhiệm bảo mật khóa bí mật cá nhân (Private Key Sender); chịu trách nhiệm kiểm tra đúng chứng thư số công khai của Bên nhận trước khi bọc khóa phiên; thực hiện ký số khẳng định nguồn gốc và đóng gói phong bì JSON đúng đặc tả.",
+      "after": "Trách nhiệm phía Bên gửi: Chịu trách nhiệm bảo mật khóa bí mật cá nhân; chịu trách nhiệm kiểm tra đúng chứng thư số công khai của Bên nhận trước khi bọc khóa phiên; thực hiện ký số khẳng định nguồn gốc và đóng gói phong bì JSON đúng đặc tả."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 194,
+      "before": "Trách nhiệm phía Bên nhận: Tiếp nhận phong bì dữ liệu qua endpoint API công khai; thực hiện kiểm tra tính hợp lệ của chữ ký số bằng Public Key Sender; thực hiện giải mã khóa phiên bằng Private Key Receiver; phát hiện và loại bỏ các gói tin bị mạo danh hoặc tấn công phát lại.",
+      "after": "Trách nhiệm phía Bên nhận: Tiếp nhận phong bì dữ liệu qua endpoint API công khai; thực hiện kiểm tra tính hợp lệ của chữ ký số bằng khóa công khai của bên gửi; thực hiện giải mã khóa phiên bằng khóa bí mật của bên nhận; phát hiện và loại bỏ các gói tin bị mạo danh hoặc tấn công phát lại."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 195,
+      "before": "2.2.2. Mô hình quản lý và phân phối cặp khóa RSA (Key Management)",
+      "after": "2.2.2. Mô hình quản lý và phân phối cặp khóa RSA"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 197,
+      "before": "Lưu trữ khóa bí mật: Khóa bí mật (Private Key) được lưu trữ riêng biệt tại môi trường máy chủ nội bộ của từng đơn vị dưới dạng file mã hóa PEM (PKCS#8 Encrypted) hoặc lưu trong cơ sở dữ liệu an toàn có phân quyền truy cập nghiêm ngặt.",
+      "after": "Lưu trữ khóa bí mật: Khóa bí mật được lưu trữ riêng biệt tại môi trường máy chủ nội bộ của từng đơn vị dưới dạng file mã hóa PEM (PKCS#8 được mã hóa) hoặc lưu trong cơ sở dữ liệu an toàn có phân quyền truy cập nghiêm ngặt."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 198,
+      "before": "Phân phối khóa công khai: Các đơn vị trao đổi chứng thư số khóa công khai (Public Key/Certificate) trước khi thiết lập giao dịch truyền nhận. Hệ thống lưu trữ danh mục khóa công khai của các đối tác liên thông trong cơ sở dữ liệu MongoDB để phục vụ truy vấn tự động khi mã hóa và xác minh chữ ký.",
+      "after": "Phân phối khóa công khai: Các đơn vị trao đổi chứng thư số khóa công khai trước khi thiết lập giao dịch truyền nhận. Hệ thống lưu trữ danh mục khóa công khai của các đối tác liên thông trong cơ sở dữ liệu MongoDB để phục vụ truy vấn tự động khi mã hóa và xác minh chữ ký."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 199,
+      "before": "2.3. Thiết kế cấu trúc Gói tin phong bì số (JSON Envelope Specification)",
+      "after": "2.3. Thiết kế cấu trúc Gói tin phong bì số"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 201,
+      "before": "Gói tin phong bì số trao đổi giữa hai hệ thống được chuẩn hóa theo định dạng JSON gồm hai thành phần chính: Khối thông tin mở (Header) chứa dữ liệu điều khiển kèm khóa phiên mã hóa `key`, và Khối dữ liệu bảo mật (Payload) chứa bản mã dữ liệu, vector khởi tạo IV và chữ ký số đính kèm.",
+      "after": "Gói tin phong bì số trao đổi giữa hai hệ thống được chuẩn hóa theo định dạng JSON gồm hai thành phần chính: Khối thông tin mở chứa dữ liệu điều khiển kèm khóa phiên mã hóa key, và Khối dữ liệu bảo mật chứa bản mã dữ liệu, vector khởi tạo IV và chữ ký số đính kèm."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 216,
+      "before": "2.3.2. Đặc tả chi tiết khối thông tin điều khiển mở (Header)",
+      "after": "2.3.2. Đặc tả chi tiết khối thông tin điều khiển mở"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 219,
+      "before": "2.3.3. Đặc tả chi tiết khối dữ liệu mã hóa bảo mật (Payload)",
+      "after": "2.3.3. Đặc tả chi tiết khối dữ liệu mã hóa bảo mật"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 222,
+      "before": "2.4. Thiết kế luồng xử lý chi tiết (Work-flow Design)",
+      "after": "2.4. Thiết kế luồng xử lý chi tiết"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 223,
+      "before": "2.4.1. Sơ đồ tuần tự tổng thể (Sequence Diagram giữa Bên gửi và Bên nhận)",
+      "after": "2.4.1. Sơ đồ tuần tự tổng thể giữa Bên gửi và Bên nhận"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 227,
+      "before": "3. Phía Gửi: Dùng Private Key của Gửi để ký số bản mã; Dùng Public Key của Nhận để bọc khóa AES.",
+      "after": "3. Phía Gửi: Dùng khóa bí mật của Gửi để ký số bản mã; Dùng khóa công khai của Nhận để bọc khóa AES."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 228,
+      "before": "4. Truyền tải: Đóng gói JSON Envelope và gửi HTTP POST request sang Bên nhận.",
+      "after": "4. Truyền tải: Đóng gói phong bì JSON và gửi HTTP POST request sang Bên nhận."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 229,
+      "before": "5. Phía Nhận: Kiểm tra timestamp/UUID; Dùng Public Key của Gửi xác minh chữ ký số.",
+      "after": "5. Phía Nhận: Kiểm tra timestamp/UUID; Dùng khóa công khai của Gửi xác minh chữ ký số."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 230,
+      "before": "6. Phía Nhận: Dùng Private Key của Nhận giải mã bọc khóa lấy khóa AES; Giải mã bản mã khôi phục tài liệu gốc.",
+      "after": "6. Phía Nhận: Dùng khóa bí mật của Nhận giải mã bọc khóa lấy khóa AES; Giải mã bản mã khôi phục tài liệu gốc."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 234,
+      "before": "Bước 2: Chuyển đổi toàn bộ nội dung file đính kèm sang định dạng chuỗi Base64 và tạo cấu trúc Plaintext JSON hoàn chỉnh.",
+      "after": "Bước 2: Chuyển đổi toàn bộ nội dung file đính kèm sang định dạng chuỗi Base64 và tạo cấu trúc JSON bản rõ hoàn chỉnh."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 235,
+      "before": "Bước 3: Khởi tạo sinh ngẫu nhiên an toàn (Crypto Random) 32 byte khóa AES-256 và 16 byte IV.",
+      "after": "Bước 3: Khởi tạo sinh ngẫu nhiên an toàn 32 byte khóa AES-256 và 16 byte IV."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 236,
+      "before": "Bước 4: Thực hiện mã hóa Plaintext bằng AES-256-CBC với khóa AES và IV thu được `encrypted_data` (Base64).",
+      "after": "Bước 4: Thực hiện mã hóa bản rõ bằng AES-256-CBC với khóa AES và IV thu được encrypted_data (Base64)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 237,
+      "before": "Bước 5: Lấy giá trị băm SHA-256 của `encrypted_data`, ký bằng Private Key của Bên gửi qua chuẩn RSASSA-PKCS1-v1_5 thu được `signature` (Base64).",
+      "after": "Bước 5: Lấy giá trị băm SHA-256 của encrypted_data, ký bằng khóa bí mật của Bên gửi qua chuẩn RSASSA-PKCS1-v1_5 thu được signature (Base64)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 238,
+      "before": "Bước 6: Mã hóa khóa AES-256 bằng Public Key của Bên nhận qua chuẩn RSA-OAEP thu được khóa phiên mã hóa `key` (Base64).",
+      "after": "Bước 6: Mã hóa khóa AES-256 bằng khóa công khai của Bên nhận qua chuẩn RSA-OAEP thu được khóa phiên mã hóa key (Base64)."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 239,
+      "before": "Bước 7: Đóng gói trường `key` vào Header, các trường `encrypted_data`, `iv`, `signature` vào Payload của JSON Envelope và phát hành gói tin.",
+      "after": "Bước 7: Đóng gói trường key vào Header, các trường encrypted_data, iv, signature vào Payload của phong bì JSON và phát hành gói tin."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 242,
+      "before": "Bước 1: Tiếp nhận request JSON Envelope tại REST API Endpoint.",
+      "after": "Bước 1: Tiếp nhận request phong bì JSON tại REST API Endpoint."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 243,
+      "before": "Bước 2: Phân tích cấu trúc Header, kiểm tra tính hợp lệ của timestamp và kiểm tra `request_id` trong cache chống Replay Attack.",
+      "after": "Bước 2: Phân tích cấu trúc Header, kiểm tra tính hợp lệ của timestamp và kiểm tra request_id trong cache chống Replay Attack."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 244,
+      "before": "Bước 3: Tra cứu Public Key của Bên gửi dựa trên `sender_id`.",
+      "after": "Bước 3: Tra cứu khóa công khai của Bên gửi dựa trên sender_id."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 245,
+      "before": "Bước 4: Thực hiện thẩm tra `signature` trên `encrypted_data` bằng Public Key của Bên gửi. Nếu không hợp lệ, lập tức dừng xử lý và phản hồi lỗi xác thực.",
+      "after": "Bước 4: Thực hiện thẩm tra signature trên encrypted_data bằng khóa công khai của Bên gửi. Nếu không hợp lệ, lập tức dừng xử lý và phản hồi lỗi xác thực."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 246,
+      "before": "Bước 5: Sử dụng Private Key của Bên nhận để giải mã trường `key` ở Header qua chuẩn RSA-OAEP thu được khóa phiên AES-256 thô.",
+      "after": "Bước 5: Sử dụng khóa bí mật của Bên nhận để giải mã trường key ở Header qua chuẩn RSA-OAEP thu được khóa phiên AES-256 thô."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 247,
+      "before": "Bước 6: Giải mã `encrypted_data` bằng khóa AES-256 và `iv` thu được dữ liệu Plaintext JSON.",
+      "after": "Bước 6: Giải mã encrypted_data bằng khóa AES-256 và iv thu được dữ liệu JSON bản rõ."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 249,
+      "before": "2.4.4. Cơ chế chống tấn công phát lại (Anti-Replay Attack qua UUID và Timestamp)",
+      "after": "2.4.4. Cơ chế chống tấn công phát lại qua UUID và dấu thời gian"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 250,
+      "before": "Tấn công phát lại (Replay Attack) là rủi ro kẻ tấn công bắt chặn một gói tin hợp lệ trên đường truyền và gửi lại nhiều lần cho Bên nhận nhằm làm rối loạn logic nghiệp vụ. Hệ thống áp dụng cơ chế bảo vệ hai lớp đính kèm tại Header:",
+      "after": "Tấn công phát lại là rủi ro kẻ tấn công bắt chặn một gói tin hợp lệ trên đường truyền và gửi lại nhiều lần cho Bên nhận nhằm làm rối loạn logic nghiệp vụ. Hệ thống áp dụng cơ chế bảo vệ hai lớp đính kèm tại Header:"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 251,
+      "before": "Lớp 1 - Kiểm tra thời gian trượt (Sliding Timestamp Window): Bên nhận thiết lập cửa sổ thời gian chấp nhận Delta T (ví dụ: +/- 5 phút so với giờ hệ thống server). Gói tin có `timestamp` vượt ngoài cửa sổ này sẽ bị từ chối ngay lập tức.",
+      "after": "Lớp 1 - Kiểm tra thời gian trượt: Bên nhận thiết lập cửa sổ thời gian chấp nhận Delta T (ví dụ: +/- 5 phút so với giờ hệ thống server). Gói tin có timestamp vượt ngoài cửa sổ này sẽ bị từ chối ngay lập tức."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 252,
+      "before": "Lớp 2 - Danh mục chỉ mục duy nhất (Nonce Cache / UUID Index): Bên nhận duy trì một bộ nhớ đệm (Redis/In-Memory Cache) lưu trữ danh sách `request_id` (UUIDv4) của các gói tin đã xử lý trong khoảng thời gian Delta T. Nếu một request có `request_id` đã tồn tại trong cache, hệ thống sẽ xác định là tấn công phát lại và từ chối xử lý.",
+      "after": "Lớp 2 - Danh mục chỉ mục duy nhất: Bên nhận duy trì một bộ nhớ đệm (Redis/In-Memory Cache) lưu trữ danh sách request_id (UUIDv4) của các gói tin đã xử lý trong khoảng thời gian Delta T. Nếu một request có request_id đã tồn tại trong cache, hệ thống sẽ xác định là tấn công phát lại và từ chối xử lý."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 397,
+      "before": "Hiện hai đơn vị trao đổi tệp PEM, đối chiếu vân tay SHA-256 qua kênh độc lập rồi ghim khóa bằng POST /api/peers (mục 3.2.1). Theo cách phân loại ở bài giảng [8, mục 4.3.1, tr. 106–108], đây là phương pháp trao đổi điểm–điểm qua kênh tin cậy, kết hợp danh mục khóa công khai (public-key registry) tự quản. Bài giảng nhận xét phương pháp này phù hợp với hệ thống đóng kín hoặc cỡ nhỏ và trao đổi không thường xuyên; nhược điểm là độ trễ lớn và phải dùng kênh tin cậy riêng, tốn kém. Hạn chế thể hiện ở ba điểm:",
+      "after": "Hiện hai đơn vị trao đổi tệp PEM, đối chiếu vân tay SHA-256 qua kênh độc lập rồi ghim khóa bằng POST /api/peers (mục 3.2.1). Theo cách phân loại ở bài giảng [8, mục 4.3.1, tr. 106–108], đây là phương pháp trao đổi điểm–điểm qua kênh tin cậy, kết hợp danh mục khóa công khai tự quản. Bài giảng nhận xét phương pháp này phù hợp với hệ thống đóng kín hoặc cỡ nhỏ và trao đổi không thường xuyên; nhược điểm là độ trễ lớn và phải dùng kênh tin cậy riêng, tốn kém. Hạn chế thể hiện ở ba điểm:"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 413,
+      "before": "Thay vì ghim từng khóa PEM, mỗi đơn vị được trung tâm chứng thực (CA) cấp chứng chỉ X.509 v3. Theo bài giảng [8, mục 4.3.1], với mô hình máy chủ không trực tuyến và chứng chỉ, CA kiểm tra danh tính của A rồi ký xác nhận cặp (IDA, KUA); bên nhận chỉ cần tin CA là tin được khóa công khai của A. Số quan hệ tin cậy cần thiết lập giảm từ N(N-1)2 giữa các đơn vị xuống còn N quan hệ giữa mỗi đơn vị với CA, và bước ghim khóa ở mục 3.2.1 được thay bằng xác minh chứng chỉ. Các trường của chứng chỉ X.509 (Version, Serial Number, Signature Algorithm, Issuer, Validity Period, Subject, Public Key, Extensions, Signature) [8, mục 4.3.2, tr. 109–111] giải quyết trực tiếp các hạn chế ở Bảng 4.4:",
+      "after": "Thay vì ghim từng khóa PEM, mỗi đơn vị được trung tâm chứng thực (CA) cấp chứng chỉ X.509 v3. Theo bài giảng [8, mục 4.3.1], với mô hình máy chủ không trực tuyến và chứng chỉ, CA kiểm tra danh tính của A rồi ký xác nhận cặp (IDA, KUA); bên nhận chỉ cần tin CA là tin được khóa công khai của A. Số quan hệ tin cậy cần thiết lập giảm từ N(N-1)2 giữa các đơn vị xuống còn N quan hệ giữa mỗi đơn vị với CA, và bước ghim khóa ở mục 3.2.1 được thay bằng xác minh chứng chỉ. Các trường của chứng chỉ X.509 (phiên bản, số sê-ri, thuật toán chữ ký, bên cấp, thời hạn hiệu lực, chủ thể, khóa công khai, phần mở rộng, chữ ký) [8, mục 4.3.2, tr. 109–111] giải quyết trực tiếp các hạn chế ở Bảng 4.4:"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 414,
+      "before": "Subject gắn khóa công khai với định danh đơn vị (sender_id, receiver_id), thay cho việc đối chiếu vân tay thủ công.",
+      "after": "Trường chủ thể gắn khóa công khai với định danh đơn vị (sender_id, receiver_id), thay cho việc đối chiếu vân tay thủ công."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 415,
+      "before": "Validity Period (not before, not after) bổ sung thời hạn cho khóa. Serial Number cùng danh sách thu hồi chứng chỉ (CRL, theo RFC 5280 [9]) hoặc giao thức trạng thái chứng chỉ trực tuyến (OCSP) cho phép thu hồi khi lộ khóa.",
+      "after": "Thời hạn hiệu lực (thời điểm bắt đầu và hết hiệu lực) bổ sung thời hạn cho khóa. Số sê-ri cùng danh sách thu hồi chứng chỉ (CRL, theo RFC 5280 [9]) hoặc giao thức trạng thái chứng chỉ trực tuyến (OCSP) cho phép thu hồi khi lộ khóa."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 416,
+      "before": "Extensions có trường keyUsage (digitalSignature, keyEncipherment,…) cho phép gắn mỗi khóa với một mục đích. Mỗi đơn vị khi đó có hai cặp khóa và hai chứng chỉ, một để ký số và một để bọc khóa phiên, khắc phục việc dùng chung một cặp RSA.",
+      "after": "Phần mở rộng có trường keyUsage (digitalSignature, keyEncipherment,…) cho phép gắn mỗi khóa với một mục đích. Mỗi đơn vị khi đó có hai cặp khóa và hai chứng chỉ, một để ký số và một để bọc khóa phiên, khắc phục việc dùng chung một cặp RSA."
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 421,
+      "before": "4.3.2. Hỗ trợ thiết bị phần cứng bảo mật chuyên dụng (USB Token / Smartcard)",
+      "after": "4.3.2. Hỗ trợ thiết bị phần cứng bảo mật chuyên dụng (USB Token / thẻ thông minh)"
+    },
+    {
+      "kind": "terminology",
+      "sourceParagraph": 429,
+      "before": "TLS tương hỗ (mutual TLS) cho kênh truyền. TLS bảo vệ từng chặng nên bổ sung chứ không thay thế mã hóa tầng ứng dụng (lý do đã nêu ở phần Mở đầu); có thể dùng chung hạ tầng chứng chỉ X.509 ở mục 4.3.1.",
+      "after": "TLS tương hỗ cho kênh truyền. TLS bảo vệ từng chặng nên bổ sung chứ không thay thế mã hóa tầng ứng dụng (lý do đã nêu ở phần Mở đầu); có thể dùng chung hạ tầng chứng chỉ X.509 ở mục 4.3.1."
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 3,
+      "before": "Thụ động (Passive)",
+      "after": "Thụ động"
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 3,
+      "before": "Eavesdropping, Traffic Analysis",
+      "after": "Nghe lén, phân tích lưu lượng"
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 3,
+      "before": "Chủ động (Active)",
+      "after": "Chủ động"
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 3,
+      "before": "Modification, Spoofing, Replay, DoS",
+      "after": "Sửa đổi, giả mạo, phát lại, từ chối dịch vụ"
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 3,
+      "before": "Chữ ký số, Mã xác thực, Nonce/Timestamp",
+      "after": "Chữ ký số, Mã xác thực, giá trị không lặp/dấu thời gian"
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 5,
+      "before": "Public Key (Bên nhận)",
+      "after": "khóa công khai (Bên nhận)"
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 5,
+      "before": "Tính bí mật (Confidentiality)",
+      "after": "Tính bí mật"
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 5,
+      "before": "Private Key (Bên gửi)",
+      "after": "khóa bí mật (Bên gửi)"
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 5,
+      "before": "Private Key (Bên nhận)",
+      "after": "khóa bí mật (Bên nhận)"
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 5,
+      "before": "Public Key (Bên gửi)",
+      "after": "khóa công khai (Bên gửi)"
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 5,
+      "before": "Tính toàn vẹn (Integrity)",
+      "after": "Tính toàn vẹn"
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 6,
+      "before": "Tính bảo mật (Security)",
+      "after": "Tính bảo mật"
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 6,
+      "before": "Tính toàn vẹn (Integrity)",
+      "after": "Tính toàn vẹn"
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 7,
+      "before": "Mã định danh duy nhất của gói tin, dùng phục vụ chống tấn công phát lại (Anti-Replay Attack).",
+      "after": "Mã định danh duy nhất của gói tin, dùng phục vụ chống tấn công phát lại."
+    },
+    {
+      "kind": "table-terminology",
+      "tableIndex": 7,
+      "before": "Thời điểm đóng gói phát hành, kết hợp với cửa sổ thời gian (Timestamp Window) để chống tấn công phát lại.",
+      "after": "Thời điểm đóng gói phát hành, kết hợp với cửa sổ thời gian để chống tấn công phát lại."
+    },
+    {
+      "kind": "procedure-label",
+      "sourceParagraph": 109,
+      "prefix": "Bước 1: "
+    },
+    {
+      "kind": "procedure-label",
+      "sourceParagraph": 110,
+      "prefix": "Bước 2: "
+    },
+    {
+      "kind": "procedure-label",
+      "sourceParagraph": 111,
+      "prefix": "Bước 3: "
+    },
+    {
+      "kind": "procedure-label",
+      "sourceParagraph": 112,
+      "prefix": "Bước 4: "
+    },
+    {
+      "kind": "procedure-label",
+      "sourceParagraph": 113,
+      "prefix": "Bước 5: "
+    },
+    {
+      "kind": "procedure-label",
+      "sourceParagraph": 115,
+      "prefix": "Bước 6: "
+    },
+    {
+      "kind": "procedure-label",
+      "sourceParagraph": 136,
+      "prefix": "Bước 1: "
+    },
+    {
+      "kind": "procedure-label",
+      "sourceParagraph": 137,
+      "prefix": "Bước 2: "
+    },
+    {
+      "kind": "procedure-label",
+      "sourceParagraph": 138,
+      "prefix": "Bước 3: "
+    },
+    {
+      "kind": "procedure-label",
+      "sourceParagraph": 141,
+      "prefix": "Bước 1: "
+    },
+    {
+      "kind": "procedure-label",
+      "sourceParagraph": 142,
+      "prefix": "Bước 2: "
+    },
+    {
+      "kind": "procedure-label",
+      "sourceParagraph": 143,
+      "prefix": "Bước 3: "
+    },
+    {
+      "kind": "conclusion-expanded",
+      "before": "Tóm lại, trong phạm vi thử nghiệm bản cài đặt đáp ứng các mục tiêu bí mật, toàn vẹn, xác thực nguồn gốc và chống phát lại, với thời gian xử lý tệp 10 MiB là 0,312 giây. Hai hướng nên ưu tiên là tích hợp PKI kèm mở rộng phạm vi chữ ký sang toàn bộ header, và chuyển khóa bí mật vào thiết bị phần cứng, vì chúng xử lý các hạn chế liên quan đến quản lý khóa, nơi bài giảng nhấn mạnh quyết định độ an toàn chung của hệ mật.",
+      "after": [
+        "Đề tài đã xây dựng một hệ thống thực nghiệm truyền nhận tài liệu bảo mật giữa hai đơn vị dựa trên mô hình phong bì số. Phần cơ sở lý thuyết trình bày vai trò của mã hóa đối xứng, mật mã khóa công khai, hàm băm và chữ ký số đối với việc bảo vệ dữ liệu. Trên cơ sở đó, hệ thống sử dụng AES-256-CBC để mã hóa nội dung, RSA-OAEP/SHA-256 để bọc khóa phiên và RSASSA-PKCS1-v1_5 kết hợp SHA-256 để tạo, xác minh chữ ký. Cách kết hợp này cho phép xử lý tệp bằng thuật toán đối xứng, đồng thời dùng cặp khóa RSA của hai đơn vị để bảo vệ khóa phiên và kiểm tra nguồn gốc bản mã.",
+        "Bản cài đặt được tổ chức bằng Node.js, TypeScript và NestJS, với các mô-đun quản lý khóa, xử lý mật mã, đóng gói phong bì và lưu trữ. Hai đơn vị có cặp khóa riêng, trao đổi phong bì JSON qua API và quản lý khóa công khai của đối tác trong MongoDB. Tài liệu khôi phục cùng thông tin biên nhận được lưu bằng MongoDB và GridFS. Giao diện Swagger hỗ trợ thao tác gửi, mở, xác minh và tiếp nhận gói tin; các ảnh minh họa và gói tin mẫu trong báo cáo được lấy từ chương trình thực tế.",
+        "Các kịch bản ở Chương 3 đã kiểm tra luồng truyền nhận hợp lệ, can thiệp bản mã, giả mạo người gửi, phát lại gói tin và xử lý nhiều định dạng tệp. Kết quả cho thấy tài liệu hợp lệ được khôi phục đúng, còn các trường hợp sai chữ ký, sai khóa hoặc vi phạm điều kiện tiếp nhận bị từ chối trong phạm vi đã thử. Việc kết hợp UUID, dấu thời gian và chỉ mục duy nhất trong MongoDB giúp lưu lịch sử chống phát lại qua các lần khởi động lại. Với tệp 10 MiB, tổng thời gian trung bình đóng gói, mở và lưu ở lớp dịch vụ là khoảng 0,312 giây trên cấu hình thực nghiệm. Số đo này chưa gồm truyền mạng giữa hai máy vật lý, nên chỉ phản ánh kết quả trên môi trường đã mô tả.",
+        "Kết quả thực nghiệm cũng cho thấy các giới hạn cần được phân biệt với những mục tiêu đã đạt. Hai lớp Base64 làm dung lượng phong bì lớn hơn tệp gốc; việc xử lý toàn tệp trong bộ nhớ giới hạn dung lượng ở 10 MiB. Khóa công khai còn được trao đổi và ghim thủ công, chưa có cơ chế chứng thư và thu hồi khóa. Chữ ký chỉ trực tiếp bao phủ trường encrypted_data, còn thông tin điều khiển được đối chiếu sau khi giải mã; biên nhận hiện chưa được ký. Vì vậy, bản cài đặt chưa cung cấp đầy đủ căn cứ xác nhận bên nhận đã nhận tài liệu, cũng chưa thay thế một hệ thống chứng thực danh tính và chữ ký số dùng trong triển khai thực tế.",
+        "Từ các hạn chế trên, hướng ưu tiên là tích hợp PKI để quản lý chứng thư, mở rộng phạm vi chữ ký sang toàn bộ phần điều khiển của phong bì và bảo vệ khóa bí mật bằng thiết bị phần cứng chuyên dụng. Các hướng tiếp theo gồm bổ sung xác thực, phân quyền, bảo vệ kênh truyền, xử lý dữ liệu theo luồng và thử nghiệm giữa hai máy độc lập. Những công việc này tiếp nối trực tiếp kiến trúc và các phép đo đã trình bày, nhằm đánh giá khả năng sử dụng của hệ thống trong điều kiện truyền nhận giữa các đơn vị thật."
+      ],
+      "basis": "Chương 1–4, giữ số đo 10 MiB/0,312 giây; không bổ sung kết quả kiểm thử mới."
+    }
+  ],
+  "remoteVerified": true,
+  "pdfPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAO-CAO-BTL.pdf",
+  "pdfSha256": "a25f0dd46bce5a394708f1df0161e98f3c6bd5d18ae5ef6fe7082f2056b5134c",
+  "pdfPages": 51,
+  "pdfFieldErrors": [],
+  "pdfTextColor": "black",
+  "renderedChapterPt": [
+    16.079999923706055,
+    16.079999923706055,
+    16.079999923706055,
+    16.079999923706055
+  ],
+  "renderedSectionPt": [
+    13.920000076293945
+  ],
+  "verification": {
+    "all31NativeEquationsPreserved": true,
+    "all11ImagesPreservedExactly": true,
+    "all41CodeParagraphsUnchanged": true,
+    "all19TableNumericValuesUnchanged": true,
+    "all19TableCaptionsBelow": true,
+    "bodyBulletParagraphs": 0,
+    "bodyBoldRuns": 0,
+    "ambiguousDecimalLists": 0
+  },
+  "backupFileId": "1C1F9Zve_cGZGQy9r3HE06g2aIaaUGukx",
+  "signatureCodeBlockKeptOnPage": 27,
+  "remoteSha256": "f11aa1d9e345f262a2c48d086bc7b7c4d3014386a129f79c4efcbfc27de8f13b",
+  "remoteModifiedTime": "2026-11-11T16:44:49.398Z",
+  "remoteFileId": "1hlUT3wDVveSOjz4xkSf1L_4oOk41RG9C"
+}

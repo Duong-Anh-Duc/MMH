@@ -1,0 +1,846 @@
+{
+  "sourcePath": "/tmp/btl-full-review-source-20261112.docx",
+  "sourceSha256": "6f4e609ee3a51e8070961a7551297c7490d30825b6c2c27ac71ee3fd36192331",
+  "outputPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAO-CAO-BTL.docx",
+  "outputSha256": "2a798002265186e1ad2641d12dd0092fe9b4f647c52700998a71a3f7638316fe",
+  "paragraphChanges": [
+    {
+      "paragraph": 21,
+      "before": "Mặc dù các giao thức bảo mật tầng truyền tải phổ biến hiện nay (như TLS/HTTPS) đã cung cấp khả năng bảo vệ đường truyền, nhưng đây chỉ là cơ chế bảo mật từng chặng. Dữ liệu hoàn toàn có thể bị lộ lọt hoặc can thiệp khi đi qua các trạm trung gian, máy chủ ủy quyền, cổng định tuyến nội bộ hoặc khi lưu tạm tại các hệ thống trung chuyển. Do đó, việc thiết lập một cơ chế an toàn ở tầng ứng dụng theo nguyên lý đầu cuối tới đầu cuối trực tiếp giữa các đơn vị gửi và nhận là điều kiện tiên quyết.",
+      "after": "TLS/HTTPS bảo vệ dữ liệu giữa hai đầu cuối của kết nối TLS. Nếu kết nối kết thúc tại proxy hoặc máy chủ trung chuyển, dữ liệu có thể được đọc tại điểm đó hoặc khi lưu tạm; một thiết bị chỉ chuyển tiếp lưu lượng không mặc nhiên đọc được nội dung. Đề tài bổ sung phong bì mã hóa ở tầng ứng dụng để nội dung vẫn được bảo vệ khi chuyển qua hoặc lưu tại các hệ thống trung gian trước khi đến đơn vị nhận."
+    },
+    {
+      "paragraph": 22,
+      "before": "Giải pháp kết hợp giữa Mã hóa dữ liệu theo mô hình hệ mật lai và Ký số điện tử là hướng tiếp cận tối ưu: vừa giải quyết triệt để bài toán hiệu năng xử lý với các gói tin có dung lượng lớn (nhờ mã hóa đối xứng), vừa đảm bảo an toàn tuyệt đối trong việc bọc khóa phiên, phân phối khóa và xác thực danh tính đơn vị gửi (nhờ mã hóa bất đối xứng và chữ ký số).",
+      "after": "Mô hình mật mã lai kết hợp thuật toán đối xứng để xử lý nội dung với mật mã khóa công khai để bọc khóa phiên và tạo chữ ký. Mức an toàn phụ thuộc vào tham số thuật toán, cách cài đặt và việc xác thực khóa công khai của đối tác; bản thực nghiệm không thay thế một hạ tầng chứng thực danh tính hoàn chỉnh."
+    },
+    {
+      "paragraph": 23,
+      "before": "Xuất phát từ yêu cầu thực tiễn đó, học viên lựa chọn thực hiện đề tài: \"Xây dựng hệ thống truyền nhận gói tin bảo mật giữa các đơn vị ứng dụng ký số và mã hóa dữ liệu\" với các mục tiêu cụ thể:",
+      "after": "Xuất phát từ yêu cầu thực tiễn đó, nhóm thực hiện đề tài “Xây dựng hệ thống truyền nhận gói tin bảo mật giữa các đơn vị ứng dụng ký số và mã hóa dữ liệu” với các mục tiêu sau:"
+    },
+    {
+      "paragraph": 24,
+      "before": "Làm chủ nền tảng lý thuyết: Nghiên cứu sâu về các thuật toán mã hóa dữ liệu đối xứng xác thực (AES-256-GCM), mã hóa bất đối xứng bọc khóa (RSA-OAEP) và các chuẩn ký số quốc tế (RSASSA-PKCS1-v1_5 kết hợp SHA-256). ",
+      "after": "Về lý thuyết, nghiên cứu AES-256-CBC, RSA-OAEP/SHA-256 và chữ ký RSASSA-PKCS1-v1_5 kết hợp SHA-256. CBC đảm nhiệm mã hóa nội dung; chữ ký và các bước kiểm tra bổ sung đảm nhiệm phát hiện can thiệp."
+    },
+    {
+      "paragraph": 25,
+      "before": "Thiết kế kiến trúc hệ thống chuẩn hóa: Xây dựng đặc tả gói tin phong bì bảo mật độc lập nền tảng, thiết kế quy trình truyền nhận khép kín giữa các đơn vị, tích hợp cơ chế phòng chống tấn công phát lại. ",
+      "after": "Về thiết kế, xây dựng đặc tả phong bì JSON, quy trình xử lý tại hai đơn vị và cơ chế chống phát lại dựa trên UUID, dấu thời gian cùng lịch sử tiếp nhận bền vững."
+    },
+    {
+      "paragraph": 26,
+      "before": "Hiện thực hóa và triển khai ứng dụng: Lập trình hoàn chỉnh hệ thống bằng ngôn ngữ hiệu năng cao Go, xây dựng RESTful API tiếp nhận gói tin bảo mật, tích hợp cơ sở dữ liệu MongoDB phục vụ quản lý danh mục đơn vị, kho chứng thư số và lưu trữ an toàn các bản tin đã thẩm tra, giải mã. ",
+      "after": "Về cài đặt, xây dựng ứng dụng Node.js bằng TypeScript và NestJS, cung cấp REST API và Swagger. MongoDB lưu danh mục khóa công khai đã ghim và biên nhận; GridFS lưu tài liệu đã giải mã. Khóa bí mật được giữ riêng tại từng đơn vị."
+    },
+    {
+      "paragraph": 29,
+      "before": "Các thuật toán mật mã học hiện đại: Thuật toán mã hóa đối xứng khối có xác thực dữ liệu đính kèm AES-256-GCM; Thuật toán mã hóa bất đối xứng và bọc khóa RSA-OAEP (SHA-256); Thuật toán ký số RSASSA-PKCS1-v1_5 kết hợp hàm băm SHA-256.",
+      "after": "Các thuật toán được khảo sát gồm AES-256-CBC để mã hóa dữ liệu, RSA-OAEP với SHA-256 để bọc khóa phiên và RSASSA-PKCS1-v1_5 với SHA-256 để tạo, xác minh chữ ký."
+    },
+    {
+      "paragraph": 30,
+      "before": "Cơ chế bảo mật tầng ứng dụng: Cấu trúc phong bì số, cơ chế ký trước mã hóa / mã hóa trước ký, và tiêu chuẩn chứng thư số khóa công khai X.509 / PEM.",
+      "after": "Cơ chế bảo mật tầng ứng dụng gồm cấu trúc phong bì số, thứ tự mã hóa rồi ký và quản lý khóa công khai dạng PEM. Chứng chỉ X.509 được xem xét như hướng phát triển, chưa được cài đặt trong bản thực nghiệm."
+    },
+    {
+      "paragraph": 34,
+      "before": "Về kỹ thuật: Xây dựng giải pháp phần mềm hoàn chỉnh bằng ngôn ngữ Go; quản trị dữ liệu trên MongoDB; quản lý chứng thư số thông qua kho lưu trữ khóa công khai nội bộ của hệ thống (không bao gồm việc xây dựng hạ tầng cấp phát chứng thư số thương mại CA công cộng). ",
+      "after": "Về kỹ thuật, sử dụng Node.js, TypeScript và NestJS; quản lý danh mục khóa công khai, lịch sử tiếp nhận và tài liệu bằng MongoDB/GridFS. Mô hình hiện tại trao đổi và ghim khóa PEM thủ công, chưa cấp phát hoặc xác minh chứng chỉ X.509."
+    },
+    {
+      "paragraph": 38,
+      "before": "Nghiên cứu các tiêu chuẩn mật mã học quốc tế: NIST SP 800-38D (chuẩn AES-GCM), RFC 8017 (chuẩn mật mã khóa công khai PKCS #1 v2.2), RFC 5280 (chuẩn chứng thư số X.509). ",
+      "after": "Nghiên cứu NIST SP 800-38A về chế độ CBC [4], RFC 8017 về RSA-OAEP và chữ ký RSA [5], FIPS 197 về AES [11], FIPS 180-4 về SHA-256 [12] và RFC 4648 về Base64 [13]. RFC 5280 [9] là căn cứ cho hướng tích hợp chứng chỉ X.509."
+    },
+    {
+      "paragraph": 44,
+      "before": "Cài đặt mã nguồn thực tế trên môi trường Golang, kết nối cơ sở dữ liệu MongoDB.",
+      "after": "Cài đặt ứng dụng bằng TypeScript/NestJS trên Node.js, kết nối MongoDB và kiểm tra các thao tác mật mã bằng thư viện node:crypto."
+    },
+    {
+      "paragraph": 46,
+      "before": "Thiết lập các kịch bản kiểm thử bảo mật: can thiệp sửa đổi dữ liệu trên đường truyền, sử dụng chứng thư số sai lệch, gửi lại gói tin quá hạn... nhằm kiểm chứng độ vững chắc và tin cậy của hệ thống.",
+      "after": "Thiết lập các kịch bản can thiệp bản mã, ký bằng khóa giả, thay đổi thông tin điều khiển, gửi lại gói đã nhận và gửi ngoài cửa sổ thời gian. Kết quả được đánh giá bằng mã HTTP, số bản ghi và việc đối chiếu từng byte tài liệu."
+    },
+    {
+      "paragraph": 48,
+      "before": "Nội dung báo cáo đề tài ngoài phần Mở đầu, Kết luận và Hướng phát triển được kết cấu thành 4 chương chính như sau:",
+      "after": "Ngoài Mở đầu, Kết luận và Tài liệu tham khảo, báo cáo gồm bốn chương:"
+    },
+    {
+      "paragraph": 49,
+      "before": "Chương 1: Tổng quan về cơ sở lý thuyết mật mã học ứng dụng  Trình bày cơ sở toán học và nguyên lý hoạt động của các thuật toán mật mã cốt lõi được sử dụng trong đề tài, bao gồm: mã hóa đối xứng AES-256-GCM, mã hóa bất đối xứng RSA-OAEP, hàm băm SHA-256, chữ ký số RSASSA-PKCS1-v1_5 và nguyên lý mô hình phong bì số kết hợp. ",
+      "after": "Chương 1: Cơ sở lý thuyết về mật mã học và an toàn dữ liệu. Trình bày AES-256-CBC, RSA-OAEP, SHA-256, chữ ký RSASSA-PKCS1-v1_5, mô hình phong bì số và Base64."
+    },
+    {
+      "paragraph": 50,
+      "before": "Chương 2: Phân tích và thiết kế hệ thống  Phân tích chi tiết yêu cầu bài toán truyền nhận văn bản an toàn giữa hai đơn vị; mô hình kiến trúc hai bên; đặc tả cấu trúc gói tin phong bì JSON; thiết kế các sơ đồ luồng xử lý tại Bên gửi, Bên nhận và cơ chế phòng chống tấn công phát lại. ",
+      "after": "Chương 2: Phân tích và thiết kế hệ thống. Xác định yêu cầu truyền nhận giữa hai đơn vị, quản lý khóa, cấu trúc phong bì JSON, luồng xử lý và cơ chế chống phát lại."
+    },
+    {
+      "paragraph": 51,
+      "before": "Chương 3: Cài đặt và hiện thực hóa hệ thống  Mô tả chi tiết cấu trúc thư mục dự án, giải pháp kết nối cơ sở dữ liệu MongoDB, thiết kế kho chứng thư số , triển khai các module nghiệp vụ mật mã trên ngôn ngữ Go và xây dựng hệ thống RESTful API tiếp nhận văn bản. ",
+      "after": "Chương 3: Cài đặt thực nghiệm và kết quả. Mô tả các mô-đun Node.js/TypeScript/NestJS, lưu trữ MongoDB/GridFS, giao diện Swagger, kịch bản kiểm thử và số liệu hiệu năng."
+    },
+    {
+      "paragraph": 52,
+      "before": "Chương 4: Thử nghiệm và đánh giá kết quả  Trình bày các kịch bản thử nghiệm thực tế với công cụ Test Client; đánh giá hiệu năng xử lý mã hóa/giải mã; phân tích kết quả thử nghiệm trong các tình huống can thiệp giả mạo dữ liệu và đưa ra nhận xét, đánh giá tổng thể về mức độ đáp ứng mục tiêu đề tài.",
+      "after": "Chương 4: Đánh giá và hướng phát triển. Đối chiếu kết quả với yêu cầu, phân tích các hạn chế về phạm vi chữ ký, quản lý khóa và lưu trữ, từ đó đề xuất PKI, thiết bị bảo mật và truyền nhận qua mạng thực tế."
+    },
+    {
+      "paragraph": 55,
+      "before": "Trong kỷ nguyên chuyển đổi số và xu hướng liên thông dữ liệu điện tử phân tán giữa các cơ quan, đơn vị, môi trường truyền dẫn công cộng (Internet) luôn tiềm ẩn các nguy cơ rò rỉ, nghe lén, chèn sửa và phá hoại dữ liệu. Việc thiết lập hệ thống bảo mật trao đổi gói tin dựa trên nền tảng mật mã học là yêu cầu bắt buộc và mang tính sống còn.",
+      "after": "Trao đổi dữ liệu điện tử giữa các cơ quan, đơn vị có thể đi qua mạng công cộng và các hệ thống trung gian. Nội dung cần được bảo vệ trước nguy cơ nghe lén, sửa đổi, giả mạo nguồn gửi và phát lại. Mật mã học cung cấp các cơ chế cần thiết, nhưng phải kết hợp với quản lý khóa và kiểm soát truy cập phù hợp."
+    },
+    {
+      "paragraph": 58,
+      "before": "Tính bí mật: Đảm bảo dữ liệu chỉ có thể được tiếp cận và đọc hiểu bởi các thực thể được cấp quyền hợp lệ. Ngăn chặn triệt để hành vi trích xuất nội dung trái phép trên đường truyền thông qua kỹ thuật mã hóa dữ liệu.",
+      "after": "Tính bí mật: Chỉ các thực thể được cấp quyền và có khóa phù hợp mới được đọc nội dung. Mã hóa dữ liệu giúp bảo vệ nội dung khi truyền và khi lưu dưới dạng phong bì."
+    },
+    {
+      "paragraph": 59,
+      "before": "Tính toàn vẹn: Đảm bảo dữ liệu trong quá trình lưu chuyển không bị thêm, bớt, chỉnh sửa hoặc thay thế trái phép. Tính toàn vẹn được kiểm chứng thông qua các hàm băm mật mã và mã xác thực thông điệp.",
+      "after": "Tính toàn vẹn: Phát hiện dữ liệu bị thêm, bớt hoặc sửa đổi. Giá trị băm chỉ có ý nghĩa đối chiếu khi bản băm tham chiếu đáng tin cậy; chữ ký số hoặc mã xác thực thông điệp bổ sung căn cứ xác thực nguồn của dữ liệu cần kiểm tra."
+    },
+    {
+      "paragraph": 61,
+      "before": "Tính chống chối bỏ: Đảm bảo bên gửi không thể phủ nhận việc mình đã gửi thông điệp và bên nhận không thể phủ nhận việc đã nhận gói tin. Chữ ký số dựa trên hạ tầng khóa công khai là phương thức hiện thực hóa mục tiêu này.",
+      "after": "Tính chống chối bỏ: Chữ ký số có thể cung cấp bằng chứng về việc tạo thông điệp khi khóa công khai được gắn với danh tính đáng tin cậy và khóa bí mật được bảo vệ. Chữ ký của bên gửi không tự chứng minh bên nhận đã nhận tài liệu; mục tiêu đó cần biên nhận được bên nhận ký và cơ chế lưu bằng chứng phù hợp."
+    },
+    {
+      "paragraph": 79,
+      "before": "Ưu điểm vượt trội của mật mã đối xứng là tốc độ tính toán cực nhanh và tiêu thụ ít tài nguyên xử lý. Tuy nhiên, thách thức lớn nhất là bài toán thỏa thuận và phân phối khóa bí mật qua một kênh liên lạc ban đầu chưa an toàn.",
+      "after": "Mật mã đối xứng phù hợp để xử lý khối lượng dữ liệu lớn với chi phí tính toán thấp hơn mật mã khóa công khai. Khó khăn chính là phân phối và bảo vệ khóa bí mật chung giữa các bên."
+    },
+    {
+      "paragraph": 81,
+      "before": "Thuật toán Tiêu chuẩn mã hóa nâng cao (AES) được Viện Tiêu chuẩn và Kỹ thuật Quốc gia Hoa Kỳ (NIST) công bố chuẩn hóa (FIPS PUB 197).",
+      "after": "Tiêu chuẩn mã hóa nâng cao AES được NIST chuẩn hóa trong FIPS 197; bản cập nhật năm 2023 giữ nguyên thuật toán [11]."
+    },
+    {
+      "paragraph": 83,
+      "before": "Tham số cấu hình AES-256: Sử dụng độ dài khóa 256 bit (32 byte), thực hiện qua 14 vòng lặp biến đổi lặp lại liên tiếp. Không gian khóa 2256 là bất khả thi để tấn công vét cạn bằng mọi siêu máy tính hiện hành.",
+      "after": "AES-256 sử dụng khóa 256 bit (32 byte) và 14 vòng biến đổi. Không gian khóa gồm 2256 khả năng; độ dài khóa là một yếu tố an toàn, bên cạnh chất lượng sinh số ngẫu nhiên và cách sử dụng thuật toán."
+    },
+    {
+      "paragraph": 93,
+      "before": "Nhờ đó, dù hai khối dữ liệu bản rõ có nội dung hoàn toàn giống nhau, bản mã tương ứng sinh ra vẫn hoàn toàn khác biệt.",
+      "after": "Mỗi khối bản mã phụ thuộc vào khối bản rõ hiện tại và khối bản mã trước đó. Khi IV được sinh đúng yêu cầu, các thông điệp có phần mở đầu giống nhau không mặc nhiên tạo ra cùng tiền tố bản mã."
+    },
+    {
+      "paragraph": 94,
+      "before": "Vai trò của Vector khởi tạo (IV): IV có độ dài 16 byte (128 bit), đóng vai trò là khối giả lập C0 cho khối đầu tiên. IV không cần giữ bí mật nhưng bắt buộc phải là một giá trị giả ngẫu nhiên hoặc duy nhất cho mỗi lần mã hóa. IV ngăn chặn hoàn toàn việc kẻ tấn công nhận diện các thông điệp có phần mở đầu giống nhau.",
+      "after": "IV của AES-CBC dài 16 byte và không cần giữ bí mật. Theo NIST SP 800-38A [4], IV phải khó dự đoán trước khi mã hóa; chỉ bảo đảm duy nhất là chưa đủ cho CBC. Bản cài đặt dùng randomBytes(16). IV cũng cần được bảo vệ khỏi thay đổi; hệ thống kiểm tra bản sao IV trong control sau khi giải mã, như mục 3.2.3."
+    },
+    {
+      "paragraph": 97,
+      "before": "Trong các kịch bản trao đổi liên đơn vị, dữ liệu truyền nhận thường bao gồm các tệp tin đính kèm (văn bản số hóa PDF, bảng biểu, báo cáo tài chính) có dung lượng từ vài Megabyte đến hàng trăm Megabyte.",
+      "after": "Tài liệu trao đổi có thể là PDF, bảng biểu hoặc ảnh với kích thước khác nhau. Bản thực nghiệm giới hạn tệp gốc ở 10 MiB; việc xử lý các tệp lớn hơn cần thay đổi cách đọc, truyền và lưu dữ liệu."
+    },
+    {
+      "paragraph": 98,
+      "before": "Hiệu năng: AES được hỗ trợ tăng tốc phần cứng trực tiếp từ kiến trúc CPU (tập lệnh Intel AES-NI, ARM Cryptography Extensions), cho phép xử lý luồng dữ liệu đạt tốc độ nhiều Gigabyte/giây.",
+      "after": "AES xử lý dữ liệu theo khối và có thể tận dụng lệnh tăng tốc mật mã của CPU khi thư viện và phần cứng hỗ trợ. Báo cáo đo toàn bộ luồng đóng gói và mở/lưu, không đo riêng thông lượng thuần AES."
+    },
+    {
+      "paragraph": 99,
+      "before": "Tài nguyên: So với thuật toán khóa công khai RSA, AES nhanh hơn hàng trăm đến hàng nghìn lần và tiêu tốn rất ít bộ nhớ RAM, bảo đảm khả năng chịu tải cao cho cổng giao tiếp của hệ thống.",
+      "after": "RSA chỉ phù hợp với đầu vào ngắn và có chi phí tính toán lớn hơn cho mỗi thao tác. Vì vậy hệ thống dùng AES cho nội dung tài liệu và RSA cho khóa phiên 32 byte; không suy ra hệ số chênh lệch tốc độ cố định giữa hai thuật toán từ phép đo này."
+    },
+    {
+      "paragraph": 104,
+      "before": "Khóa bí mật: Được đơn vị lưu giữ bảo mật tuyệt đối tại máy chủ an toàn hoặc thiết bị phần cứng chuyên dụng (HSM), dùng để giải mã dữ liệu hoặc ký số.",
+      "after": "Khóa bí mật được giữ tại đơn vị sở hữu để ký hoặc giải mã khóa phiên. Trong bản thực nghiệm, khóa nằm trong tệp PKCS#8 mã hóa; thiết bị HSM là hướng phát triển, chưa được tích hợp."
+    },
+    {
+      "paragraph": 105,
+      "before": "Mô hình này giúp một mạng lưới gồm N đơn vị chỉ cần quản lý 2N khóa công khai/bí mật, loại bỏ hoàn toàn sự bùng nổ số lượng khóa N(N-1)2 như ở hệ mật mã đối xứng.",
+      "after": "Với mô hình một cặp khóa cho mỗi đơn vị, N đơn vị có 2N thành phần khóa công khai/bí mật, trong khi trao đổi đối xứng trực tiếp theo từng cặp cần N(N-1)2 khóa chung. Danh mục khóa công khai vẫn phải được xác thực và phân phối. Bản triển khai thực tế nên tách khóa ký và khóa mã hóa theo mục đích [5, mục 6]."
+    },
+    {
+      "paragraph": 107,
+      "before": "Thuật toán RSA dựa trên độ phức tạp tính toán của bài toán phân tích một số nguyên cực lớn thành tích các thừa số nguyên tố:",
+      "after": "RSA sử dụng mô-đun là tích của hai số nguyên tố lớn. Việc phân tích được mô-đun cho phép suy ra khóa bí mật; an toàn còn phụ thuộc vào độ dài khóa và sơ đồ đệm. Các phép toán dưới đây mô tả nguyên lý, không phải cách gọi RSA nguyên bản để mã hóa tài liệu [5]."
+    },
+    {
+      "paragraph": 110,
+      "before": "Bước 2: Tính modulo: n=p·q. Độ dài bit của n xác định độ dài khóa (khuyến nghị từ 2048 bit trở lên).",
+      "after": "Bước 2: Tính mô-đun n=p·q. Độ dài bit của n xác định độ dài khóa; bản cài đặt chấp nhận từ 2048 đến 4096 bit."
+    },
+    {
+      "paragraph": 112,
+      "before": "Bước 4: Chọn số mũ công khai e thỏa mãn: 1<e<ϕ(n) và gcd(e,ϕ(n))=1 (tiêu chuẩn khuyến nghị e=65537).",
+      "after": "Bước 4: Chọn số mũ công khai e thỏa mãn 1<e<ϕ(n) và gcd(e,ϕ(n))=1. Chương trình sử dụng e=65537."
+    },
+    {
+      "paragraph": 114,
+      "before": "d*e-1(mod ϕ(n)).",
+      "after": "d≡e−1 (mod φ(n))"
+    },
+    {
+      "paragraph": 119,
+      "before": "Tính đúng đắn được bảo đảm bởi Định lý Euler: Me·d≡M(mod n).",
+      "after": "Tính đúng đắn được suy ra từ định lý Euler kết hợp định lý số dư Trung Hoa, kể cả khi M không nguyên tố cùng nhau với n: Me·d≡M(mod n)."
+    },
+    {
+      "paragraph": 121,
+      "before": "Sử dụng RSA nguyên bản có tính tất định và dễ bị khai thác bởi tấn công bản rõ chọn trước (CPA) hoặc tấn công đồng cấu. Do đó, khi ứng dụng RSA để mã hóa (bọc) khóa phiên AES, chuẩn đệm RSA-OAEP được áp dụng bắt buộc:",
+      "after": "RSA nguyên bản có tính tất định và cấu trúc đại số có thể bị khai thác. Hệ thống dùng RSAES-OAEP theo RFC 8017 [5, mục 7.1] để bọc khóa phiên, thay vì áp dụng trực tiếp phép lũy thừa RSA lên dữ liệu."
+    },
+    {
+      "paragraph": 122,
+      "before": "Cấu trúc OAEP: Sử dụng mạng Feistel hai vòng kết hợp hàm sinh mặt nạ (MGF1) và hàm băm SHA-256 cùng một chuỗi ngẫu nhiên.",
+      "after": "OAEP kết hợp một giá trị ngẫu nhiên mới với hàm sinh mặt nạ MGF1 và hàm băm. Bản cài đặt chỉ định SHA-256 cho OAEP và MGF1, đồng thời dùng cùng cấu hình khi mở khóa phiên."
+    },
+    {
+      "paragraph": 123,
+      "before": "Tính ưu việt: Biến đổi thuật toán thành phi tất định và đảm bảo mức độ an toàn chống tấn công chọn bản mã thích nghi (IND-CCA2).",
+      "after": "OAEP làm cho kết quả bọc cùng một khóa có thể khác nhau ở các lần thực hiện. Cơ sở an toàn trước tấn công chọn bản mã được phân tích trong mô hình giả định mật mã của RSA-OAEP [5]; điều này không tự chứng minh an toàn của toàn bộ ứng dụng."
+    },
+    {
+      "paragraph": 128,
+      "before": "Hàm băm mật mã biến đổi một thông điệp đầu vào có kích thước tùy ý thành một giá trị băm cố định. Thuật toán SHA-256 sinh ra giá trị băm cố định 256 bit (32 byte) và đáp ứng 4 tiêu chuẩn:",
+      "after": "SHA-256 thuộc họ SHA-2, được quy định trong FIPS 180-4 [12], tạo giá trị băm dài 256 bit (32 byte). Hàm băm mật mã được kỳ vọng có các tính chất sau:"
+    },
+    {
+      "paragraph": 129,
+      "before": "Tính một chiều: Từ giá trị băm h, không thể tìm ngược lại thông điệp M ban đầu.",
+      "after": "Tính kháng tiền ảnh: Với một giá trị băm cho trước, việc tìm thông điệp tạo ra giá trị đó phải không khả thi về mặt tính toán."
+    },
+    {
+      "paragraph": 130,
+      "before": "Tính kháng tiền ảnh thứ hai: Cho trước M1, không thể tìm được M2 ≠ M1 sao cho H(M1)=H(M2).",
+      "after": "Tính kháng tiền ảnh thứ hai: Khi đã biết M1, việc tìm thông điệp M2 khác M1 thỏa mãn H(M1)=H(M2) phải không khả thi về mặt tính toán."
+    },
+    {
+      "paragraph": 131,
+      "before": "Tính kháng va chạm: Bất khả thi để tìm thấy hai thông điệp bất kỳ có cùng giá trị băm.",
+      "after": "Tính kháng va chạm: Việc tìm hai thông điệp khác nhau có cùng giá trị băm phải không khả thi về mặt tính toán, dù va chạm tồn tại do đầu ra có độ dài hữu hạn."
+    },
+    {
+      "paragraph": 132,
+      "before": "Hiệu ứng tuyết lở: Thay đổi dù chỉ 1 bit ở đầu vào sẽ làm xáo trộn hoàn toàn giá trị băm đầu ra.",
+      "after": "Hiệu ứng tuyết lở: Thay đổi nhỏ ở đầu vào làm thay đổi nhiều bit đầu ra; trung bình khoảng một nửa số bit băm thay đổi. Đây là đặc tính khuếch tán, không có nghĩa mọi bit đầu ra đều bị đảo."
+    },
+    {
+      "paragraph": 134,
+      "before": "Chữ ký số có giá trị pháp lý tương đương con dấu và chữ ký của người đại diện cơ quan:",
+      "after": "RSASSA-PKCS1-v1_5 kết hợp SHA-256 để tạo bằng chứng kiểm tra tính toàn vẹn và quyền kiểm soát khóa ký [5, mục 8.2]. Trong bản thực nghiệm, danh tính được đối chiếu qua khóa PEM đã ghim; báo cáo không coi chữ ký này tự động có giá trị tương đương chữ ký, con dấu pháp lý."
+    },
+    {
+      "paragraph": 136,
+      "before": "Bước 1: Đơn vị gửi băm dữ liệu cần bảo vệ qua thuật toán SHA-256 để thu được giá trị băm H(M).",
+      "after": "Bước 1: Xác định thông điệp M và tính SHA-256. Với phong bì hiện tại, M là các byte ASCII của chuỗi Base64 encrypted_data, không phải byte bản mã đã giải Base64."
+    },
+    {
+      "paragraph": 137,
+      "before": "Bước 2: Bổ sung cấu trúc mã định danh DigestInfo theo chuẩn PKCS#1 v1.5.",
+      "after": "Bước 2: Đưa giá trị băm vào DigestInfo và thực hiện mã hóa biểu diễn EMSA-PKCS1-v1_5 để tạo khối EM đúng kích thước mô-đun RSA."
+    },
+    {
+      "paragraph": 138,
+      "before": "Bước 3: Mã hóa giá trị băm đã đệm bằng Khóa bí mật của bên gửi để tạo ra Chữ ký số S: ",
+      "after": "Bước 3: Chuyển EM thành số nguyên m và áp dụng phép toán chữ ký RSA bằng khóa bí mật (d, n). Giá trị s sau đó được chuyển thành chuỗi byte chữ ký S:"
+    },
+    {
+      "paragraph": 139,
+      "before": "S=(H(M))d(mod n)",
+      "after": "s=md (mod n)"
+    },
+    {
+      "paragraph": 141,
+      "before": "Bước 1: Đơn vị nhận giải mã chữ ký S bằng Khóa công khai của bên gửi (Kpub_Sender ) để khôi phục giá trị băm H1.",
+      "after": "Bước 1: Kiểm tra độ dài chữ ký, chuyển S thành số nguyên s và áp dụng phép toán RSA với khóa công khai (e, n) để khôi phục khối EM."
+    },
+    {
+      "paragraph": 142,
+      "before": "Bước 2: Tự tính toán giá trị băm H2=SHA-256(M) từ nội dung dữ liệu nhận được.",
+      "after": "Bước 2: Từ đúng thông điệp M nhận được, tính lại H2=SHA-256(M) và tạo khối biểu diễn EMSA-PKCS1-v1_5 kỳ vọng."
+    },
+    {
+      "paragraph": 143,
+      "before": "Bước 3: So sánh H1và H2: Nếu trùng khớp tuyệt đối, chữ ký hợp lệ; khẳng định tính toàn vẹn và nguồn gốc gói tin.",
+      "after": "Bước 3: So sánh toàn bộ khối biểu diễn, bao gồm định dạng đệm và DigestInfo. Chỉ chấp nhận khi mọi kiểm tra hợp lệ. Trong Node.js, sign()/verify() tự băm SHA-256 nên chương trình truyền trực tiếp M, không băm trước rồi băm lần nữa."
+    },
+    {
+      "paragraph": 146,
+      "before": "Bên gửi thực hiện mã hóa tệp dữ liệu trước để sinh ra bản mã, sau đó dùng khóa bí mật của mình để ký trực tiếp lên chuỗi bản mã đó.",
+      "after": "Bên gửi mã hóa JSON bản rõ bằng AES-256-CBC, chuyển bản mã thành chuỗi Base64 encrypted_data rồi dùng khóa bí mật của mình ký lên các byte ASCII của chính chuỗi đó."
+    },
+    {
+      "paragraph": 147,
+      "before": "Lợi ích an toàn: Loại trừ rủi ro tấn công chuyển tiếp lén lút, đồng thời cho phép các trạm trung gian kiểm tra tính toàn vẹn và tính xác thực của gói tin mà không cần phải giải mã dữ liệu nghiệp vụ nhạy cảm bên trong.",
+      "after": "Thứ tự này cho phép kiểm tra chữ ký của bản mã trước khi giải mã. Chữ ký hiện tại chỉ trực tiếp bao phủ encrypted_data; không tự bảo vệ toàn bộ header hoặc IV và không tự loại trừ mọi hình thức chuyển tiếp. Hệ thống ràng buộc đơn vị nhận và thông tin điều khiển qua control, được đối chiếu sau giải mã như mục 3.2.3."
+    },
+    {
+      "paragraph": 150,
+      "before": "Mô hình Phong bì số là sự kết hợp tối ưu giữa mật mã đối xứng, mật mã bất đối xứng và chữ ký điện tử:",
+      "after": "Phong bì số kết hợp mật mã đối xứng cho nội dung và mật mã khóa công khai cho khóa phiên cùng chữ ký. Các thành phần chính gồm:"
+    },
+    {
+      "paragraph": 151,
+      "before": "Khóa phiên đối xứng: Hệ thống tự động sinh ngẫu nhiên một khóa AES-256 tạm thời (Ksession) có giá trị duy nhất cho từng gói tin.",
+      "after": "Khóa phiên đối xứng: Mỗi gói sinh mới một khóa AES-256 bằng nguồn ngẫu nhiên mật mã; khóa không được cố ý tái sử dụng giữa các gói."
+    },
+    {
+      "paragraph": 158,
+      "before": "Ký số gói tin: Bên gửi dùng khóa bí mật của Bên gửi (đảm bảo Tính xác thực và Chống chối bỏ).",
+      "after": "Ký số gói tin: Bên gửi dùng khóa bí mật của mình để tạo chữ ký, cung cấp căn cứ xác thực theo khóa công khai đã được tin cậy."
+    },
+    {
+      "paragraph": 164,
+      "before": "Base64 (RFC 4648) là phương thức chuyển đổi dữ liệu nhị phân sang tập các ký tự ASCII an toàn:",
+      "after": "Base64 theo RFC 4648 [13] chuyển dữ liệu nhị phân sang các ký tự ASCII. Đây là phép biểu diễn dữ liệu, không cung cấp tính bí mật hoặc xác thực."
+    },
+    {
+      "paragraph": 168,
+      "before": "Gói tin truyền dẫn giữa các đơn vị được chuẩn hóa dưới định dạng JSON. Chuẩn JSON thuần túy chỉ hỗ trợ kiểu dữ liệu chuỗi ký tự UTF-8/ASCII và không hỗ trợ trực tiếp dữ liệu nhị phân thô. Việc chuyển đổi tệp PDF sang chuỗi Base64 cho phép đóng gói toàn bộ tệp đính kèm vào trong một trường thuộc tính của payload JSON, bảo đảm tính toàn vẹn và thuận tiện khi truyền tải qua các giao thức web API (REST/HTTP POST).",
+      "after": "JSON hỗ trợ đối tượng, mảng, chuỗi, số, boolean và null, nhưng không có kiểu byte nhị phân trực tiếp [14]. Vì vậy chương trình chuyển byte của PDF sang Base64 để đặt trong trường data của JSON bản rõ. Base64 giúp biểu diễn tệp trong chuỗi JSON; tính toàn vẹn của hệ thống đến từ chữ ký và các bước đối chiếu sau giải mã."
+    },
+    {
+      "paragraph": 170,
+      "before": "Ưu điểm: Đảm bảo dữ liệu nhị phân không bị hỏng, biến dạng khi đi qua các thiết bị mạng, proxy, mail gateway; tích hợp liền mạch với các cấu trúc dữ liệu JSON, XML.",
+      "after": "Base64 thuận tiện khi nhúng tệp nhị phân vào JSON hoặc XML, sử dụng bảng ký tự và quy tắc đệm xác định [13]. Nó không thay thế việc kiểm tra lỗi, chữ ký hoặc mã xác thực."
+    },
+    {
+      "paragraph": 171,
+      "before": "Chi phí dung lượng: Do 3 byte nhị phân (24 bit) được chuyển thành 4 byte ASCII (32 bit), dung lượng tệp tin sau khi mã hóa Base64 sẽ tăng thêm đúng:",
+      "after": "Với n byte đầu vào, Base64 có đệm tạo L(n)=4×⌈n3⌉ ký tự. Khi đầu vào gồm các nhóm trọn 3 byte, tỷ lệ tăng là:"
+    },
+    {
+      "paragraph": 172,
+      "before": "Độ tăng dung lượng = 4-33×100%=33.33%",
+      "after": "Độ tăng dung lượng = 4−33×100%≈33,33%"
+    },
+    {
+      "paragraph": 173,
+      "before": "Mức chi phí 33.3% này hoàn toàn chấp nhận được so với độ an toàn và sự tiện lợi vượt trội mà mô hình gói tin JSON mang lại.",
+      "after": "Với dữ liệu nhỏ hoặc không chia hết cho 3, ký tự đệm khiến tỷ lệ thực tế khác 33,33%; khi dữ liệu lớn, tỷ lệ tiến gần một phần ba. Đây là chi phí của một lớp Base64. Phong bì trong đề tài có hai lớp Base64 nên tổng chi phí tiến gần 77,8%, cộng phần cố định, như mục 3.4.5 và 4.2.1."
+    },
+    {
+      "paragraph": 184,
+      "before": "Quản lý và Sinh cặp khóa RSA: Cho phép khởi tạo cặp khóa RSA 2048-bit hoặc 4096-bit đạt tiêu chuẩn bảo mật, xuất/nhập chứng thư công khai và khóa bí mật theo định dạng chuẩn PEM (PKCS#8/PKCS#1).",
+      "after": "Quản lý khóa RSA: Sinh khóa 2048, 3072 hoặc 4096 bit; xuất khóa công khai SPKI PEM; nhập khóa bí mật PKCS#1 hoặc PKCS#8 rồi chuẩn hóa và lưu dưới dạng PKCS#8 mã hóa. Bản hiện tại chưa xuất/nhập chứng chỉ X.509."
+    },
+    {
+      "paragraph": 185,
+      "before": "Mã hóa dữ liệu lai: Tự động sinh khóa ngẫu nhiên AES-256 cho từng phiên làm việc, hỗ trợ mã hóa luồng dữ liệu lớn và mã hóa bọc khóa phiên bằng thuật toán RSA-OAEP.",
+      "after": "Mã hóa lai: Sinh khóa AES-256 và IV mới cho từng gói, mã hóa JSON chứa tài liệu bằng CBC và bọc khóa phiên bằng RSA-OAEP/SHA-256. Tệp gốc tối đa 10 MiB và được xử lý toàn bộ trong RAM; truyền mã hóa theo luồng chưa được cài đặt."
+    },
+    {
+      "paragraph": 186,
+      "before": "Ký số và Xác thực chữ ký: Tạo chữ ký số chuẩn RSASSA-PKCS1-v1_5 trên giá trị băm SHA-256 của bản mã; hỗ trợ bên nhận kiểm tra và xác định tính hợp lệ của chữ ký trước khi thực hiện giải mã.",
+      "after": "Ký và xác minh: Dùng RSASSA-PKCS1-v1_5/SHA-256 trên các byte ASCII của encrypted_data. Bên nhận kiểm tra chữ ký trước khi giải mã và đối chiếu control sau giải mã để xác nhận header, IV."
+    },
+    {
+      "paragraph": 193,
+      "before": "Trách nhiệm phía Bên gửi: Chịu trách nhiệm bảo mật khóa bí mật cá nhân; chịu trách nhiệm kiểm tra đúng chứng thư số công khai của Bên nhận trước khi bọc khóa phiên; thực hiện ký số khẳng định nguồn gốc và đóng gói phong bì JSON đúng đặc tả.",
+      "after": "Bên gửi bảo vệ khóa bí mật của mình, đối chiếu vân tay và ghim đúng khóa công khai của bên nhận trước khi bọc khóa phiên. Sau đó bên gửi tạo phong bì JSON đúng đặc tả, mã hóa dữ liệu và tạo chữ ký bằng khóa của mình."
+    },
+    {
+      "paragraph": 194,
+      "before": "Trách nhiệm phía Bên nhận: Tiếp nhận phong bì dữ liệu qua endpoint API công khai; thực hiện kiểm tra tính hợp lệ của chữ ký số bằng khóa công khai của bên gửi; thực hiện giải mã khóa phiên bằng khóa bí mật của bên nhận; phát hiện và loại bỏ các gói tin bị mạo danh hoặc tấn công phát lại.",
+      "after": "Bên nhận kiểm tra cấu trúc phong bì, cửa sổ thời gian và địa chỉ nhận; xác minh chữ ký bằng khóa công khai đã ghim của bên gửi; mở khóa phiên và dữ liệu; kiểm tra control, kích thước, giá trị băm rồi mới ghi nhận UUID và lưu tài liệu."
+    },
+    {
+      "paragraph": 197,
+      "before": "Lưu trữ khóa bí mật: Khóa bí mật được lưu trữ riêng biệt tại môi trường máy chủ nội bộ của từng đơn vị dưới dạng file mã hóa PEM (PKCS#8 được mã hóa) hoặc lưu trong cơ sở dữ liệu an toàn có phân quyền truy cập nghiêm ngặt.",
+      "after": "Khóa bí mật nằm trong thư mục dữ liệu riêng của từng đơn vị, dưới dạng PKCS#8 PEM mã hóa bằng mật khẩu, với quyền tệp 0600 trên POSIX. MongoDB không lưu khóa bí mật. Mật khẩu cho chế độ receive tự động được cấu hình tại chính bên nhận."
+    },
+    {
+      "paragraph": 198,
+      "before": "Phân phối khóa công khai: Các đơn vị trao đổi chứng thư số khóa công khai trước khi thiết lập giao dịch truyền nhận. Hệ thống lưu trữ danh mục khóa công khai của các đối tác liên thông trong cơ sở dữ liệu MongoDB để phục vụ truy vấn tự động khi mã hóa và xác minh chữ ký.",
+      "after": "Các đơn vị trao đổi khóa công khai SPKI PEM, đối chiếu vân tay SHA-256 qua kênh độc lập rồi ghim vào danh mục peers trong MongoDB. Mỗi bản ghi gắn với ownerId và unitId. Đây là quản lý khóa thủ công, chưa có xác minh chuỗi chứng chỉ hoặc thu hồi khóa."
+    },
+    {
+      "paragraph": 220,
+      "before": "Khối Payload chứa nội dung dữ liệu nghiệp vụ đã được mã hóa bảo mật cùng các thành phần mật mã để kiểm tra tính toàn vẹn và giải mã dữ liệu:",
+      "after": "Payload chứa bản mã, IV và chữ ký theo Bảng 2.3. JSON bản rõ bên trong bản mã gồm protocol, control, subject, filename, mimeType, size, sha256 và data. Trường data là Base64 tệp; control lưu bản sao năm trường header cùng IV để kiểm tra sau giải mã. Phần bổ sung này nằm trong bản mã, không thêm trường vào schema bên ngoài."
+    },
+    {
+      "paragraph": 224,
+      "before": "Luồng giao tiếp tổng thể giữa Bên gửi và Bên nhận diễn ra qua 6 bước chính:",
+      "after": "Hình 2.1 mô tả trình tự xử lý và phản hồi giữa hai đơn vị. Luồng chính gồm sáu bước:"
+    },
+    {
+      "paragraph": 225,
+      "before": "Bước 1: Phía Gửi: Truy xuất Khóa công khai của Bên nhận từ kho lưu trữ.",
+      "after": "Bước 1: Bên gửi nạp khóa bí mật của mình và khóa công khai đã ghim của bên nhận."
+    },
+    {
+      "paragraph": 226,
+      "before": "Bước 2: Phía Gửi: Sinh khóa ngẫu nhiên AES-256 & IV; Thực hiện mã hóa dữ liệu văn bản.",
+      "after": "Bước 2: Bên gửi sinh khóa AES-256, IV, UUID và dấu thời gian; bọc khóa bằng RSA-OAEP rồi tạo header và bản sao control trong JSON bản rõ."
+    },
+    {
+      "paragraph": 227,
+      "before": "Bước 3: Phía Gửi: Dùng khóa bí mật của Gửi để ký số bản mã; Dùng khóa công khai của Nhận để bọc khóa AES.",
+      "after": "Bước 3: Bên gửi mã hóa JSON bằng AES-CBC, chuyển bản mã thành encrypted_data và ký chuỗi này bằng khóa bí mật của mình."
+    },
+    {
+      "paragraph": 228,
+      "before": "Bước 4: Truyền tải: Đóng gói phong bì JSON và gửi HTTP POST request sang Bên nhận.",
+      "after": "Bước 4: Bên gửi đóng gói header/payload và gửi JSON bằng HTTP POST tới API receive của bên nhận."
+    },
+    {
+      "paragraph": 229,
+      "before": "Bước 5: Phía Nhận: Kiểm tra timestamp/UUID; Dùng khóa công khai của Gửi xác minh chữ ký số.",
+      "after": "Bước 5: Bên nhận kiểm tra schema, thời gian và receiver_id, rồi xác minh chữ ký bằng khóa công khai đã ghim của bên gửi."
+    },
+    {
+      "paragraph": 230,
+      "before": "Bước 6: Phía Nhận: Dùng khóa bí mật của Nhận giải mã bọc khóa lấy khóa AES; Giải mã bản mã khôi phục tài liệu gốc.",
+      "after": "Bước 6: Bên nhận mở khóa AES và giải mã, đối chiếu protocol/control, kiểm tra tệp rồi lưu GridFS và biên nhận có UUID duy nhất. Nếu thành công, API trả biên nhận HTTP 200; gói trùng UUID bị từ chối với HTTP 409."
+    },
+    {
+      "paragraph": 233,
+      "before": "Bước 1: Tiếp nhận dữ liệu đầu vào (Thông tin công văn + File đính kèm).",
+      "after": "Bước 1: Tiếp nhận tệp, tên tệp, loại nội dung và trích yếu; kiểm tra giới hạn và nạp khóa của hai bên."
+    },
+    {
+      "paragraph": 234,
+      "before": "Bước 2: Chuyển đổi toàn bộ nội dung file đính kèm sang định dạng chuỗi Base64 và tạo cấu trúc JSON bản rõ hoàn chỉnh.",
+      "after": "Bước 2: Chuyển tệp sang Base64, tính SHA-256 và chuẩn bị các trường subject, filename, mimeType, size, sha256, data."
+    },
+    {
+      "paragraph": 235,
+      "before": "Bước 3: Khởi tạo sinh ngẫu nhiên an toàn 32 byte khóa AES-256 và 16 byte IV.",
+      "after": "Bước 3: Sinh khóa AES 32 byte, IV 16 byte, UUIDv4 và timestamp UTC. Bọc khóa bằng RSA-OAEP/SHA-256 để tạo header.key; hoàn thiện header rồi đưa bản sao header và IV vào control cùng protocol trong JSON bản rõ."
+    },
+    {
+      "paragraph": 236,
+      "before": "Bước 4: Thực hiện mã hóa bản rõ bằng AES-256-CBC với khóa AES và IV thu được encrypted_data (Base64).",
+      "after": "Bước 4: Mã hóa byte UTF-8 của JSON bản rõ bằng AES-256-CBC với đệm PKCS#7; chuyển bản mã sang Base64 để tạo encrypted_data."
+    },
+    {
+      "paragraph": 237,
+      "before": "Bước 5: Lấy giá trị băm SHA-256 của encrypted_data, ký bằng khóa bí mật của Bên gửi qua chuẩn RSASSA-PKCS1-v1_5 thu được signature (Base64).",
+      "after": "Bước 5: Truyền byte ASCII của encrypted_data vào hàm sign với SHA-256 và RSA_PKCS1_PADDING. Thư viện tính băm và tạo chữ ký RSASSA-PKCS1-v1_5; chuyển kết quả sang Base64."
+    },
+    {
+      "paragraph": 238,
+      "before": "Bước 6: Mã hóa khóa AES-256 bằng khóa công khai của Bên nhận qua chuẩn RSA-OAEP thu được khóa phiên mã hóa key (Base64).",
+      "after": "Bước 6: Ghép header đã tạo với payload gồm encrypted_data, iv và signature. Không đưa khóa AES dạng rõ hoặc mật khẩu khóa bí mật vào phong bì."
+    },
+    {
+      "paragraph": 239,
+      "before": "Bước 7: Đóng gói trường key vào Header, các trường encrypted_data, iv, signature vào Payload của phong bì JSON và phát hành gói tin.",
+      "after": "Bước 7: Xuất phong bì JSON để tải về hoặc chuyển tới bên nhận. Bộ đệm khóa phiên do hàm quản lý được xóa sau xử lý; việc này không bảo đảm xóa mọi bản sao do runtime hoặc OpenSSL tạo."
+    },
+    {
+      "paragraph": 242,
+      "before": "Bước 1: Tiếp nhận request phong bì JSON tại REST API Endpoint.",
+      "after": "Bước 1: Tiếp nhận JSON qua receive hoặc tệp phong bì qua open; kiểm tra kích thước, UTF-8 và tập trường hợp lệ."
+    },
+    {
+      "paragraph": 243,
+      "before": "Bước 2: Phân tích cấu trúc Header, kiểm tra tính hợp lệ của timestamp và kiểm tra request_id trong cache chống Replay Attack.",
+      "after": "Bước 2: Kiểm tra UUIDv4, timestamp UTC trong cửa sổ ±300 giây và receiver_id đúng đơn vị hiện tại. Bước này chưa ghi nhận request_id là đã tiếp nhận."
+    },
+    {
+      "paragraph": 244,
+      "before": "Bước 3: Tra cứu khóa công khai của Bên gửi dựa trên sender_id.",
+      "after": "Bước 3: Tra cứu khóa công khai đã ghim theo sender_id trong danh mục của bên nhận."
+    },
+    {
+      "paragraph": 245,
+      "before": "Bước 4: Thực hiện thẩm tra signature trên encrypted_data bằng khóa công khai của Bên gửi. Nếu không hợp lệ, lập tức dừng xử lý và phản hồi lỗi xác thực.",
+      "after": "Bước 4: Xác minh chữ ký trên các byte ASCII của encrypted_data. Nếu không hợp lệ, dừng trước khi mở khóa bí mật và giải mã dữ liệu."
+    },
+    {
+      "paragraph": 246,
+      "before": "Bước 5: Sử dụng khóa bí mật của Bên nhận để giải mã trường key ở Header qua chuẩn RSA-OAEP thu được khóa phiên AES-256 thô.",
+      "after": "Bước 5: Mở khóa bí mật bên nhận bằng mật khẩu cục bộ; dùng RSA-OAEP/SHA-256 giải header.key và kiểm tra khóa AES thu được dài 32 byte."
+    },
+    {
+      "paragraph": 247,
+      "before": "Bước 6: Giải mã encrypted_data bằng khóa AES-256 và iv thu được dữ liệu JSON bản rõ.",
+      "after": "Bước 6: Giải AES-CBC với IV nhận được, kiểm tra JSON và protocol, rồi đối chiếu từng trường header và IV với control. Nếu khác biệt, từ chối trước khi ghi dữ liệu hoặc tiêu thụ UUID."
+    },
+    {
+      "paragraph": 248,
+      "before": "Bước 7: Giải mã chuỗi Base64 tệp đính kèm khôi phục file gốc và lưu trữ kết quả vào MongoDB.",
+      "after": "Bước 7: Giải Base64 tệp, kiểm tra tên, loại nội dung, kích thước và SHA-256. Khi hợp lệ, lưu byte vào GridFS và tạo receipts với chỉ mục duy nhất ownerId/request_id; chỉ một yêu cầu trùng UUID được chấp nhận. Gói không hợp lệ không làm mất quyền tiếp nhận của UUID đó."
+    },
+    {
+      "paragraph": 250,
+      "before": "Tấn công phát lại là rủi ro kẻ tấn công bắt chặn một gói tin hợp lệ trên đường truyền và gửi lại nhiều lần cho Bên nhận nhằm làm rối loạn logic nghiệp vụ. Hệ thống áp dụng cơ chế bảo vệ hai lớp đính kèm tại Header:",
+      "after": "Tấn công phát lại là việc gửi lại một phong bì hợp lệ để lặp thao tác nghiệp vụ. Hệ thống kết hợp cửa sổ thời gian, lịch sử UUID bền vững và đối chiếu control; hai trường UUID/timestamp mở ở header không tự đủ để chống phát lại nếu có thể bị thay đổi."
+    },
+    {
+      "paragraph": 251,
+      "before": "Lớp 1 - Kiểm tra thời gian trượt: Bên nhận thiết lập cửa sổ thời gian chấp nhận Delta T (ví dụ: +/- 5 phút so với giờ hệ thống server). Gói tin có timestamp vượt ngoài cửa sổ này sẽ bị từ chối ngay lập tức.",
+      "after": "Kiểm tra thời gian: Bên nhận chấp nhận timestamp lệch tối đa 300 giây theo cả hai chiều so với đồng hồ hệ thống. Gói ngoài cửa sổ bị từ chối; hai đơn vị cần đồng bộ đồng hồ. Giá trị được cấu hình bởi TIMESTAMP_WINDOW_SECONDS."
+    },
+    {
+      "paragraph": 252,
+      "before": "Lớp 2 - Danh mục chỉ mục duy nhất: Bên nhận duy trì một bộ nhớ đệm (Redis/In-Memory Cache) lưu trữ danh sách request_id (UUIDv4) của các gói tin đã xử lý trong khoảng thời gian Delta T. Nếu một request có request_id đã tồn tại trong cache, hệ thống sẽ xác định là tấn công phát lại và từ chối xử lý.",
+      "after": "Kiểm tra lịch sử: MongoDB lưu receipts với chỉ mục duy nhất ownerId/request_id và giữ lịch sử sau khi khởi động lại. Chỉ ghi UUID sau khi chữ ký, giải mã, control và tệp hợp lệ; yêu cầu trùng nhận HTTP 409. Đổi UUID hoặc timestamp của bản mã cũ bị phát hiện qua control. Các test lõi dùng dấu tệp; demo và phép đo dùng MongoDB."
+    },
+    {
+      "paragraph": 335,
+      "before": "Bộ kiểm thử được chạy bằng npm test tại 2026-11-02T14:13:02.559Z. Kết quả: 42/42 ca đạt, 0 ca thất bại. Bằng chứng nằm trong artifacts/test-results.tap và artifacts/test-results.json. Lệnh npm run demo kiểm tra thêm luồng HTTP thực tế với hai máy chủ tạm tại 2026-11-02T14:14:47.085Z.",
+      "after": "Lượt kiểm thử ngày 02/11/2026 lúc 14:13:02.559 UTC ghi nhận 42/42 ca đạt, được lưu trong ảnh nhật ký ở Hình 3.5. Luồng demo HTTP chạy lúc 14:14:47.085 UTC cùng ngày, có kết quả tại artifacts/demo-results.json. Sau khi bổ sung kiểm thử API, lượt npm test ngày 08/11/2026 lúc 02:19:01.529 UTC đạt 65/65 ca; artifacts/test-results.tap và artifacts/test-results.json hiện phản ánh lượt mới này. Kết quả 65 ca không phải nội dung của ảnh 42 ca."
+    },
+    {
+      "paragraph": 351,
+      "before": "Kiểm thử HTTP bổ sung tên tệp tiếng Việt có dấu để kiểm tra cả nội dung lẫn tên tệp khi tải về. API receive thiếu body phải trả lỗi đầu vào HTTP 400. Một kiểm thử gây lỗi giả lập sau thao tác ghi MongoDB thật xác nhận rằng mất phản hồi không làm chương trình xóa tệp mà biên nhận đã tham chiếu tới.",
+      "after": "Các ca kiểm thử bổ sung kiểm tra tên tệp tiếng Việt có dấu khi tải về và receive thiếu body phải trả HTTP 400. Kiểm thử giả lập mất phản hồi sau thao tác ghi MongoDB thật xác nhận chương trình giữ tệp mà biên nhận đã tham chiếu. Lượt kiểm thử ngày 08/11 bao gồm 23 ca tích hợp HTTP, thực thi 12 API qua 72 yêu cầu; không có mã HTTP sai kỳ vọng, theo artifacts/api-test-results.json."
+    },
+    {
+      "paragraph": 366,
+      "before": "Với n byte đầu vào, một lớp Base64 tạo 4×⌈n3⌉ ký tự. Luồng mục 2.4.2 Base64 tệp trước khi tạo JSON bản rõ, rồi Base64 thêm bản mã để có encrypted_data. Khi n lớn, tỷ lệ tiến gần (43)2=169, tức tăng khoảng 77,8%, cộng metadata, khóa bọc, chữ ký và padding. Mức 33,3% tại mục 1.6.3 vẫn đúng cho một phép Base64 riêng lẻ, nhưng không phải tổng chi phí phong bì hai lớp. Với tệp nhỏ, các trường control/header và chữ ký chiếm tỷ lệ lớn hơn.",
+      "after": "Với n byte đầu vào, một lớp Base64 tạo 4×⌈n3⌉ ký tự. Luồng mục 2.4.2 Base64 tệp trước khi tạo JSON bản rõ, rồi Base64 bản mã để có encrypted_data. Khi n lớn, tỷ lệ tiến gần (43)2=169, tức tăng khoảng 77,8%, cộng metadata, khóa bọc, chữ ký và padding. Mức 33,3% ở mục 1.6.3 chỉ là giới hạn tỷ lệ của một lớp Base64 khi dữ liệu lớn. Với tệp nhỏ, các trường control/header và chữ ký chiếm tỷ lệ cao hơn."
+    },
+    {
+      "paragraph": 367,
+      "before": "Kết quả cho thấy bản thực nghiệm đáp ứng việc giữ bí mật nội dung, phát hiện can thiệp, kiểm tra quyền kiểm soát khóa người gửi và từ chối phát lại trong phạm vi thử nghiệm. Các giới hạn còn lại gồm xử lý toàn tệp trong RAM, giới hạn 10 MiB, trao đổi khóa thủ công, chưa có PKI, chứng thư, phân quyền người dùng, TLS hoặc thiết bị ký chuyên dụng. Một cặp RSA dùng cho hai mục đích để bám mô hình bài tập; phiên bản triển khai cần tách khóa theo mục đích và đánh giá giao thức đầy đủ. Chữ ký hiện tại không tự chứng minh việc bên nhận đã nhận tài liệu hoặc giá trị pháp lý của danh tính; các nội dung đó cần hạ tầng và biên nhận thích hợp.",
+      "after": "Trong phạm vi thử nghiệm, tài liệu được khôi phục đúng; gói can thiệp, mạo danh và phát lại bị từ chối. Hệ thống xử lý toàn tệp trong RAM, giới hạn 10 MiB, trao đổi khóa thủ công; chưa có PKI, phân quyền người dùng, TLS hay thiết bị ký. Một cặp RSA đang dùng cho cả ký và bọc khóa theo mô hình bài tập; bản triển khai cần tách khóa theo mục đích. Chữ ký chưa xác nhận việc bên nhận đã nhận tài liệu hoặc danh tính pháp lý."
+    },
+    {
+      "paragraph": 368,
+      "before": "Các ca đã thực hiện phát hiện cả thay đổi bản mã, giả mạo chữ ký và tái sử dụng bản mã kèm UUID mới. Đây là bằng chứng cho các đường xử lý được khảo sát, chưa phải chứng minh an toàn hình thức hoặc kiểm toán độc lập. Bản sao control là phần bổ sung của cách cài đặt theo đặc tả Chương 2; một giao thức triển khai thực tế cần được thẩm định đầy đủ, quản lý khóa theo từng mục đích và xác thực danh tính tin cậy.",
+      "after": "Các kiểm thử bao gồm sửa bản mã, giả mạo chữ ký và đổi UUID của bản mã cũ. Chúng kiểm tra các đường xử lý cụ thể, chưa thay thế thẩm định giao thức hoặc chứng minh an toàn hình thức, đặc biệt đối với cơ chế đối chiếu control sau giải mã."
+    },
+    {
+      "paragraph": 370,
+      "before": "Chương này tổng hợp kết quả thực nghiệm ở Chương 3, đối chiếu với bốn mục tiêu an toàn ở mục 1.1.1 và các yêu cầu thiết kế ở mục 2.1. Trên cơ sở đó, chương chỉ ra những hạn chế còn tồn tại của bản cài đặt và đề xuất hướng phát triển, có đối chiếu với kiến thức về quản lý và phân phối khóa, chứng chỉ X.509, thẻ thông minh và các tấn công lên RSA trong hai bài giảng Mật mã học nâng cao [8] và Mật mã học cơ sở [7]. Mọi số liệu trích trong chương đều lấy từ kết quả đã trình bày ở Chương 3; ",
+      "after": "Chương này tổng hợp kết quả ở Chương 3, đối chiếu bốn mục tiêu an toàn ở mục 1.1.1 và yêu cầu thiết kế ở mục 2.1. Các hạn chế về phạm vi chữ ký, quản lý khóa, lưu trữ và môi trường thử nghiệm là cơ sở đề xuất hướng phát triển. Kiến thức tham khảo gồm bài giảng Mật mã học cơ sở [7], Mật mã học nâng cao [8] và các tiêu chuẩn liên quan; số liệu của hệ thống lấy từ Chương 3, còn ví dụ số liệu từ bài giảng được ghi nguồn riêng."
+    },
+    {
+      "paragraph": 371,
+      "before": "4.1 Đánh giá kết quả đạt được",
+      "after": "4.1. Đánh giá kết quả đạt được"
+    },
+    {
+      "paragraph": 375,
+      "before": "Bộ kiểm thử tự động gồm 42 ca cho kết quả 42/42 đạt (Hình 3.5), và luồng HTTP thực tế giữa hai tiến trình xác nhận cả ba tệp mẫu khôi phục đúng từng byte. Thứ tự \"xác minh chữ ký trước, giải mã sau\" cũng được kiểm chứng: gói đã bị sửa kèm mật khẩu sai vẫn nhận lỗi chữ ký trước (mục 3.4.2). Đối với các yêu cầu phi chức năng ở mục 2.1.3, kết quả được tổng hợp trong Bảng 4.2.",
+      "after": "Hình 3.5 ghi lại 42/42 ca đạt của lượt ngày 02/11; bộ kiểm thử mở rộng đạt 65/65 ca vào ngày 08/11 như mục 3.4. Luồng HTTP giữa hai tiến trình cũng xác nhận cả ba tệp mẫu khôi phục đúng từng byte. Thứ tự xác minh trước giải mã được kiểm tra bằng gói sửa bản mã kèm mật khẩu sai, vẫn nhận lỗi chữ ký trước. Bảng 4.2 đối chiếu kết quả với các yêu cầu phi chức năng."
+    },
+    {
+      "paragraph": 379,
+      "before": "Bảo mật đầu cuối ở tầng ứng dụng. Nội dung được mã hóa và ký ngay tại đơn vị gửi; các trạm trung gian như proxy hoặc cổng định tuyến chỉ thấy header và bản mã. Điều này giải quyết đúng hạn chế của bảo mật từng chặng đã nêu ở phần Mở đầu.",
+      "after": "Bảo vệ nội dung ở tầng ứng dụng. Tài liệu được mã hóa tại bên gửi và chỉ được mở bằng khóa bên nhận. Điểm trung chuyển không giữ các khóa này chỉ thấy header và bản mã, kể cả khi kết thúc một kết nối TLS tại đó. Việc bảo vệ kênh truyền vẫn cần được bổ sung khi triển khai thực tế."
+    },
+    {
+      "paragraph": 380,
+      "before": "Hệ mật lai cân bằng giữa an toàn và tốc độ. RSA chỉ bọc khóa phiên 32 byte, phần dữ liệu lớn do AES xử lý; tệp 10 MiB được đóng gói, mở và lưu trong 0,312 giây.",
+      "after": "Phân chia tác vụ của hệ mật lai. RSA chỉ bọc khóa phiên 32 byte, còn AES xử lý nội dung. Trên cấu hình và phạm vi đo ở mục 3.4.5, tệp 10 MiB được đóng gói, mở và lưu trong tổng thời gian trung bình 0,312 giây."
+    },
+    {
+      "paragraph": 382,
+      "before": "Phòng tấn công chọn bản mã thích nghi lên RSA. Bài giảng [7, mục 5.4.2, tr. 139–144] mô tả tấn công lên RSA dùng đệm PKCS#1 v1.5 khi kẻ tấn công có \"hàm tiên tri\" cho biết bản rõ giải mã có đúng định dạng đệm hay không: trung bình cần khoảng 220 bản mã chọn, và dưới 50 nghìn bản mã trong cải tiến năm 2012. Cách phòng tránh được nêu là không phản hồi chi tiết lỗi và dùng đệm OAEP. Hệ thống bọc khóa phiên bằng RSA-OAEP/SHA-256 và trả lỗi mật mã bằng thông báo chung, không lộ chi tiết OpenSSL (mục 3.2.5).",
+      "after": "Giảm rủi ro từ RSA dùng đệm mã hóa cũ. Bài giảng [7, mục 5.4.2, tr. 139–144] mô tả tấn công vào RSAES-PKCS1-v1_5 khi có bộ phận trả lời việc đệm có hợp lệ hay không; ví dụ nêu khoảng 220 bản mã chọn và dưới 50 nghìn trong một cải tiến năm 2012. Đây là số liệu trích bài giảng, không phải kết quả tấn công do nhóm thực hiện. Hệ thống dùng RSA-OAEP/SHA-256 để bọc khóa và trả thông báo lỗi mật mã chung. RSASSA-PKCS1-v1_5 là sơ đồ chữ ký khác với đệm mã hóa bị tấn công nói trên."
+    },
+    {
+      "paragraph": 383,
+      "before": "Chống phát lại hai lớp và bền vững. Cửa sổ thời gian ±300 giây kết hợp chỉ mục duy nhất theo request_id trong MongoDB nên lịch sử không mất khi khởi động lại và hai yêu cầu cùng UUID đến đồng thời chỉ được chấp nhận một lần. Hướng tiếp cận này tương đồng với nhãn thời gian tA và số ngẫu nhiên không dùng lại rA trong xác thực hai chiều X.509 [8, mục 4.3.2] và với bộ đệm phát lại của authenticator trong Kerberos [8, mục 4.2.2].",
+      "after": "Chống phát lại có lịch sử bền vững. Cửa sổ ±300 giây, đối chiếu control và chỉ mục duy nhất ownerId/request_id trong MongoDB khiến gói trùng chỉ được chấp nhận một lần. Lịch sử còn sau khi khởi động lại. Nhãn thời gian và số không dùng lại cũng xuất hiện trong các cơ chế xác thực X.509 và Kerberos ở bài giảng [8, mục 4.2.2 và 4.3.2], nhưng không đồng nghĩa bản cài đặt thực hiện đầy đủ các giao thức đó."
+    },
+    {
+      "paragraph": 385,
+      "before": "Dùng thư viện mật mã chuẩn và thiết kế mô-đun. Phép toán RSA và AES do OpenSSL thực hiện qua node:crypto thay vì tự cài đặt. Việc tách CryptoService, KeysService, EnvelopesService và StorageService cho phép thay từng phần (ví dụ nguồn khóa từ HSM) mà không đổi đặc tả phong bì.",
+      "after": "Sử dụng thư viện và mô-đun tách biệt. Phép toán RSA và AES do OpenSSL thực hiện qua node:crypto. CryptoService, KeysService, EnvelopesService và StorageService tách thao tác mật mã, quản lý khóa và lưu trữ; việc thay nguồn khóa bằng HSM vẫn cần triển khai bộ tích hợp và kiểm thử tương thích."
+    },
+    {
+      "paragraph": 395,
+      "before": "Hướng khắc phục là gửi bản mã dưới dạng nhị phân (multipart/form-data hoặc luồng nhị phân), chỉ Base64 các trường ngắn như key, iv, signature, và đặt tệp gốc thành thành phần nhị phân riêng trong bản rõ thay vì Base64 lần thứ nhất. Khi đó dung lượng tiến gần kích thước tệp gốc cộng phần cố định ở Bảng 4.3. Kết hợp xử lý theo khối sẽ bỏ luôn giới hạn RAM (mục 4.3.3).",
+      "after": "Hướng khắc phục là truyền bản mã dạng nhị phân, chỉ Base64 các trường ngắn cần biểu diễn trong JSON, đồng thời tránh Base64 tệp trong bản rõ. Khi đó có thể giảm đáng kể chi phí hai lớp; phần cố định cũng phải tính lại vì định dạng thay đổi. Xử lý theo khối giảm nhu cầu giữ toàn tệp trong RAM, nhưng vẫn cần giới hạn dung lượng và tài nguyên phù hợp (mục 4.3.3)."
+    },
+    {
+      "paragraph": 413,
+      "before": "Thay vì ghim từng khóa PEM, mỗi đơn vị được trung tâm chứng thực (CA) cấp chứng chỉ X.509 v3. Theo bài giảng [8, mục 4.3.1], với mô hình máy chủ không trực tuyến và chứng chỉ, CA kiểm tra danh tính của A rồi ký xác nhận cặp (IDA, KUA); bên nhận chỉ cần tin CA là tin được khóa công khai của A. Số quan hệ tin cậy cần thiết lập giảm từ N(N-1)2 giữa các đơn vị xuống còn N quan hệ giữa mỗi đơn vị với CA, và bước ghim khóa ở mục 3.2.1 được thay bằng xác minh chứng chỉ. Các trường của chứng chỉ X.509 (phiên bản, số sê-ri, thuật toán chữ ký, bên cấp, thời hạn hiệu lực, chủ thể, khóa công khai, phần mở rộng, chữ ký) [8, mục 4.3.2, tr. 109–111] giải quyết trực tiếp các hạn chế ở Bảng 4.4:",
+      "after": "Trong hướng tích hợp PKI, CA kiểm tra danh tính rồi cấp chứng chỉ X.509 v3 gắn khóa công khai với đơn vị [8, mục 4.3.1; 9]. Với mô hình CA chung đơn giản, số quan hệ tin cậy cần thiết lập có thể giảm từ N(N-1)2 giữa các đơn vị xuống N quan hệ với CA; mỗi bên vẫn phải xác minh chuỗi chứng chỉ, danh tính, mục đích dùng khóa, thời hạn và trạng thái thu hồi. Các trường X.509 ở bài giảng [8, mục 4.3.2, tr. 109–111] và RFC 5280 [9] hỗ trợ xử lý những hạn chế ở Bảng 4.4:"
+    },
+    {
+      "paragraph": 417,
+      "before": "Bài giảng [8, mục 4.3.2] cũng mô tả xác thực hai chiều X.509 với thông điệp A → B gồm certA, DA và SA(DA), trong đó DA=(tA,rA,B,data1,PB(k1)). Bảng 4.5 đối chiếu cấu trúc này với phong bì hiện tại.",
+      "after": "Bài giảng [8, mục 4.3.2] mô tả thông điệp đầu tiên A → B của xác thực hai chiều X.509 gồm certA, DA và SA(DA), trong đó DA=(tA,rA,B,data1,PB(k1)). Bảng 4.5 đối chiếu các thành phần này với phong bì hiện tại. Xác thực hai chiều đầy đủ còn cần phản hồi được xác thực từ B; hệ thống hiện chưa thực hiện giao thức đó."
+    },
+    {
+      "paragraph": 420,
+      "before": "Về giá trị pháp lý, chữ ký số theo khung pháp luật Việt Nam gắn với chứng thư số do tổ chức cung cấp dịch vụ chứng thực chữ ký số cấp. Trong phạm vi đề tài, một CA nội bộ dựng bằng OpenSSL là đủ để thử nghiệm; triển khai thực tế cần dùng dịch vụ chứng thực phù hợp quy định.",
+      "after": "Có thể dựng CA nội bộ bằng OpenSSL để thử nghiệm cấp và xác minh chứng chỉ. Bước này chưa được cài đặt trong đề tài và không tự xác lập giá trị pháp lý của chữ ký trong một nghiệp vụ cụ thể; triển khai thật cần xác định yêu cầu chứng thực, vận hành và quy định áp dụng."
+    },
+    {
+      "paragraph": 423,
+      "before": "Khóa không rời thiết bị. Khóa bí mật được sinh và lưu trong token hoặc smartcard (với máy chủ là HSM), phép ký phong bì và giải mã khóa phiên thực hiện bên trong thiết bị qua giao diện chuẩn PKCS#11. Khi đó không còn tệp private.pem và biến RECEIVE_KEY_PASSPHRASE; khóa được bảo vệ bằng PIN của thiết bị.",
+      "after": "Khóa được bảo vệ trong thiết bị. Khóa bí mật được sinh và lưu trong token, thẻ thông minh hoặc HSM; thao tác ký và mở khóa phiên thực hiện qua giao diện như PKCS#11 nếu thiết bị hỗ trợ. Ứng dụng sẽ thay việc đọc private.pem và mật khẩu PEM bằng cơ chế phiên truy cập, PIN hoặc thông tin xác thực thiết bị. PIN không nhất thiết thay thế hoàn toàn cấu hình bí mật khi vận hành tự động."
+    },
+    {
+      "paragraph": 424,
+      "before": "Phù hợp từng kịch bản. Token USB cần người nhập PIN nên hợp với thao tác ký phía gửi hoặc mở gói thủ công. Endpoint receive chạy tự động nên dùng HSM mạng hoặc dịch vụ quản lý khóa (đánh giá theo thiết kế, chưa thử nghiệm).",
+      "after": "Lựa chọn theo nghiệp vụ. Token hoặc thẻ thông minh cần thao tác PIN phù hợp với ký và mở gói thủ công. API receive tự động có thể cần HSM hoặc dịch vụ quản lý khóa với chính sách truy cập riêng. Khả năng ký, giải RSA-OAEP và thông lượng cần được kiểm tra trên thiết bị cụ thể; đề tài chưa thử nghiệm phần này."
+    },
+    {
+      "paragraph": 425,
+      "before": "Cân nhắc ECC cho thiết bị hạn chế. Bảng 3.8 của bài giảng [8, tr. 85] so sánh bắt tay SSL: ECC-224 mất 5,12 ms so với 56,18 ms của RSA-2048 (xấp xỉ 11:1), độ dài khóa xấp xỉ 1:9,1. Chuyển ký số sang ECDSA với đường cong NIST P-256 (FIPS 186-4) cho chữ ký dài 64 byte (r và s ghép nối) thay cho 256 byte của RSA-2048, làm giảm phần cố định ở Bảng 4.3. Bài giảng lưu ý việc chọn tham số đường cong là hạn chế lớn nhất của ECC, vì vậy chỉ nên dùng các đường cong đã được NIST kiểm định.",
+      "after": "Cân nhắc ECC khi phát triển thêm. Bảng 3.8 của bài giảng [8, tr. 85] nêu ví dụ bắt tay SSL: ECC-224 mất 5,12 ms, RSA-2048 mất 56,18 ms, tỷ lệ thời gian xấp xỉ 11:1 và độ dài khóa 1:9,1. Đây là số liệu tham khảo, không phải phép đo của hệ thống hiện tại. Có thể khảo sát ECDSA P-256 theo FIPS 186-5 [15]. Chữ ký dạng r và s ghép cố định dài 64 byte, còn dạng DER có độ dài khác; cần quy định rõ biểu diễn và đánh giá lại giao thức. ECDSA chỉ thay phần ký, không trực tiếp thay cơ chế bọc khóa RSA-OAEP."
+    },
+    {
+      "paragraph": 426,
+      "before": "Lưu ý an toàn khi dùng thiết bị. Bài giảng [7, mục 5.4.2, tr. 143] cho biết tấn công chọn bản mã thích nghi lên RSA PKCS#1 v1.5 đặc biệt hiệu quả đối với USB Token và HSM có hỗ trợ nhập khẩu khóa bí mật có lập mã. Vì vậy khi tích hợp phải chỉ cho phép giải mã RSA-OAEP và không để lộ chi tiết lỗi ra bên ngoài.",
+      "after": "Lưu ý cơ chế RSA trong thiết bị. Bài giảng [7, mục 5.4.2, tr. 143–144] nêu nguy cơ bộ phận kiểm tra đệm RSAES-PKCS1-v1_5 bị lợi dụng trên token hoặc HSM. Khi tích hợp cần giới hạn cơ chế theo chính sách khóa, kiểm tra hỗ trợ OAEP/SHA-256 và tránh để lộ chi tiết giải mã. Sử dụng thiết bị phần cứng không tự loại bỏ lỗi giao thức hoặc cấu hình."
+    },
+    {
+      "paragraph": 429,
+      "before": "TLS tương hỗ cho kênh truyền. TLS bảo vệ từng chặng nên bổ sung chứ không thay thế mã hóa tầng ứng dụng (lý do đã nêu ở phần Mở đầu); có thể dùng chung hạ tầng chứng chỉ X.509 ở mục 4.3.1.",
+      "after": "Bảo vệ kênh truyền bằng TLS tương hỗ. TLS bảo vệ giữa các đầu cuối của kết nối và xác thực máy chủ hoặc hai phía khi cấu hình mTLS. Phong bì ứng dụng tiếp tục bảo vệ nội dung qua các điểm trung chuyển và khi lưu tạm. Có thể dùng hạ tầng chứng chỉ đề xuất ở mục 4.3.1; bản thử nghiệm hiện chỉ dùng HTTP loopback."
+    },
+    {
+      "paragraph": 430,
+      "before": "Xác thực, phân quyền và giới hạn tài nguyên cho API. Bổ sung xác thực đơn vị gọi API, giới hạn kích thước và tốc độ yêu cầu, và đo khả năng chịu tải. Việc này cần thiết vì mỗi yêu cầu hợp lệ về cấu trúc buộc bên nhận thực hiện phép RSA (mục 1.1.2).",
+      "after": "Xác thực, phân quyền và giới hạn tài nguyên cho API. Bổ sung xác thực bên gọi, giới hạn tốc độ và kiểm tra tải. Bản hiện tại đã có giới hạn dung lượng; cần đánh giá thêm số kết nối và chi phí các yêu cầu giả mạo, do xác minh chữ ký RSA vẫn tiêu tốn tài nguyên trước khi bị từ chối."
+    },
+    {
+      "paragraph": 431,
+      "before": "Truyền theo luồng và theo khối. Dùng multipart, WebSocket hoặc gRPC streaming để gửi từng khối; mỗi khối được mã hóa có xác thực (AES-GCM) kèm chỉ số khối, chữ ký đặt trên chuỗi băm của các khối. Cách này bỏ giới hạn RAM 10 MiB và hai lớp Base64 (mục 4.2.1).",
+      "after": "Truyền theo luồng và theo khối. Có thể khảo sát multipart, WebSocket hoặc gRPC streaming cùng AES-GCM. Giao thức cần quy định nonce không lặp theo khóa, thứ tự và tổng số khối, ràng buộc định danh thông điệp, phát hiện thiếu hoặc lặp khối và thời điểm xác thực trước khi giao dữ liệu. Cách này giảm bộ nhớ và chi phí Base64, nhưng vẫn cần giới hạn tài nguyên; chưa được cài đặt hoặc kiểm chứng trong đề tài."
+    },
+    {
+      "paragraph": 442,
+      "before": "Tài liệu tham khảo của Chương 3",
+      "after": ""
+    },
+    {
+      "paragraph": 449,
+      "before": "Tài liệu tham khảo của Chương 4",
+      "after": ""
+    },
+    {
+      "paragraph": 450,
+      "before": "Các tài liệu [4] và [5] được tham chiếu từ danh mục của Chương 3.",
+      "after": ""
+    },
+    {
+      "paragraph": 452,
+      "before": "[8] Đỗ Xuân Chợ, Bài giảng Mật mã học nâng cao, Học viện Công nghệ Bưu chính Viễn thông, Hà Nội, 2021 (mục 3.7: ứng dụng đường cong Elliptic; Chương 4: Quản lý khóa).",
+      "after": "[8] Đỗ Xuân Chợ, Bài giảng Mật mã học nâng cao, Học viện Công nghệ Bưu chính Viễn thông, Hà Nội, 2021 (mục 3.7 và Chương 4). Thông tin thư viện: https://dlib.ptit.edu.vn/handle/HVCNBCVT/2620"
+    },
+    {
+      "paragraph": 454,
+      "before": "[10] NIST SP 800-38D, Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC, 2007.",
+      "after": "[10] NIST SP 800-38D, Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC, 2007. https://csrc.nist.gov/pubs/sp/800/38/d/final"
+    }
+  ],
+  "tableCellChanges": [
+    {
+      "table": 4,
+      "row": 2,
+      "column": 1,
+      "before": "Rất nhanh (hàng GB/s)",
+      "after": "Phù hợp mã hóa khối dữ liệu lớn"
+    },
+    {
+      "table": 4,
+      "row": 2,
+      "column": 2,
+      "before": "Chậm (hàng KB/s đến MB/s)",
+      "after": "Chi phí cao hơn; dùng cho khóa phiên và chữ ký"
+    },
+    {
+      "table": 4,
+      "row": 3,
+      "column": 1,
+      "before": "Tùy biến (không giới hạn)",
+      "after": "Độ dài tùy biến; bản thực nghiệm giới hạn tệp 10 MiB"
+    },
+    {
+      "table": 4,
+      "row": 3,
+      "column": 2,
+      "before": "Bị giới hạn bởi kích thước module n trừ đi độ dài phần đệm",
+      "after": "OAEP/SHA-256 với RSA-2048: tối đa 190 byte mỗi lần mã hóa"
+    },
+    {
+      "table": 5,
+      "row": 2,
+      "column": 3,
+      "before": "Xác thực & Chống chối bỏ",
+      "after": "Xác thực theo khóa đã tin cậy; hỗ trợ bằng chứng phía gửi"
+    },
+    {
+      "table": 6,
+      "row": 1,
+      "column": 1,
+      "before": "Đảm bảo độ dài khóa RSA tối thiểu 2048-bit, AES 256-bit. Sử dụng chuẩn đệm OAEP chống tấn công bản mã lựa chọn.",
+      "after": "RSA từ 2048 bit, AES 256 bit; dùng RSA-OAEP/SHA-256 để bọc khóa phiên. Không coi cấu hình này là bảo đảm an toàn cho mọi thành phần ứng dụng."
+    },
+    {
+      "table": 6,
+      "row": 2,
+      "column": 1,
+      "before": "Phát hiện lập tức mọi hành vi sửa đổi dữ liệu dù chỉ 1 bit dựa trên thẩm định chữ ký số SHA-256 và RSASSA-PKCS1-v1_5.",
+      "after": "Phát hiện can thiệp bản mã qua chữ ký; xác nhận header/IV qua control sau giải mã và kiểm tra kích thước, SHA-256 trước khi chấp nhận tệp."
+    },
+    {
+      "table": 6,
+      "row": 3,
+      "column": 0,
+      "before": "Hiệu năng & Tốc độ",
+      "after": "Hiệu năng"
+    },
+    {
+      "table": 6,
+      "row": 3,
+      "column": 1,
+      "before": "Thời gian đóng gói mã hóa và thẩm định giải mã tệp tin dung lượng 10MB không quá 1.5 giây trên cấu hình máy chủ tiêu chuẩn.",
+      "after": "Mục tiêu: tổng thời gian đóng gói, mở và lưu tệp 10 MiB không quá 1,5 giây trên cấu hình thực nghiệm ở mục 3.1.1, chưa tính truyền HTTP giữa hai máy."
+    },
+    {
+      "table": 7,
+      "row": 1,
+      "column": 1,
+      "before": "String (UUID)",
+      "after": "String (UUIDv4)"
+    },
+    {
+      "table": 7,
+      "row": 4,
+      "column": 1,
+      "before": "String (ISO8601)",
+      "after": "String (ISO 8601 UTC)"
+    },
+    {
+      "table": 8,
+      "row": 1,
+      "column": 2,
+      "before": "Bản mã dữ liệu nội dung công văn và file đính kèm đã mã hóa bằng khóa phiên AES-256.",
+      "after": "Bản mã AES-256-CBC của JSON chứa protocol, control, thông tin tệp và dữ liệu tệp Base64."
+    },
+    {
+      "table": 8,
+      "row": 3,
+      "column": 2,
+      "before": "Chữ ký số của Bên gửi được tạo trên giá trị băm SHA-256 của chuỗi encrypted_data.",
+      "after": "RSASSA-PKCS1-v1_5/SHA-256 trên byte ASCII của chuỗi encrypted_data; thư viện tự tính băm."
+    },
+    {
+      "table": 11,
+      "row": 4,
+      "column": 2,
+      "before": "",
+      "after": "HTTP 200 kèm biên nhận; tải GridFS đúng byte; phát lại HTTP 409 (mục 3.3.3 và 3.4)."
+    },
+    {
+      "table": 11,
+      "row": 6,
+      "column": 0,
+      "before": "2.1.3: tệp 10 MB dưới 1,5 giây",
+      "after": "2.1.3: tệp 10 MiB trong 1,5 giây"
+    },
+    {
+      "table": 17,
+      "row": 2,
+      "column": 1,
+      "before": "Phát hiện sửa đổi dù chỉ 1 bit.",
+      "after": "Phát hiện can thiệp trước khi chấp nhận tài liệu; xác minh bản mã trước giải mã."
+    },
+    {
+      "table": 17,
+      "row": 3,
+      "column": 1,
+      "before": "Tệp 10 MB xử lý không quá 1,5 giây.",
+      "after": "Tệp 10 MiB: đóng gói, mở và lưu không quá 1,5 giây trên cấu hình thử nghiệm, chưa gồm truyền HTTP."
+    },
+    {
+      "table": 16,
+      "row": 4,
+      "column": 3,
+      "before": "Đáp ứng một phần: chỉ phía gửi, trong phạm vi khóa PEM",
+      "after": "Hỗ trợ bằng chứng phía gửi theo khóa ghim; chưa xác thực danh tính bằng chứng chỉ hoặc có biên nhận ký"
+    },
+    {
+      "table": 16,
+      "row": 5,
+      "column": 1,
+      "before": "Cửa sổ thời gian ±300 giây và chỉ mục duy nhất ownerId/request_id trong MongoDB (mục 2.4.4, 3.2.5).",
+      "after": "Cửa sổ ±300 giây, đối chiếu control và chỉ mục duy nhất ownerId/request_id trong MongoDB (mục 2.4.4, 3.2.5)."
+    },
+    {
+      "table": 21,
+      "row": 6,
+      "column": 1,
+      "before": "Biên nhận có chữ ký của bên nhận; endpoint tra cứu",
+      "after": "Biên nhận có chữ ký; bổ sung tra cứu biên nhận theo request_id"
+    }
+  ],
+  "originalCodeUnchanged": true,
+  "originalTablesPreserved": 22,
+  "originalImagesPreserved": 11,
+  "addedImages": [
+    "/Users/ducytcg123456/Desktop/BTL MMH/docs/hinh-2-1-luong-truyen-nhan.png"
+  ],
+  "nativeMathCount": 32,
+  "nativeHeadingCounts": {
+    "Heading 1": 10,
+    "Heading 2": 21,
+    "Heading 3": 53
+  },
+  "recordedExperimentData": "Original demo and benchmark values preserved; 42 tests on 02 Nov distinguished from 65 tests on 08 Nov.",
+  "checksToday": {
+    "build": "passed",
+    "coreAndHttpTests": {
+      "tests": 35,
+      "passed": 35,
+      "failed": 0,
+      "tap": "artifacts/btl-core-http-review-20261112.tap",
+      "finishedAtApproxUtc": "2026-11-12T15:38:40.922757+00:00"
+    },
+    "fullMongoIntegrationRerun": false,
+    "reason": "MongoDB is stopped; did not restart Docker."
+  },
+  "remainingUserInformation": [
+    "Mã học phần, nhóm, lớp",
+    "Nội dung phân công và thời hạn thực tế"
+  ],
+  "driveBackupId": "1flRu57zQRu5dRG2d1_vn3AhdBkhsmrp0",
+  "driveFileId": "1hlUT3wDVveSOjz4xkSf1L_4oOk41RG9C",
+  "remoteVerified": true,
+  "pdfSha256": "6a7b8b1bfb40d2065f4eaa66f264d9c48aa66da60280f11ed560b7cc9fdffab8",
+  "pdfPageCount": 52,
+  "verification": {
+    "all11OriginalImagesPixelIdentical": true,
+    "addedSequenceDiagram": true,
+    "allOriginalCodeParagraphsIdentical": true,
+    "tableChangesExactlyMatchReviewedCells": true,
+    "environmentDemoBenchmarkTablesIdentical": true,
+    "tableCaptionsBelow": 19,
+    "nativeEquationCount": 32,
+    "nativeHeadings": {
+      "Heading 1": 10,
+      "Heading 2": 21,
+      "Heading 3": 53
+    },
+    "all4ChaptersPreserved": true,
+    "noAutomaticOrManualBullets": true,
+    "noBoldProseOrUnderlinedText": true,
+    "documentProofingHidden": true,
+    "bodyFont": "Times New Roman 13",
+    "headingSizes": [
+      20,
+      16,
+      14
+    ],
+    "bodyLineSpacing": 1.15,
+    "marginsCm": {
+      "left": 2.5,
+      "right": 1.8,
+      "top": 2,
+      "bottom": 2
+    },
+    "references": 15,
+    "noReferenceFieldErrors": true,
+    "noNearlyEmptyPages": true,
+    "wordNativeFieldsUpdated": true,
+    "noTrackedRevisions": true
+  },
+  "pdfPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAO-CAO-BTL.pdf",
+  "reviewCompletedAtUtc": "2026-11-12T16:28:48.272975+00:00",
+  "remoteSha256": "2a798002265186e1ad2641d12dd0092fe9b4f647c52700998a71a3f7638316fe",
+  "remoteBytes": 4528919,
+  "remoteModifiedTime": "2026-11-12T16:29:00.326Z",
+  "remoteUrl": "https://docs.google.com/document/d/1hlUT3wDVveSOjz4xkSf1L_4oOk41RG9C/edit"
+}

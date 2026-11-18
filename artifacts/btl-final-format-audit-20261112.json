@@ -1,0 +1,70 @@
+{
+  "outputPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAO-CAO-BTL.docx",
+  "sourceBackup": "/tmp/btl-before-final-format-audit-20261112.docx",
+  "sourceSha256": "315b62cac33ffcf8490247ed405b9f7c5c794d9fb99f9a3e42f4db82cfcd6844",
+  "outputSha256": "6f4e609ee3a51e8070961a7551297c7490d30825b6c2c27ac71ee3fd36192331",
+  "nativeHeadingStyleCounts": {
+    "Heading 1": 10,
+    "Heading 2": 21,
+    "Heading 3": 53
+  },
+  "headingPointSizes": [
+    20,
+    16,
+    14
+  ],
+  "bodyPointSize": 13,
+  "headingSpacingPt": {
+    "Heading 1": [
+      0,
+      18
+    ],
+    "Heading 2": [
+      12,
+      6
+    ],
+    "Heading 3": [
+      10,
+      4
+    ]
+  },
+  "headingLineSpacing": "single",
+  "bodyLineSpacing": 1.15,
+  "bodyAutomaticBullets": [],
+  "manualBulletOrDecimalMarkers": [],
+  "boldBodyRuns": [],
+  "redundantBilingualGlosses": [],
+  "allParagraphTextUnchanged": true,
+  "allTableTextUnchanged": true,
+  "tableCaptionsBelow": 19,
+  "imageCount": 11,
+  "remoteVerified": true,
+  "formatReferences": [
+    {
+      "title": "Hướng dẫn trình bày đồ án tốt nghiệp – Đại học Thủy lợi",
+      "url": "https://env.tlu.edu.vn/Portals/0/Tai-lieu-Khoa/Mau-don-van-ban/Huong%20dan%20trinh%20bay%20DATN%20%2826-2-2020%29.pdf",
+      "usedFor": "Sử dụng Heading 1/2/3 thật; phân biệt tiêu đề và thân bài bằng style; tham khảo khoảng cách đoạn."
+    },
+    {
+      "title": "Hướng dẫn trình bày bài báo – Trung tâm Học liệu và Hỗ trợ Học thuật, Đại học Trà Vinh",
+      "url": "https://celri.tvu.edu.vn/huong-dan-trinh-bay-bai-bao/",
+      "usedFor": "Thuật ngữ/viết tắt nhất quán; phương trình gốc; chú thích có số. Các cỡ chữ, lề và vị trí tên bảng vẫn theo mẫu BTL và yêu cầu riêng của người dùng."
+    }
+  ],
+  "pdfPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAO-CAO-BTL.pdf",
+  "pdfSha256": "c922a51fba560580f0ec703b3a426f84fe11f67d3297d87eb5a4386e4d2f60ea",
+  "pdfPages": 52,
+  "pdfBulletMarkers": [],
+  "pdfFieldErrors": [],
+  "pdfBlankPages": [],
+  "spellingAndGrammarMarksHidden": true,
+  "activeUnderlines": 0,
+  "effectiveFontSizes": [
+    20.0,
+    16.0,
+    14.0,
+    13.0
+  ],
+  "remoteSha256": "6f4e609ee3a51e8070961a7551297c7490d30825b6c2c27ac71ee3fd36192331",
+  "remoteModifiedTime": "2026-11-12T03:02:47.219Z"
+}

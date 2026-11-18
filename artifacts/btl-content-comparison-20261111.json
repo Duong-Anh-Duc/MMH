@@ -1,0 +1,2073 @@
+{
+  "sourceFileId": "1vHgsKstVxrFdUIGA1C0P3cWYvGNdODiI",
+  "targetFileId": "1hlUT3wDVveSOjz4xkSf1L_4oOk41RG9C",
+  "sourceSha256": "8693c157977cd800b1dd7445d69562720a675af0dbfbb34ada987f0fadad13fe",
+  "checkedLocalSha256": "ef8f3fb68bdd15cf1e215ed835a036e394819aa395663d076aa8fbbebd84e3be",
+  "sourceBodyNonemptyParagraphs": 408,
+  "matchedBodyParagraphs": 408,
+  "missingOrUnaccountedBodyParagraphs": [],
+  "coverInformationMissing": [],
+  "all19OriginalTablesIdentical": true,
+  "originalTableCount": 19,
+  "sourceImageCount": 11,
+  "targetImageCount": 11,
+  "imagesWithIdenticalDecodedPixels": 10,
+  "localizedImage": "Biểu đồ hiệu năng dùng đúng dữ liệu benchmark.json, chỉ đổi chú thích sang tiếng Việt và màu xám/đen.",
+  "mathComparisonMethod": "Kiểm tra toàn bộ chữ và toán tử sau khi biểu diễn chỉ số, số mũ, phân số trong Equation; bỏ khoảng trắng và dấu ngoặc do cách trình bày, chuẩn hóa ký hiệu nhân và hàm ceil. Công thức được xem lại ở bản PDF.",
+  "allowedNumberingRepair": "Tham chiếu bảng đối chiếu: Bảng 3.2 -> Bảng 3.3, tương ứng số thứ tự sau khi bổ sung chú thích đầy đủ.",
+  "retainedSourceNotation": "Ký hiệu RSA d * e^(-1) (mod phi(n)) đã được giữ lại đúng nguồn; không áp dụng sửa lý thuyết trong yêu cầu định dạng.",
+  "matched": [
+    {
+      "sourceParagraph": 110,
+      "targetParagraph": 18,
+      "comparison": "heading-capitalization"
+    },
+    {
+      "sourceParagraph": 111,
+      "targetParagraph": 19,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 112,
+      "targetParagraph": 20,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 113,
+      "targetParagraph": 21,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 114,
+      "targetParagraph": 22,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 115,
+      "targetParagraph": 23,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 116,
+      "targetParagraph": 24,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 117,
+      "targetParagraph": 25,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 118,
+      "targetParagraph": 26,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 126,
+      "targetParagraph": 27,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 127,
+      "targetParagraph": 28,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 128,
+      "targetParagraph": 29,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 129,
+      "targetParagraph": 30,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 130,
+      "targetParagraph": 31,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 131,
+      "targetParagraph": 32,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 132,
+      "targetParagraph": 33,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 133,
+      "targetParagraph": 34,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 135,
+      "targetParagraph": 35,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 136,
+      "targetParagraph": 36,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 137,
+      "targetParagraph": 37,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 138,
+      "targetParagraph": 38,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 139,
+      "targetParagraph": 39,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 140,
+      "targetParagraph": 40,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 141,
+      "targetParagraph": 41,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 142,
+      "targetParagraph": 42,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 144,
+      "targetParagraph": 43,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 145,
+      "targetParagraph": 44,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 146,
+      "targetParagraph": 45,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 147,
+      "targetParagraph": 46,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 149,
+      "targetParagraph": 47,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 150,
+      "targetParagraph": 48,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 151,
+      "targetParagraph": 49,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 152,
+      "targetParagraph": 50,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 153,
+      "targetParagraph": 51,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 154,
+      "targetParagraph": 52,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 163,
+      "targetParagraph": 53,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 164,
+      "targetParagraph": 54,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 165,
+      "targetParagraph": 55,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 166,
+      "targetParagraph": 56,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 167,
+      "targetParagraph": 57,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 169,
+      "targetParagraph": 58,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 170,
+      "targetParagraph": 59,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 171,
+      "targetParagraph": 60,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 172,
+      "targetParagraph": 61,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 173,
+      "targetParagraph": 62,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 174,
+      "targetParagraph": 63,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 176,
+      "targetParagraph": 64,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 177,
+      "targetParagraph": 65,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 178,
+      "targetParagraph": 66,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 179,
+      "targetParagraph": 67,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 180,
+      "targetParagraph": 68,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 181,
+      "targetParagraph": 69,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 182,
+      "targetParagraph": 70,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 183,
+      "targetParagraph": 71,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 185,
+      "targetParagraph": 73,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 186,
+      "targetParagraph": 74,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 187,
+      "targetParagraph": 75,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 189,
+      "targetParagraph": 76,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 190,
+      "targetParagraph": 77,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 191,
+      "targetParagraph": 78,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 193,
+      "targetParagraph": 79,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 194,
+      "targetParagraph": 80,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 195,
+      "targetParagraph": 81,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 197,
+      "targetParagraph": 82,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 198,
+      "targetParagraph": 83,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 199,
+      "targetParagraph": 84,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 200,
+      "targetParagraph": 85,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 201,
+      "targetParagraph": 86,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 202,
+      "targetParagraph": 87,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 203,
+      "targetParagraph": 88,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 204,
+      "targetParagraph": 89,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 205,
+      "targetParagraph": 90,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 207,
+      "targetParagraph": 91,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 209,
+      "targetParagraph": 92,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 211,
+      "targetParagraph": 93,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 213,
+      "targetParagraph": 94,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 214,
+      "targetParagraph": 95,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 215,
+      "targetParagraph": 96,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 216,
+      "targetParagraph": 97,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 218,
+      "targetParagraph": 98,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 219,
+      "targetParagraph": 99,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 220,
+      "targetParagraph": 100,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 221,
+      "targetParagraph": 101,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 222,
+      "targetParagraph": 102,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 224,
+      "targetParagraph": 103,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 225,
+      "targetParagraph": 104,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 227,
+      "targetParagraph": 105,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 228,
+      "targetParagraph": 106,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 229,
+      "targetParagraph": 107,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 231,
+      "targetParagraph": 108,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 232,
+      "targetParagraph": 109,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 233,
+      "targetParagraph": 110,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 234,
+      "targetParagraph": 111,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 235,
+      "targetParagraph": 112,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 236,
+      "targetParagraph": 113,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 237,
+      "targetParagraph": 114,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 238,
+      "targetParagraph": 115,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 239,
+      "targetParagraph": 116,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 240,
+      "targetParagraph": 117,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 241,
+      "targetParagraph": 118,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 243,
+      "targetParagraph": 119,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 244,
+      "targetParagraph": 120,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 245,
+      "targetParagraph": 121,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 247,
+      "targetParagraph": 122,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 248,
+      "targetParagraph": 123,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 249,
+      "targetParagraph": 124,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 250,
+      "targetParagraph": 126,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 251,
+      "targetParagraph": 127,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 252,
+      "targetParagraph": 128,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 254,
+      "targetParagraph": 129,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 255,
+      "targetParagraph": 130,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 256,
+      "targetParagraph": 131,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 257,
+      "targetParagraph": 132,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 258,
+      "targetParagraph": 133,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 259,
+      "targetParagraph": 134,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 261,
+      "targetParagraph": 135,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 262,
+      "targetParagraph": 136,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 263,
+      "targetParagraph": 137,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 264,
+      "targetParagraph": 138,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 265,
+      "targetParagraph": 139,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 266,
+      "targetParagraph": 140,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 267,
+      "targetParagraph": 141,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 268,
+      "targetParagraph": 142,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 269,
+      "targetParagraph": 143,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 270,
+      "targetParagraph": 144,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 271,
+      "targetParagraph": 145,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 273,
+      "targetParagraph": 146,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 274,
+      "targetParagraph": 147,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 275,
+      "targetParagraph": 148,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 276,
+      "targetParagraph": 149,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 277,
+      "targetParagraph": 150,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 279,
+      "targetParagraph": 151,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 280,
+      "targetParagraph": 152,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 281,
+      "targetParagraph": 153,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 282,
+      "targetParagraph": 154,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 283,
+      "targetParagraph": 155,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 284,
+      "targetParagraph": 156,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 286,
+      "targetParagraph": 157,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 287,
+      "targetParagraph": 158,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 288,
+      "targetParagraph": 159,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 289,
+      "targetParagraph": 160,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 291,
+      "targetParagraph": 162,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 292,
+      "targetParagraph": 163,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 293,
+      "targetParagraph": 164,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 295,
+      "targetParagraph": 165,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 296,
+      "targetParagraph": 166,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 297,
+      "targetParagraph": 167,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 298,
+      "targetParagraph": 168,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 299,
+      "targetParagraph": 169,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 300,
+      "targetParagraph": 170,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 301,
+      "targetParagraph": 171,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 303,
+      "targetParagraph": 172,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 305,
+      "targetParagraph": 173,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 307,
+      "targetParagraph": 174,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 308,
+      "targetParagraph": 175,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 309,
+      "targetParagraph": 176,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 310,
+      "targetParagraph": 177,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 312,
+      "targetParagraph": 178,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 313,
+      "targetParagraph": 179,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 314,
+      "targetParagraph": 180,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 315,
+      "targetParagraph": 181,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 316,
+      "targetParagraph": 182,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 317,
+      "targetParagraph": 183,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 319,
+      "targetParagraph": 184,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 320,
+      "targetParagraph": 185,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 321,
+      "targetParagraph": 186,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 322,
+      "targetParagraph": 187,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 323,
+      "targetParagraph": 188,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 325,
+      "targetParagraph": 190,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 326,
+      "targetParagraph": 191,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 327,
+      "targetParagraph": 192,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 329,
+      "targetParagraph": 193,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 330,
+      "targetParagraph": 194,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 331,
+      "targetParagraph": 195,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 332,
+      "targetParagraph": 196,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 334,
+      "targetParagraph": 197,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 335,
+      "targetParagraph": 198,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 336,
+      "targetParagraph": 199,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 337,
+      "targetParagraph": 200,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 338,
+      "targetParagraph": 201,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 340,
+      "targetParagraph": 202,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 341,
+      "targetParagraph": 203,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 342,
+      "targetParagraph": 204,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 343,
+      "targetParagraph": 205,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 344,
+      "targetParagraph": 206,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 345,
+      "targetParagraph": 207,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 346,
+      "targetParagraph": 208,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 347,
+      "targetParagraph": 209,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 348,
+      "targetParagraph": 210,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 349,
+      "targetParagraph": 211,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 350,
+      "targetParagraph": 212,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 351,
+      "targetParagraph": 213,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 352,
+      "targetParagraph": 214,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 353,
+      "targetParagraph": 215,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 354,
+      "targetParagraph": 216,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 355,
+      "targetParagraph": 217,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 357,
+      "targetParagraph": 219,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 358,
+      "targetParagraph": 220,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 360,
+      "targetParagraph": 222,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 361,
+      "targetParagraph": 223,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 362,
+      "targetParagraph": 224,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 364,
+      "targetParagraph": 225,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 365,
+      "targetParagraph": 226,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 366,
+      "targetParagraph": 227,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 367,
+      "targetParagraph": 228,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 368,
+      "targetParagraph": 229,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 369,
+      "targetParagraph": 230,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 370,
+      "targetParagraph": 231,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 371,
+      "targetParagraph": 232,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 373,
+      "targetParagraph": 233,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 374,
+      "targetParagraph": 234,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 375,
+      "targetParagraph": 235,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 376,
+      "targetParagraph": 236,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 377,
+      "targetParagraph": 237,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 378,
+      "targetParagraph": 238,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 379,
+      "targetParagraph": 239,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 380,
+      "targetParagraph": 240,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 381,
+      "targetParagraph": 241,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 383,
+      "targetParagraph": 242,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 384,
+      "targetParagraph": 243,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 385,
+      "targetParagraph": 244,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 386,
+      "targetParagraph": 245,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 387,
+      "targetParagraph": 246,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 388,
+      "targetParagraph": 247,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 389,
+      "targetParagraph": 248,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 390,
+      "targetParagraph": 249,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 391,
+      "targetParagraph": 250,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 393,
+      "targetParagraph": 251,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 394,
+      "targetParagraph": 252,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 400,
+      "targetParagraph": 253,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 401,
+      "targetParagraph": 254,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 402,
+      "targetParagraph": 255,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 403,
+      "targetParagraph": 256,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 404,
+      "targetParagraph": 257,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 405,
+      "targetParagraph": 259,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 406,
+      "targetParagraph": 260,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 407,
+      "targetParagraph": 261,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 408,
+      "targetParagraph": 263,
+      "comparison": "table-number-reference"
+    },
+    {
+      "sourceParagraph": 409,
+      "targetParagraph": 265,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 410,
+      "targetParagraph": 266,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 411,
+      "targetParagraph": 267,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 412,
+      "targetParagraph": 268,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 413,
+      "targetParagraph": 269,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 414,
+      "targetParagraph": 270,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 415,
+      "targetParagraph": 271,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 416,
+      "targetParagraph": 272,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 417,
+      "targetParagraph": 273,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 418,
+      "targetParagraph": 274,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 419,
+      "targetParagraph": 275,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 420,
+      "targetParagraph": 276,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 421,
+      "targetParagraph": 277,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 422,
+      "targetParagraph": 278,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 423,
+      "targetParagraph": 279,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 424,
+      "targetParagraph": 280,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 425,
+      "targetParagraph": 281,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 426,
+      "targetParagraph": 282,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 427,
+      "targetParagraph": 283,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 428,
+      "targetParagraph": 284,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 429,
+      "targetParagraph": 285,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 430,
+      "targetParagraph": 286,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 431,
+      "targetParagraph": 287,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 432,
+      "targetParagraph": 288,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 433,
+      "targetParagraph": 289,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 434,
+      "targetParagraph": 290,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 435,
+      "targetParagraph": 291,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 436,
+      "targetParagraph": 292,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 437,
+      "targetParagraph": 293,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 438,
+      "targetParagraph": 295,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 439,
+      "targetParagraph": 296,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 440,
+      "targetParagraph": 298,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 441,
+      "targetParagraph": 299,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 442,
+      "targetParagraph": 300,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 443,
+      "targetParagraph": 301,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 444,
+      "targetParagraph": 302,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 445,
+      "targetParagraph": 303,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 447,
+      "targetParagraph": 305,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 448,
+      "targetParagraph": 306,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 449,
+      "targetParagraph": 307,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 450,
+      "targetParagraph": 308,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 451,
+      "targetParagraph": 309,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 452,
+      "targetParagraph": 310,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 453,
+      "targetParagraph": 311,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 454,
+      "targetParagraph": 312,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 455,
+      "targetParagraph": 313,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 456,
+      "targetParagraph": 314,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 457,
+      "targetParagraph": 315,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 458,
+      "targetParagraph": 316,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 459,
+      "targetParagraph": 317,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 460,
+      "targetParagraph": 318,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 461,
+      "targetParagraph": 319,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 462,
+      "targetParagraph": 320,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 463,
+      "targetParagraph": 321,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 464,
+      "targetParagraph": 322,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 465,
+      "targetParagraph": 323,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 466,
+      "targetParagraph": 324,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 468,
+      "targetParagraph": 326,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 470,
+      "targetParagraph": 328,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 471,
+      "targetParagraph": 329,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 473,
+      "targetParagraph": 331,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 474,
+      "targetParagraph": 332,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 475,
+      "targetParagraph": 333,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 476,
+      "targetParagraph": 334,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 477,
+      "targetParagraph": 335,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 479,
+      "targetParagraph": 337,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 480,
+      "targetParagraph": 338,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 481,
+      "targetParagraph": 339,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 482,
+      "targetParagraph": 340,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 483,
+      "targetParagraph": 341,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 484,
+      "targetParagraph": 342,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 485,
+      "targetParagraph": 343,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 487,
+      "targetParagraph": 345,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 488,
+      "targetParagraph": 346,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 489,
+      "targetParagraph": 347,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 491,
+      "targetParagraph": 349,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 492,
+      "targetParagraph": 350,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 493,
+      "targetParagraph": 351,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 494,
+      "targetParagraph": 353,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 495,
+      "targetParagraph": 354,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 497,
+      "targetParagraph": 356,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 499,
+      "targetParagraph": 358,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 500,
+      "targetParagraph": 359,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 501,
+      "targetParagraph": 360,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 502,
+      "targetParagraph": 362,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 504,
+      "targetParagraph": 364,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 505,
+      "targetParagraph": 365,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 506,
+      "targetParagraph": 366,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 507,
+      "targetParagraph": 367,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 508,
+      "targetParagraph": 368,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 509,
+      "targetParagraph": 438,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 510,
+      "targetParagraph": 439,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 511,
+      "targetParagraph": 440,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 512,
+      "targetParagraph": 441,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 513,
+      "targetParagraph": 442,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 514,
+      "targetParagraph": 443,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 515,
+      "targetParagraph": 444,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 516,
+      "targetParagraph": 369,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 517,
+      "targetParagraph": 370,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 518,
+      "targetParagraph": 371,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 519,
+      "targetParagraph": 372,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 520,
+      "targetParagraph": 373,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 521,
+      "targetParagraph": 374,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 523,
+      "targetParagraph": 375,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 524,
+      "targetParagraph": 376,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 526,
+      "targetParagraph": 377,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 527,
+      "targetParagraph": 378,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 528,
+      "targetParagraph": 379,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 529,
+      "targetParagraph": 380,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 530,
+      "targetParagraph": 381,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 531,
+      "targetParagraph": 382,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 532,
+      "targetParagraph": 383,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 533,
+      "targetParagraph": 384,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 534,
+      "targetParagraph": 385,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 535,
+      "targetParagraph": 386,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 536,
+      "targetParagraph": 387,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 537,
+      "targetParagraph": 388,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 538,
+      "targetParagraph": 389,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 539,
+      "targetParagraph": 390,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 541,
+      "targetParagraph": 391,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 542,
+      "targetParagraph": 392,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 543,
+      "targetParagraph": 393,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 544,
+      "targetParagraph": 394,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 545,
+      "targetParagraph": 395,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 546,
+      "targetParagraph": 396,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 547,
+      "targetParagraph": 397,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 548,
+      "targetParagraph": 398,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 549,
+      "targetParagraph": 399,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 550,
+      "targetParagraph": 400,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 551,
+      "targetParagraph": 401,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 552,
+      "targetParagraph": 402,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 554,
+      "targetParagraph": 403,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 555,
+      "targetParagraph": 404,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 556,
+      "targetParagraph": 405,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 557,
+      "targetParagraph": 406,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 558,
+      "targetParagraph": 407,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 559,
+      "targetParagraph": 408,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 560,
+      "targetParagraph": 409,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 561,
+      "targetParagraph": 410,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 562,
+      "targetParagraph": 411,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 563,
+      "targetParagraph": 412,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 564,
+      "targetParagraph": 413,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 565,
+      "targetParagraph": 414,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 566,
+      "targetParagraph": 415,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 567,
+      "targetParagraph": 416,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 568,
+      "targetParagraph": 417,
+      "comparison": "equation-format"
+    },
+    {
+      "sourceParagraph": 569,
+      "targetParagraph": 418,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 571,
+      "targetParagraph": 419,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 572,
+      "targetParagraph": 420,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 573,
+      "targetParagraph": 421,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 574,
+      "targetParagraph": 422,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 575,
+      "targetParagraph": 423,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 576,
+      "targetParagraph": 424,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 577,
+      "targetParagraph": 425,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 578,
+      "targetParagraph": 426,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 579,
+      "targetParagraph": 427,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 580,
+      "targetParagraph": 428,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 581,
+      "targetParagraph": 429,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 582,
+      "targetParagraph": 430,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 583,
+      "targetParagraph": 431,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 584,
+      "targetParagraph": 432,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 585,
+      "targetParagraph": 433,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 586,
+      "targetParagraph": 434,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 588,
+      "targetParagraph": 436,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 589,
+      "targetParagraph": 445,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 590,
+      "targetParagraph": 446,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 591,
+      "targetParagraph": 447,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 592,
+      "targetParagraph": 448,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 593,
+      "targetParagraph": 449,
+      "comparison": "text"
+    },
+    {
+      "sourceParagraph": 594,
+      "targetParagraph": 450,
+      "comparison": "text"
+    }
+  ],
+  "remoteVerified": true,
+  "remoteSha256": "ef8f3fb68bdd15cf1e215ed835a036e394819aa395663d076aa8fbbebd84e3be",
+  "remoteModifiedTime": "2026-11-11T16:12:05.944Z",
+  "coverRosterColumns": [
+    "TT",
+    "Họ và tên"
+  ],
+  "coverRosterAlignment": {
+    "table": "center",
+    "TT": "center",
+    "Họ và tên": "left"
+  }
+}

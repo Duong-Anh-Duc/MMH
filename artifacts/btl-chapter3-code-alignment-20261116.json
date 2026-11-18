@@ -1,0 +1,213 @@
+{
+  "reviewedAtUtc": "2026-11-16T02:25:57.262820+00:00",
+  "canonicalReportUrl": "https://docs.google.com/document/d/1hlUT3wDVveSOjz4xkSf1L_4oOk41RG9C/edit",
+  "sourceWordSha256": "2a798002265186e1ad2641d12dd0092fe9b4f647c52700998a71a3f7638316fe",
+  "outputWordSha256": "acbdbd65e91a7ca0749bc1d99f10151256d6b43feee877d4daa696168569d593",
+  "outputPdfSha256": "8d709416de5db870798c154c9600acbbdca2e5a6bf132beef80b5cc0d056264f",
+  "gitRevision": "8d139435f72317a66ea51bc9b144e56fa2a51feb",
+  "applicationCodeChanged": false,
+  "checks": [
+    {
+      "topic": "Node.js / TypeScript / NestJS",
+      "reportSections": [
+        "Mở đầu",
+        "3.1"
+      ],
+      "source": [
+        "package.json",
+        "tsconfig.json",
+        "src/bootstrap.ts:12"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "topic": "RSA key generation, encrypted PKCS#8, SPKI fingerprints",
+      "reportSections": [
+        "1.3",
+        "1.5.2",
+        "2.2.2",
+        "3.2.1"
+      ],
+      "source": [
+        "src/crypto/crypto.service.ts:27",
+        "src/keys/keys.service.ts:42",
+        "src/keys/keys.service.ts:151"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "topic": "AES-256-CBC, 32-byte session key, 16-byte random IV, PKCS#7",
+      "reportSections": [
+        "1.2",
+        "2.4.2",
+        "3.2.2"
+      ],
+      "source": [
+        "src/crypto/crypto.service.ts:116",
+        "src/envelopes/envelopes.service.ts:53"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "topic": "RSA-OAEP SHA-256; wrap key before encrypted control is assembled",
+      "reportSections": [
+        "1.3.3",
+        "2.4.2",
+        "3.2.2"
+      ],
+      "source": [
+        "src/crypto/crypto.service.ts:135",
+        "src/envelopes/envelopes.service.ts:57"
+      ],
+      "status": "MATCH_AFTER_SNIPPET_ORDER_CORRECTION"
+    },
+    {
+      "topic": "RSASSA-PKCS1-v1_5 / SHA-256 on ASCII Base64 encrypted_data",
+      "reportSections": [
+        "1.4",
+        "2.3.3",
+        "2.4.2",
+        "3.2.3"
+      ],
+      "source": [
+        "src/crypto/crypto.service.ts:153",
+        "src/envelopes/envelope.ts:164"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "topic": "Exactly 5 header and 3 payload fields; protocol/control are inside encrypted JSON",
+      "reportSections": [
+        "2.3",
+        "3.2.2",
+        "3.2.4"
+      ],
+      "source": [
+        "src/envelopes/envelope.ts:11",
+        "src/envelopes/envelope.ts:108",
+        "src/envelopes/envelopes.service.ts:67"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "topic": "Verify ciphertext before decrypt; check full control after decrypt; then claim UUID",
+      "reportSections": [
+        "2.4.3",
+        "3.2.3",
+        "3.2.5",
+        "4.2.3"
+      ],
+      "source": [
+        "src/envelopes/envelopes.service.ts:120",
+        "src/envelopes/envelopes.service.ts:150",
+        "src/envelopes/envelopes.service.ts:178"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "topic": "Default 10 MiB and symmetric 300-second window; persistent MongoDB uniqueness",
+      "reportSections": [
+        "2.1.3",
+        "2.4.4",
+        "3.1.1",
+        "3.2.5"
+      ],
+      "source": [
+        "src/config.ts:38",
+        "src/envelopes/envelopes.service.ts:100",
+        "src/storage/storage.service.ts:53"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "topic": "REST receive obtains receiver passphrase locally; GridFS and receipts",
+      "reportSections": [
+        "2.4",
+        "3.3",
+        "4.2.3"
+      ],
+      "source": [
+        "src/envelopes/envelopes.service.ts:183",
+        "src/storage/storage.service.ts:101",
+        "src/envelopes/receive.controller.ts:17"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "topic": "Two Base64 layers, approximately 77.8% overhead for large inputs; benchmark excludes HTTP",
+      "reportSections": [
+        "1.6.3",
+        "3.4.5",
+        "4.2.1"
+      ],
+      "source": [
+        "src/envelopes/envelopes.service.ts:75",
+        "src/envelopes/envelopes.service.ts:81",
+        "scripts/benchmark.ts:54"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "topic": "PKI/X.509, TLS, hardware keys, AEAD and signed receipts are future work",
+      "reportSections": [
+        "3.4.5",
+        "4.2.3",
+        "4.3"
+      ],
+      "source": [
+        "src/keys/keys.service.ts",
+        "src/bootstrap.ts",
+        "src/envelopes/envelopes.service.ts"
+      ],
+      "status": "MATCH_WITH_STATED_LIMITATIONS"
+    }
+  ],
+  "reportCorrection": {
+    "section": "3.2.2",
+    "description": "Moved existing RSA-OAEP snippet before existing AES-CBC snippet, matching seal() and design step 3 before step 4. No wording, code characters, tables, images, equations or measurements changed.",
+    "changedPdfPages": [
+      28
+    ]
+  },
+  "verification": {
+    "build": "PASS",
+    "freshCoreHttpTests": {
+      "passed": 35,
+      "failed": 0,
+      "skipped": 0,
+      "log": "artifacts/btl-core-http-review-20261116.tap"
+    },
+    "fullMongoIntegrationRerun": false,
+    "reason": "MongoDB stopped on port 27018; Docker not started.",
+    "historicalFullTestRun": {
+      "executedAt": "2026-11-08T02:19:01.529Z",
+      "node": "v22.22.3",
+      "command": "npm test",
+      "exitCode": 0,
+      "tests": 65,
+      "passed": 65,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 743.168083
+    },
+    "controlScopeProbe": "artifacts/btl-control-scope-probe-20261116.json",
+    "all3ArchivedSignaturesVerified": true,
+    "all3RestoredFilesByteIdenticalToAssets": true,
+    "all3ArchivedEnvelopesMatchRecordedSizes": true,
+    "all5BenchmarkRowsMatchRecordedValues": true,
+    "allParagraphsRetainedExactly": true,
+    "all22TablesIdentical": true,
+    "all12ImagesIdentical": true,
+    "nativeEquations": 32,
+    "pdfPages": 52,
+    "noReferenceFieldErrors": true,
+    "snippetOrderCorrectInPdf": true
+  },
+  "backupDriveId": "1MVDXt3pYYMnH61PXpdkGhVr17fqlt4eW",
+  "remoteVerified": true,
+  "outputWordPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAO-CAO-BTL.docx",
+  "outputPdfPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAO-CAO-BTL.pdf",
+  "remoteSha256": "acbdbd65e91a7ca0749bc1d99f10151256d6b43feee877d4daa696168569d593",
+  "remoteBytes": 4530642,
+  "remoteModifiedTime": "2026-11-16T02:26:49.235Z"
+}

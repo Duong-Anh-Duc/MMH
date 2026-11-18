@@ -1,0 +1,704 @@
+{
+  "sourceSha256": "8693c157977cd800b1dd7445d69562720a675af0dbfbb34ada987f0fadad13fe",
+  "templateSha256": "65f27e6d47e33c18abeaa8070d6366346883218048f36bc619d504e63f448acc",
+  "outputPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAO-CAO-BTL-Theo-mau-20261111.docx",
+  "outputSha256": "ef8f3fb68bdd15cf1e215ed835a036e394819aa395663d076aa8fbbebd84e3be",
+  "paragraphs": 448,
+  "tables": 22,
+  "images": 11,
+  "nativeEquations": 31,
+  "headings": [
+    {
+      "text": "MỞ ĐẦU",
+      "bookmark": "btl_heading_1",
+      "level": 1
+    },
+    {
+      "text": "Mục tiêu và tính cấp thiết của đề tài",
+      "bookmark": "btl_heading_2",
+      "level": 2
+    },
+    {
+      "text": "Đối tượng và phạm vi nghiên cứu",
+      "bookmark": "btl_heading_3",
+      "level": 2
+    },
+    {
+      "text": "Phương pháp nghiên cứu",
+      "bookmark": "btl_heading_4",
+      "level": 2
+    },
+    {
+      "text": "Bố cục báo cáo",
+      "bookmark": "btl_heading_5",
+      "level": 2
+    },
+    {
+      "text": "CHƯƠNG 1: CƠ SỞ LÝ THUYẾT VỀ MẬT MÃ HỌC VÀ AN TOÀN DỮ LIỆU",
+      "bookmark": "btl_heading_6",
+      "level": 1
+    },
+    {
+      "text": "1.1. Tổng quan về an toàn thông tin trong truyền thông dữ liệu",
+      "bookmark": "btl_heading_7",
+      "level": 2
+    },
+    {
+      "text": "1.1.1. Bốn mục tiêu an toàn cốt lõi",
+      "bookmark": "btl_heading_8",
+      "level": 3
+    },
+    {
+      "text": "1.1.2. Các mối đe dọa thường trực trên đường truyền",
+      "bookmark": "btl_heading_9",
+      "level": 3
+    },
+    {
+      "text": "1.2. Mật mã học khóa đối xứng và Thuật toán AES-256",
+      "bookmark": "btl_heading_10",
+      "level": 2
+    },
+    {
+      "text": "1.2.1. Khái niệm và nguyên lý hoạt động của mật mã đối xứng",
+      "bookmark": "btl_heading_11",
+      "level": 3
+    },
+    {
+      "text": "1.2.2. Thuật toán mã hóa AES-256",
+      "bookmark": "btl_heading_12",
+      "level": 3
+    },
+    {
+      "text": "1.2.3. Chế độ hoạt động CBC (Cipher Block Chaining) và vai trò của Vector khởi tạo (IV)",
+      "bookmark": "btl_heading_13",
+      "level": 3
+    },
+    {
+      "text": "1.2.4. Lý do sử dụng AES để mã hóa dữ liệu văn bản dung lượng lớn",
+      "bookmark": "btl_heading_14",
+      "level": 3
+    },
+    {
+      "text": "1.3. Mật mã học khóa công khai và Thuật toán RSA",
+      "bookmark": "btl_heading_15",
+      "level": 2
+    },
+    {
+      "text": "1.3.1. Mô hình mỗi thực thể sở hữu một cặp khóa RSA duy nhất",
+      "bookmark": "btl_heading_16",
+      "level": 3
+    },
+    {
+      "text": "1.3.2. Thuật toán RSA và cơ sở toán học",
+      "bookmark": "btl_heading_17",
+      "level": 3
+    },
+    {
+      "text": "1.3.3. Cơ chế đệm an toàn RSA-OAEP khi bọc khóa phiên",
+      "bookmark": "btl_heading_18",
+      "level": 3
+    },
+    {
+      "text": "1.3.4. Đánh giá ưu điểm và hạn chế về mặt tốc độ của thuật toán RSA",
+      "bookmark": "btl_heading_19",
+      "level": 3
+    },
+    {
+      "text": "1.4. Hàm băm mật mã và Kỹ thuật Ký số",
+      "bookmark": "btl_heading_20",
+      "level": 2
+    },
+    {
+      "text": "1.4.1. Hàm băm mật mã một chiều và thuật toán SHA-256",
+      "bookmark": "btl_heading_21",
+      "level": 3
+    },
+    {
+      "text": "1.4.2. Cơ chế tạo và xác minh chữ ký số theo chuẩn RSASSA-PKCS1-v1_5",
+      "bookmark": "btl_heading_22",
+      "level": 3
+    },
+    {
+      "text": "1.4.3. Mô hình ký sau khi mã hóa (Encrypt-then-Sign) để tối ưu tính an toàn",
+      "bookmark": "btl_heading_23",
+      "level": 3
+    },
+    {
+      "text": "1.5. Mô hình Mã hóa phong bì số (Digital Envelope / Hybrid Encryption)",
+      "bookmark": "btl_heading_24",
+      "level": 2
+    },
+    {
+      "text": "1.5.1. Nguyên lý kết hợp giữa AES-256, RSA-OAEP và Chữ ký số",
+      "bookmark": "btl_heading_25",
+      "level": 3
+    },
+    {
+      "text": "1.5.2. Cơ chế sử dụng chéo cặp khóa giữa Bên gửi và Bên nhận",
+      "bookmark": "btl_heading_26",
+      "level": 3
+    },
+    {
+      "text": "1.6. Chuẩn mã hóa định dạng dữ liệu Base64",
+      "bookmark": "btl_heading_27",
+      "level": 2
+    },
+    {
+      "text": "1.6.1. Nguyên lý chuyển đổi từ nhị phân sang ký tự văn bản ASCII an toàn",
+      "bookmark": "btl_heading_28",
+      "level": 3
+    },
+    {
+      "text": "1.6.2. Lý do chuyển file PDF sang chuỗi Base64 trước khi nhúng vào cấu trúc JSON",
+      "bookmark": "btl_heading_29",
+      "level": 3
+    },
+    {
+      "text": "1.6.3. Đánh giá ưu điểm và chi phí dung lượng (~33.3% overhead) của Base64",
+      "bookmark": "btl_heading_30",
+      "level": 3
+    },
+    {
+      "text": "CHƯƠNG 2: PHÂN TÍCH VÀ THIẾT KẾ HỆ THỐNG",
+      "bookmark": "btl_heading_31",
+      "level": 1
+    },
+    {
+      "text": "2.1. Phân tích yêu cầu bài toán",
+      "bookmark": "btl_heading_32",
+      "level": 2
+    },
+    {
+      "text": "2.1.1. Kịch bản nghiệp vụ truyền nhận văn bản mật trực tiếp giữa hai đơn vị",
+      "bookmark": "btl_heading_33",
+      "level": 3
+    },
+    {
+      "text": "2.1.2. Yêu cầu chức năng của hệ thống (Sinh khóa, Ký số, Mã hóa,...)",
+      "bookmark": "btl_heading_34",
+      "level": 3
+    },
+    {
+      "text": "2.1.3. Yêu cầu phi chức năng (Tính bảo mật, Tính toàn vẹn, Tốc độ,...)",
+      "bookmark": "btl_heading_35",
+      "level": 3
+    },
+    {
+      "text": "2.2. Mô hình kiến trúc hệ thống 2 bên (Bên gửi – Bên nhận)",
+      "bookmark": "btl_heading_36",
+      "level": 2
+    },
+    {
+      "text": "2.2.1. Phân định vai trò và trách nhiệm của Bên gửi và Bên nhận",
+      "bookmark": "btl_heading_37",
+      "level": 3
+    },
+    {
+      "text": "2.2.2. Mô hình quản lý và phân phối cặp khóa RSA (Key Management)",
+      "bookmark": "btl_heading_38",
+      "level": 3
+    },
+    {
+      "text": "2.3. Thiết kế cấu trúc Gói tin phong bì số (JSON Envelope Specification)",
+      "bookmark": "btl_heading_39",
+      "level": 2
+    },
+    {
+      "text": "2.3.1. Cấu trúc tổng thể của file gói tin JSON",
+      "bookmark": "btl_heading_40",
+      "level": 3
+    },
+    {
+      "text": "2.3.2. Đặc tả chi tiết khối thông tin điều khiển mở (Header)",
+      "bookmark": "btl_heading_41",
+      "level": 3
+    },
+    {
+      "text": "2.3.3. Đặc tả chi tiết khối dữ liệu mã hóa bảo mật (Payload)",
+      "bookmark": "btl_heading_42",
+      "level": 3
+    },
+    {
+      "text": "2.4. Thiết kế luồng xử lý chi tiết (Work-flow Design)",
+      "bookmark": "btl_heading_43",
+      "level": 2
+    },
+    {
+      "text": "2.4.1. Sơ đồ tuần tự tổng thể (Sequence Diagram giữa Bên gửi và Bên nhận)",
+      "bookmark": "btl_heading_44",
+      "level": 3
+    },
+    {
+      "text": "2.4.2. Luồng thuật toán xử lý tại Bên gửi",
+      "bookmark": "btl_heading_45",
+      "level": 3
+    },
+    {
+      "text": "2.4.3. Luồng thuật toán xử lý tại Bên nhận",
+      "bookmark": "btl_heading_46",
+      "level": 3
+    },
+    {
+      "text": "2.4.4. Cơ chế chống tấn công phát lại (Anti-Replay Attack qua UUID và Timestamp)",
+      "bookmark": "btl_heading_47",
+      "level": 3
+    },
+    {
+      "text": "CHƯƠNG 3: CÀI ĐẶT THỰC NGHIỆM VÀ KẾT QUẢ",
+      "bookmark": "btl_heading_48",
+      "level": 1
+    },
+    {
+      "text": "3.1. Môi trường và công nghệ triển khai",
+      "bookmark": "btl_heading_49",
+      "level": 2
+    },
+    {
+      "text": "3.1.1. Lựa chọn ngôn ngữ lập trình và nền tảng phát triển",
+      "bookmark": "btl_heading_50",
+      "level": 3
+    },
+    {
+      "text": "3.1.2. Các thư viện mật mã học chuyên dụng",
+      "bookmark": "btl_heading_51",
+      "level": 3
+    },
+    {
+      "text": "3.2. Hiện thực hóa các mô-đun chức năng cốt lõi",
+      "bookmark": "btl_heading_52",
+      "level": 2
+    },
+    {
+      "text": "3.2.1. Mô-đun sinh và lưu trữ cặp khóa RSA",
+      "bookmark": "btl_heading_53",
+      "level": 3
+    },
+    {
+      "text": "3.2.2. Mô-đun mã hóa AES-256 và bọc khóa phiên RSA-OAEP",
+      "bookmark": "btl_heading_54",
+      "level": 3
+    },
+    {
+      "text": "3.2.3. Mô-đun băm SHA-256 và tạo chữ ký số",
+      "bookmark": "btl_heading_55",
+      "level": 3
+    },
+    {
+      "text": "3.2.4. Mô-đun đóng gói và giải nén JSON",
+      "bookmark": "btl_heading_56",
+      "level": 3
+    },
+    {
+      "text": "3.2.5. Mô-đun thẩm định chữ ký và khôi phục tệp gốc",
+      "bookmark": "btl_heading_57",
+      "level": 3
+    },
+    {
+      "text": "3.3. Giao diện và kết quả thực thi chương trình",
+      "bookmark": "btl_heading_58",
+      "level": 2
+    },
+    {
+      "text": "3.3.1. Giao diện thao tác của bên gửi",
+      "bookmark": "btl_heading_59",
+      "level": 3
+    },
+    {
+      "text": "3.3.2. Cấu trúc tệp package.json thực tế sau đóng gói",
+      "bookmark": "btl_heading_60",
+      "level": 3
+    },
+    {
+      "text": "3.3.3. Giao diện thao tác của bên nhận",
+      "bookmark": "btl_heading_61",
+      "level": 3
+    },
+    {
+      "text": "3.4. Kịch bản kiểm thử và đánh giá an toàn",
+      "bookmark": "btl_heading_62",
+      "level": 2
+    },
+    {
+      "text": "3.4.1. Kịch bản 1: Luồng truyền nhận chuẩn",
+      "bookmark": "btl_heading_63",
+      "level": 3
+    },
+    {
+      "text": "3.4.2. Kịch bản 2: Chống can thiệp dữ liệu",
+      "bookmark": "btl_heading_64",
+      "level": 3
+    },
+    {
+      "text": "3.4.3. Kịch bản 3: Chống mạo danh bên gửi",
+      "bookmark": "btl_heading_65",
+      "level": 3
+    },
+    {
+      "text": "3.4.4. Kịch bản 4: Nhiều định dạng và các trường hợp biên",
+      "bookmark": "btl_heading_66",
+      "level": 3
+    },
+    {
+      "text": "3.4.5. Đo thời gian thực thi và độ tăng dung lượng",
+      "bookmark": "btl_heading_67",
+      "level": 3
+    },
+    {
+      "text": "CHƯƠNG 4: ĐÁNH GIÁ VÀ HƯỚNG PHÁT TRIỂN",
+      "bookmark": "btl_heading_68",
+      "level": 1
+    },
+    {
+      "text": "4.1 Đánh giá kết quả đạt được",
+      "bookmark": "btl_heading_69",
+      "level": 2
+    },
+    {
+      "text": "4.1.1. Mức độ đáp ứng các mục tiêu an toàn thông tin ban đầu",
+      "bookmark": "btl_heading_70",
+      "level": 3
+    },
+    {
+      "text": "4.1.2. Ưu điểm nổi bật của hệ thống",
+      "bookmark": "btl_heading_71",
+      "level": 3
+    },
+    {
+      "text": "4.2. Những hạn chế còn tồn tại",
+      "bookmark": "btl_heading_72",
+      "level": 2
+    },
+    {
+      "text": "4.2.1. Chi phí tăng dung lượng dữ liệu do cơ chế mã hóa Base64",
+      "bookmark": "btl_heading_73",
+      "level": 3
+    },
+    {
+      "text": "4.2.2. Việc quản lý và phân phối khóa công khai còn thủ công qua file",
+      "bookmark": "btl_heading_74",
+      "level": 3
+    },
+    {
+      "text": "4.2.3. Các hạn chế khác về thiết kế và phạm vi thử nghiệm",
+      "bookmark": "btl_heading_75",
+      "level": 3
+    },
+    {
+      "text": "4.3. Hướng phát triển trong tương lai",
+      "bookmark": "btl_heading_76",
+      "level": 2
+    },
+    {
+      "text": "4.3.1. Tích hợp hạ tầng chứng thực khóa công khai (PKI / Chứng chỉ X.509)",
+      "bookmark": "btl_heading_77",
+      "level": 3
+    },
+    {
+      "text": "4.3.2. Hỗ trợ thiết bị phần cứng bảo mật chuyên dụng (USB Token / Smartcard)",
+      "bookmark": "btl_heading_78",
+      "level": 3
+    },
+    {
+      "text": "4.3.3. Mở rộng giao thức truyền nhận trực tiếp qua giao diện Web API / Socket mạng",
+      "bookmark": "btl_heading_79",
+      "level": 3
+    }
+  ],
+  "figures": [
+    {
+      "text": "Hình 3.1. Gửi tệp PDF và tạo phong bì tại đơn vị A; các trường chứa mật khẩu đã được che.",
+      "bookmark": "btl_figure_3_1",
+      "level": 1
+    },
+    {
+      "text": "Hình 3.2. Đơn vị B mở phong bì và tải tài liệu gốc qua Swagger UI.",
+      "bookmark": "btl_figure_3_2",
+      "level": 1
+    },
+    {
+      "text": "Hình 3.3. Tiếp nhận phong bì JSON qua REST API và trả biên nhận lưu trữ.",
+      "bookmark": "btl_figure_3_3",
+      "level": 1
+    },
+    {
+      "text": "Hình 3.4. Trạng thái và số bản ghi MongoDB của một phiên trình diễn giao diện.",
+      "bookmark": "btl_figure_3_4",
+      "level": 1
+    },
+    {
+      "text": "Hình 3.5. Trích nguyên văn nhật ký npm test: 42 ca đạt, không có ca thất bại.",
+      "bookmark": "btl_figure_3_5",
+      "level": 1
+    },
+    {
+      "text": "Hình 3.6. Đảo một bit bản mã, giữ nguyên chữ ký: API từ chối với HTTP 401.",
+      "bookmark": "btl_figure_3_6",
+      "level": 1
+    },
+    {
+      "text": "Hình 3.7. Ký bằng khóa giả nhưng khai báo đơn vị A: API từ chối với HTTP 401.",
+      "bookmark": "btl_figure_3_7",
+      "level": 1
+    },
+    {
+      "text": "Hình 3.8. Gửi lại phong bì đã tiếp nhận: API từ chối với HTTP 409.",
+      "bookmark": "btl_figure_3_8",
+      "level": 1
+    },
+    {
+      "text": "Hình 3.9. Đổi UUID và timestamp của phong bì cũ: control không khớp, HTTP 400.",
+      "bookmark": "btl_figure_3_9",
+      "level": 1
+    },
+    {
+      "text": "Hình 3.10. Thời gian trung bình đóng gói và mở/lưu MongoDB theo kích thước tệp.",
+      "bookmark": "btl_figure_3_10",
+      "level": 1
+    }
+  ],
+  "tableCaptions": [
+    {
+      "text": "Bảng 1.1. Các nhóm tấn công và biện pháp bảo vệ đường truyền",
+      "bookmark": "btl_table_1_1",
+      "level": 1
+    },
+    {
+      "text": "Bảng 1.2. So sánh mật mã đối xứng và mật mã bất đối xứng",
+      "bookmark": "btl_table_1_2",
+      "level": 1
+    },
+    {
+      "text": "Bảng 1.3. Vai trò của các khóa trong mô hình phong bì số",
+      "bookmark": "btl_table_1_3",
+      "level": 1
+    },
+    {
+      "text": "Bảng 2.1. Yêu cầu phi chức năng của hệ thống",
+      "bookmark": "btl_table_2_1",
+      "level": 1
+    },
+    {
+      "text": "Bảng 2.2. Đặc tả các trường trong phần header",
+      "bookmark": "btl_table_2_2",
+      "level": 1
+    },
+    {
+      "text": "Bảng 2.3. Đặc tả các trường trong phần payload",
+      "bookmark": "btl_table_2_3",
+      "level": 1
+    },
+    {
+      "text": "Bảng 3.1. Cấu hình môi trường thực nghiệm",
+      "bookmark": "btl_table_3_1",
+      "level": 1
+    },
+    {
+      "text": "Bảng 3.2. Thư viện và các hàm mật mã được sử dụng",
+      "bookmark": "btl_table_3_2",
+      "level": 1
+    },
+    {
+      "text": "Bảng 3.3. Đối chiếu yêu cầu thiết kế với thành phần hiện thực",
+      "bookmark": "btl_table_3_3",
+      "level": 1
+    },
+    {
+      "text": "Bảng 3.4. Cấu trúc lưu trữ khóa và tài liệu",
+      "bookmark": "btl_table_3_4",
+      "level": 1
+    },
+    {
+      "text": "Bảng 3.5. Các API phục vụ truyền nhận phong bì số",
+      "bookmark": "btl_table_3_5",
+      "level": 1
+    },
+    {
+      "text": "Bảng 3.6. Các kịch bản kiểm thử bổ sung và kết quả mong đợi",
+      "bookmark": "btl_table_3_6",
+      "level": 1
+    },
+    {
+      "text": "Bảng 3.7. Thời gian xử lý và độ tăng dung lượng của phong bì",
+      "bookmark": "btl_table_3_7",
+      "level": 1
+    },
+    {
+      "text": "Bảng 4.1. Đối chiếu các mục tiêu an toàn với kết quả thực nghiệm",
+      "bookmark": "btl_table_4_1",
+      "level": 1
+    },
+    {
+      "text": "Bảng 4.2. Đối chiếu các yêu cầu phi chức năng",
+      "bookmark": "btl_table_4_2",
+      "level": 1
+    },
+    {
+      "text": "Bảng 4.3. Dung lượng phong bì và phần cố định mỗi gói",
+      "bookmark": "btl_table_4_3",
+      "level": 1
+    },
+    {
+      "text": "Bảng 4.4. Hiện trạng quản lý khóa so với các mối đe dọa theo bài giảng",
+      "bookmark": "btl_table_4_4",
+      "level": 1
+    },
+    {
+      "text": "Bảng 4.5. Đối chiếu xác thực hai chiều X.509 với phong bì hiện tại",
+      "bookmark": "btl_table_4_5",
+      "level": 1
+    },
+    {
+      "text": "Bảng 4.6. Tổng hợp hạn chế và hướng giải quyết",
+      "bookmark": "btl_table_4_6",
+      "level": 1
+    }
+  ],
+  "removedEmptyParagraphs": 68,
+  "referenceCount": 10,
+  "templateFormat": {
+    "page": "A4",
+    "leftCm": 2.5,
+    "rightCm": 1.8,
+    "topBottomCm": 2,
+    "bodyFont": "Times New Roman",
+    "bodySizePt": 13,
+    "lineSpacing": 1.15,
+    "firstLineCm": 0.8,
+    "spaceAfterPt": 6,
+    "textColor": "#000000"
+  },
+  "team": {
+    "class": "",
+    "group": "",
+    "course_code": "",
+    "members": [
+      {
+        "name": "Nguyễn Trọng Lư",
+        "student_id": "",
+        "task": "",
+        "deadline": ""
+      },
+      {
+        "name": "Dương Anh Đức",
+        "student_id": "",
+        "task": "",
+        "deadline": ""
+      },
+      {
+        "name": "Bùi Anh Đức",
+        "student_id": "",
+        "task": "",
+        "deadline": ""
+      },
+      {
+        "name": "Lê Ngọc Tân",
+        "student_id": "",
+        "task": "",
+        "deadline": ""
+      }
+    ]
+  },
+  "formulaChanges": [
+    "Equation: 2^256",
+    "Equation: GF(2^8)",
+    "Equation: N*(N-1)/2",
+    "Equation: n = p * q",
+    "Equation: ϕ(n) = (p - 1) * (q - 1)",
+    "Equation: 1 < e < ϕ(n) và gcd(e, ϕ(n)) = 1",
+    "Equation: e = 65537",
+    "Equation: Kpub = (e, n)",
+    "Equation: Kpriv = (d, n)",
+    "Equation: H(M1) = H(M2)",
+    "Equation: H2 = SHA-256 (M)",
+    "Equation: (4/3)² = 16/9",
+    "Equation: 4 × ceil(n/3)",
+    "Equation: n(n−1)/2",
+    "Equation: 2^20",
+    "Equation: 16n/9",
+    "Equation: (4/3)² = 16/9",
+    "Equation: N(N−1)/2",
+    "Equation: n²",
+    "Equation: N(N−1)/2",
+    "Equation: DA = (tA, rA, B, data1, PB(k1))",
+    "Khôi phục ký hiệu công thức RSA đúng nguồn và nhãn Độ tăng dung lượng =, số 33.33%, dấu chấm cuối công thức Euler theo yêu cầu giữ nguyên nội dung."
+  ],
+  "backupFileId": "1vHgsKstVxrFdUIGA1C0P3cWYvGNdODiI",
+  "remoteVerified": true,
+  "pdfPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BAO-CAO-BTL-Theo-mau-20261111.pdf",
+  "pdfSha256": "28ee02afd8a2435ef6c5528ba239c0925b2d33e96e3f4ccf3f6d887358cd7125",
+  "pdfPages": 51,
+  "originalTableTextPreserved": true,
+  "changedImages": [
+    "word/media/image1.png",
+    "word/media/image2.png",
+    "word/media/image3.png",
+    "word/media/image4.png",
+    "word/media/image6.png",
+    "word/media/image7.png",
+    "word/media/image8.png",
+    "word/media/image9.png",
+    "word/media/image11.png",
+    "word/media/image10.png"
+  ],
+  "fieldErrors": [],
+  "blankPages": [],
+  "textColor": "black",
+  "originalImagesWithIdenticalDecodedPixels": 10,
+  "localizedChart": "Chú thích tiếng Việt, dữ liệu artifacts/benchmark.json không đổi",
+  "renderer": "Microsoft Word 16.89.1",
+  "pendingFields": [
+    "Lớp/nhóm",
+    "Mã học phần",
+    "Nhiệm vụ và thời hạn thực tế"
+  ],
+  "sourceContentAudit": {
+    "sourceNonemptyBodyParagraphs": 408,
+    "unaccountedMissingParagraphs": [],
+    "formulaParagraphsConvertedToEquation": [
+      189,
+      190,
+      198,
+      202,
+      209,
+      227,
+      233,
+      234,
+      235,
+      237,
+      238,
+      240,
+      241,
+      243,
+      255,
+      265,
+      268,
+      303,
+      506,
+      530,
+      531,
+      538,
+      548,
+      564,
+      568
+    ],
+    "all19OriginalTablesPreserved": true,
+    "originalReferenceSubheadingsAndNotePreserved": true,
+    "referenceCount": 10,
+    "numberingRepair": "Bảng 3.2 → Bảng 3.3 tại đoạn giới thiệu bảng đối chiếu"
+  },
+  "remoteSha256": "ef8f3fb68bdd15cf1e215ed835a036e394819aa395663d076aa8fbbebd84e3be",
+  "remoteModifiedTime": "2026-11-11T16:12:05.944Z",
+  "remoteFileId": "1hlUT3wDVveSOjz4xkSf1L_4oOk41RG9C",
+  "contentAudit": "artifacts/btl-content-comparison-20261111.json",
+  "restoredSourceNotation": true,
+  "restoredSourcePunctuation": true,
+  "coverRosterColumns": [
+    "TT",
+    "Họ và tên"
+  ],
+  "coverRosterAlignment": {
+    "table": "center",
+    "TT": "center",
+    "Họ và tên": "left"
+  }
+}

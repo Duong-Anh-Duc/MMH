@@ -1,0 +1,354 @@
+{
+  "changedAtUtc": "2026-11-16T06:12:01.769073+00:00",
+  "sourcePath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BTL-MMH-NHÓM 2.docx",
+  "sourceBackup": "/tmp/btl-before-heading3-italic-20261116.docx",
+  "sourceSha256": "e005395ea6004138d4581d18faddbbc4fdd062f234b72eb994db4cc036f3968d",
+  "outputPreviewPath": "/tmp/BTL-MMH-Tieu-de-cap-ba-in-nghieng-20261116.docx",
+  "change": "Apply bold italic level-three headings x.x.x, keeping size 14, Times New Roman and black text. Preserve heading levels 1 and 2.",
+  "heading3Count": 53,
+  "heading3Texts": [
+    "1.1.1. Bốn mục tiêu an toàn cốt lõi",
+    "1.1.2. Các mối đe dọa thường trực trên đường truyền",
+    "1.2.1. Khái niệm và nguyên lý hoạt động của mật mã đối xứng",
+    "1.2.2. Thuật toán mã hóa AES-256",
+    "1.2.3. Chế độ hoạt động CBC và vai trò của Vector khởi tạo (IV)",
+    "1.2.4. Lý do sử dụng AES để mã hóa dữ liệu văn bản dung lượng lớn",
+    "1.3.1. Mô hình mỗi thực thể sở hữu một cặp khóa RSA duy nhất",
+    "1.3.2. Thuật toán RSA và cơ sở toán học",
+    "1.3.3. Cơ chế đệm an toàn RSA-OAEP khi bọc khóa phiên",
+    "1.3.4. Đánh giá ưu điểm và hạn chế về mặt tốc độ của thuật toán RSA",
+    "1.4.1. Hàm băm mật mã một chiều và thuật toán SHA-256",
+    "1.4.2. Cơ chế tạo và xác minh chữ ký số theo chuẩn RSASSA-PKCS1-v1_5",
+    "1.4.3. Mô hình ký sau khi mã hóa để tối ưu tính an toàn",
+    "1.5.1. Nguyên lý kết hợp giữa AES-256, RSA-OAEP và Chữ ký số",
+    "1.5.2. Cơ chế sử dụng chéo cặp khóa giữa Bên gửi và Bên nhận",
+    "1.6.1. Nguyên lý chuyển đổi từ nhị phân sang ký tự văn bản ASCII an toàn",
+    "1.6.2. Lý do chuyển file PDF sang chuỗi Base64 trước khi nhúng vào cấu trúc JSON",
+    "1.6.3. Đánh giá ưu điểm và chi phí dung lượng (tăng khoảng 33,3%) của Base64",
+    "2.1.1. Kịch bản nghiệp vụ truyền nhận văn bản mật trực tiếp giữa hai đơn vị",
+    "2.1.2. Yêu cầu chức năng của hệ thống (Sinh khóa, Ký số, Mã hóa,...)",
+    "2.1.3. Yêu cầu phi chức năng (Tính bảo mật, Tính toàn vẹn, Tốc độ,...)",
+    "2.2.1. Phân định vai trò và trách nhiệm của Bên gửi và Bên nhận",
+    "2.2.2. Mô hình quản lý và phân phối cặp khóa RSA",
+    "2.3.1. Cấu trúc tổng thể của file gói tin JSON",
+    "2.3.2. Đặc tả chi tiết khối thông tin điều khiển mở",
+    "2.3.3. Đặc tả chi tiết khối dữ liệu mã hóa bảo mật",
+    "2.4.1. Sơ đồ tuần tự tổng thể giữa Bên gửi và Bên nhận",
+    "2.4.2. Luồng thuật toán xử lý tại Bên gửi",
+    "2.4.3. Luồng thuật toán xử lý tại Bên nhận",
+    "2.4.4. Cơ chế chống tấn công phát lại qua UUID và dấu thời gian",
+    "3.1.1. Lựa chọn ngôn ngữ lập trình và nền tảng phát triển",
+    "3.1.2. Các thư viện mật mã học chuyên dụng",
+    "3.2.1. Mô-đun sinh và lưu trữ cặp khóa RSA",
+    "3.2.2. Mô-đun mã hóa AES-256 và bọc khóa phiên RSA-OAEP",
+    "3.2.3. Mô-đun băm SHA-256 và tạo chữ ký số",
+    "3.2.4. Mô-đun đóng gói và giải nén JSON",
+    "3.2.5. Mô-đun thẩm định chữ ký và khôi phục tệp gốc",
+    "3.3.1. Giao diện thao tác của bên gửi",
+    "3.3.2. Cấu trúc tệp package.json thực tế sau đóng gói",
+    "3.3.3. Giao diện thao tác của bên nhận",
+    "3.4.1. Kịch bản 1: Luồng truyền nhận chuẩn",
+    "3.4.2. Kịch bản 2: Chống can thiệp dữ liệu",
+    "3.4.3. Kịch bản 3: Chống mạo danh bên gửi",
+    "3.4.4. Kịch bản 4: Nhiều định dạng và các trường hợp biên",
+    "3.4.5. Đo thời gian thực thi và độ tăng dung lượng",
+    "4.1.1. Mức độ đáp ứng các mục tiêu an toàn thông tin ban đầu",
+    "4.1.2. Ưu điểm nổi bật của hệ thống",
+    "4.2.1. Chi phí tăng dung lượng dữ liệu do cơ chế mã hóa Base64",
+    "4.2.2. Việc quản lý và phân phối khóa công khai còn thủ công qua file",
+    "4.2.3. Các hạn chế khác về thiết kế và phạm vi thử nghiệm",
+    "4.3.1. Tích hợp hạ tầng chứng thực khóa công khai (PKI / Chứng chỉ X.509)",
+    "4.3.2. Hỗ trợ thiết bị phần cứng bảo mật chuyên dụng (USB Token / thẻ thông minh)",
+    "4.3.3. Mở rộng giao thức truyền nhận trực tiếp qua giao diện Web API / Socket mạng"
+  ],
+  "userEditsPreserved": [
+    "Renamed Word file BTL-MMH-NHÓM 2.docx",
+    "Nhóm: 2; Lớp: BSKT",
+    "Removed blank MÃ HỌC PHẦN row"
+  ],
+  "allParagraphTextUnchanged": true,
+  "tableCount": 22,
+  "inlineImages": 12,
+  "nativeEquations": 32,
+  "backupDriveId": "1RTCHNl0QOxGsVtm2J7-6rok3JjuG84at",
+  "remoteVerified": true,
+  "allTextAndTablesUnchanged": true,
+  "allImagesIdentical": true,
+  "otherHeadingAndBodyStylesUnchanged": true,
+  "wordHeading3ItalicVerified": true,
+  "pdfHeading3BoldItalicVerified": [
+    {
+      "page": 12,
+      "text": "1.1.1. Bốn mục tiêu an toàn cốt lõi ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 12,
+      "text": "1.1.2. Các mối đe dọa thường trực trên đường truyền ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 13,
+      "text": "1.2.1. Khái niệm và nguyên lý hoạt động của mật mã đối xứng ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 13,
+      "text": "1.2.2. Thuật toán mã hóa AES-256 ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 14,
+      "text": "1.2.3. Chế độ hoạt động CBC và vai trò của Vector khởi tạo (IV) ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 14,
+      "text": "1.2.4. Lý do sử dụng AES để mã hóa dữ liệu văn bản dung lượng lớn ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 15,
+      "text": "1.3.1. Mô hình mỗi thực thể sở hữu một cặp khóa RSA duy nhất ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 15,
+      "text": "1.3.2. Thuật toán RSA và cơ sở toán học ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 16,
+      "text": "1.3.3. Cơ chế đệm an toàn RSA-OAEP khi bọc khóa phiên ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 16,
+      "text": "1.3.4. Đánh giá ưu điểm và hạn chế về mặt tốc độ của thuật toán RSA ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 16,
+      "text": "1.4.1. Hàm băm mật mã một chiều và thuật toán SHA-256 ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 17,
+      "text": "1.4.2. Cơ chế tạo và xác minh chữ ký số theo chuẩn RSASSA-PKCS1-v1_5 ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 17,
+      "text": "1.4.3. Mô hình ký sau khi mã hóa để tối ưu tính an toàn ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 18,
+      "text": "1.5.1. Nguyên lý kết hợp giữa AES-256, RSA-OAEP và Chữ ký số ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 18,
+      "text": "1.5.2. Cơ chế sử dụng chéo cặp khóa giữa Bên gửi và Bên nhận ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 19,
+      "text": "1.6.1. Nguyên lý chuyển đổi từ nhị phân sang ký tự văn bản ASCII an toàn ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 19,
+      "text": "1.6.2. Lý do chuyển file PDF sang chuỗi Base64 trước khi nhúng vào cấu trúc ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 19,
+      "text": "1.6.3. Đánh giá ưu điểm và chi phí dung lượng (tăng khoảng 33,3%) của Base64 ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 20,
+      "text": "2.1.1. Kịch bản nghiệp vụ truyền nhận văn bản mật trực tiếp giữa hai đơn vị ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 20,
+      "text": "2.1.2. Yêu cầu chức năng của hệ thống (Sinh khóa, Ký số, Mã hóa,...) ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 21,
+      "text": "2.1.3. Yêu cầu phi chức năng (Tính bảo mật, Tính toàn vẹn, Tốc độ,...) ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 21,
+      "text": "2.2.1. Phân định vai trò và trách nhiệm của Bên gửi và Bên nhận ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 21,
+      "text": "2.2.2. Mô hình quản lý và phân phối cặp khóa RSA ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 22,
+      "text": "2.3.1. Cấu trúc tổng thể của file gói tin JSON ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 22,
+      "text": "2.3.2. Đặc tả chi tiết khối thông tin điều khiển mở ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 23,
+      "text": "2.3.3. Đặc tả chi tiết khối dữ liệu mã hóa bảo mật ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 23,
+      "text": "2.4.1. Sơ đồ tuần tự tổng thể giữa Bên gửi và Bên nhận ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 24,
+      "text": "2.4.2. Luồng thuật toán xử lý tại Bên gửi ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 25,
+      "text": "2.4.3. Luồng thuật toán xử lý tại Bên nhận ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 25,
+      "text": "2.4.4. Cơ chế chống tấn công phát lại qua UUID và dấu thời gian ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 26,
+      "text": "3.1.1. Lựa chọn ngôn ngữ lập trình và nền tảng phát triển ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 26,
+      "text": "3.1.2. Các thư viện mật mã học chuyên dụng ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 28,
+      "text": "3.2.1. Mô-đun sinh và lưu trữ cặp khóa RSA ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 28,
+      "text": "3.2.2. Mô-đun mã hóa AES-256 và bọc khóa phiên RSA-OAEP ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 28,
+      "text": "3.2.3. Mô-đun băm SHA-256 và tạo chữ ký số ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 29,
+      "text": "3.2.4. Mô-đun đóng gói và giải nén JSON ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 29,
+      "text": "3.2.5. Mô-đun thẩm định chữ ký và khôi phục tệp gốc ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 31,
+      "text": "3.3.1. Giao diện thao tác của bên gửi ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 32,
+      "text": "3.3.2. Cấu trúc tệp package.json thực tế sau đóng gói ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 33,
+      "text": "3.3.3. Giao diện thao tác của bên nhận ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 36,
+      "text": "3.4.1. Kịch bản 1: Luồng truyền nhận chuẩn ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 36,
+      "text": "3.4.2. Kịch bản 2: Chống can thiệp dữ liệu ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 37,
+      "text": "3.4.3. Kịch bản 3: Chống mạo danh bên gửi ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 38,
+      "text": "3.4.4. Kịch bản 4: Nhiều định dạng và các trường hợp biên ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 40,
+      "text": "3.4.5. Đo thời gian thực thi và độ tăng dung lượng ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 42,
+      "text": "4.1.1. Mức độ đáp ứng các mục tiêu an toàn thông tin ban đầu ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 44,
+      "text": "4.1.2. Ưu điểm nổi bật của hệ thống ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 45,
+      "text": "4.2.1. Chi phí tăng dung lượng dữ liệu do cơ chế mã hóa Base64 ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 46,
+      "text": "4.2.2. Việc quản lý và phân phối khóa công khai còn thủ công qua file ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 47,
+      "text": "4.2.3. Các hạn chế khác về thiết kế và phạm vi thử nghiệm ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 47,
+      "text": "4.3.1. Tích hợp hạ tầng chứng thực khóa công khai (PKI / Chứng chỉ X.509) ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 49,
+      "text": "4.3.2. Hỗ trợ thiết bị phần cứng bảo mật chuyên dụng (USB Token / thẻ thông ",
+      "font": "TimesNewRomanPS-BoldItal"
+    },
+    {
+      "page": 49,
+      "text": "4.3.3. Mở rộng giao thức truyền nhận trực tiếp qua giao diện Web API / Socket ",
+      "font": "TimesNewRomanPS-BoldItal"
+    }
+  ],
+  "pdfPages": 52,
+  "outputWordSha256": "fe6cc8933e0da9db9e821a97442a005e07f8aec756acbf73a127081fc25aab65",
+  "outputPdfSha256": "41080effbbb3829445a116e822f9bf86dbc034c3651ad50aa199e73cb739a334",
+  "outputWordPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BTL-MMH-NHÓM 2.docx",
+  "outputPdfPath": "/Users/ducytcg123456/Desktop/BTL MMH/docs/BTL-MMH-NHÓM 2.pdf",
+  "remoteSha256": "fe6cc8933e0da9db9e821a97442a005e07f8aec756acbf73a127081fc25aab65",
+  "remoteModifiedTime": "2026-11-16T06:13:52.772Z",
+  "remoteBytes": 4529068
+}

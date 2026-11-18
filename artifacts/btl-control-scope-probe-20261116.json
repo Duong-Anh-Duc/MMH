@@ -1,0 +1,9 @@
+{
+  "executedAt": "2026-11-16T02:24:28.969Z",
+  "scope": "Core services with isolated temporary key/replay files; no MongoDB",
+  "changedUuidCanPassSignatureOnlyVerify": true,
+  "changedUuidRejectedByOpenControlWithHttp400": true,
+  "originalUuidNotConsumedByInvalidEnvelope": true,
+  "restoredByteIdentical": true,
+  "replayRejectedWithHttp409": true
+}
